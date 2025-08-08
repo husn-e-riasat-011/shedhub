@@ -1,139 +1,159 @@
 import { useState } from "react";
 import "./App.css";
-import logo from "./assats/Group.png";
+import Navbar from "./component/navbar";
+import horizental from "./assats/horizontal ad 2.png";
+import {
+  FaHeart,
+  FaShareAlt,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
+
+const images = ["/img1.jpg", "/img2.jpg", "/img3.jpg"];
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setCurrent((current + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((current - 1 + images.length) % images.length);
+  };
 
   return (
     <div>
-      <nav className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <a href="#">
-                <img
-                  src={logo} // <-- make sure your logo image is here
-                  alt="Logo"
-                  className="h-10 w-auto"
+      <Navbar />
+      <div className="flex justify-center items-center ">
+        <img src={horizental} alt="Example" className="w-[70%] h-auto m-10" />
+      </div>
+
+      <div className="flex flex-col lg:flex-row gap-6 p-4">
+        {/* Left Section */}
+        <div className="w-full lg:w-2/3 space-y-4">
+          {/* Image Slider (placeholder) */}
+          <div className="relative w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
+            {/* Image */}
+            <img
+              src={images[current]}
+              alt="Slide"
+              className="w-full h-full object-cover"
+            />
+
+            {/* Top Left Icons */}
+            <div className="absolute top-2 left-2 flex gap-2">
+              <button className="bg-white p-2 rounded-full shadow">
+                <FaShareAlt className="text-gray-700" />
+              </button>
+              <button className="bg-white p-2 rounded-full shadow">
+                <FaHeart className="text-orange-400" />
+              </button>
+            </div>
+
+            {/* Left Arrow */}
+            <button
+              onClick={prevSlide}
+              className="absolute bottom-2 left-2 bg-white p-2 rounded-full shadow"
+            >
+              <FaChevronLeft className="text-gray-700" />
+            </button>
+
+            {/* Right Arrow */}
+            <button
+              onClick={nextSlide}
+              className="absolute bottom-2 right-2 bg-white p-2 rounded-full shadow"
+            >
+              <FaChevronRight className="text-gray-700" />
+            </button>
+
+            {/* Dots */}
+            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2">
+              {images.map((_, i) => (
+                <span
+                  key={i}
+                  className={`w-2 h-2 rounded-full ${
+                    i === current ? "bg-[#FFA424]" : "bg-white"
+                  } border border-gray-400`}
                 />
-              </a>
+              ))}
             </div>
+          </div>
 
-            {/* Middle Links */}
-            <div className="hidden md:flex space-x-6">
-              <a href="#" className="text-gray-700 hover:text-blue-600">
-                Shed News
-              </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600">
-                Feature Sellers
-              </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600">
-                Lounge
-              </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600">
-                Lounge
-              </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600">
-                Seller Login
-              </a>
+          {/* Property Info */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white p-4 rounded shadow">
+            <div>
+              <p className="font-semibold">Building Type</p>
+              <p>Studio</p>
             </div>
-
-            {/* Right Buttons */}
-            <div className="hidden md:flex space-x-4">
-              {/* LOGIN Button */}
-              <button className="px-4 py-2 border text-sm text-[#FFA424] border-[#FFA424] rounded-[35px] flex items-center gap-2 hover:bg-[#FFF3E0]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5.121 17.804A10.96 10.96 0 0112 15c2.294 0 4.404.689 6.121 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-                LOGIN
-              </button>
-
-              {/* SELL Button */}
-              <button className="px-4 py-2 bg-[#FFA424] text-white text-sm rounded-[35px] flex items-center gap-2 hover:bg-[#ff9800]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 4v16m8-8H4"
-                  />
-                </svg>
-                SELL
-              </button>
+            <div>
+              <p className="font-semibold">Building Size</p>
+              <p>14 x 32</p>
             </div>
-
-            {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center">
-              <button
-                onClick={() => setMenuOpen(!menuOpen)}
-                className="text-gray-600 focus:outline-none"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
+            <div>
+              <p className="font-semibold">Color</p>
+              <p>Dark Grey</p>
+            </div>
+            <div>
+              <p className="font-semibold">Condition</p>
+              <p>Pre-Loved</p>
             </div>
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="md:hidden px-4 pb-4 space-y-2">
-            <a href="#" className="block text-gray-700 hover:text-blue-600">
-              Home
-            </a>
-            <a href="#" className="block text-gray-700 hover:text-blue-600">
-              About
-            </a>
-            <a href="#" className="block text-gray-700 hover:text-blue-600">
-              Contact
-            </a>
-            <a href="#" className="block text-gray-700 hover:text-blue-600">
-              Blog
-            </a>
-            <a href="#" className="block text-gray-700 hover:text-blue-600">
-              News
-            </a>
-            <div className="flex space-x-4 pt-2">
-              <button className="w-full px-4 py-2 border rounded text-sm text-gray-700 hover:bg-gray-100">
-                Login
-              </button>
-              <button className="w-full px-4 py-2 bg-blue-600 text-white rounded text-sm hover:bg-blue-700">
-                Signup
-              </button>
-            </div>
+        {/* Right Section */}
+        <div className="w-full lg:w-1/3 space-y-4">
+          {/* Price Box */}
+          <div className="bg-white p-4 rounded shadow text-center">
+            <p className="text-orange-500 text-2xl font-bold">
+              $13,328.00 <span className="text-orange-300">+ Taxes</span>
+            </p>
+            <p className="text-sm text-gray-500">
+              Free delivery up to 30 miles
+            </p>
           </div>
-        )}
-      </nav>
+
+          {/* Contact Form */}
+          <div className="bg-orange-400 p-4 rounded space-y-2">
+            <h1 className="font-bold text-[#002D4A]">Contact Dealer</h1>
+            <hr className="text-black"></hr>
+            <input
+              type="text"
+              placeholder="Name"
+              className="w-full p-2 rounded"
+            />
+            <input
+              type="text"
+              placeholder="Phone"
+              className="w-full p-2 rounded"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-full p-2 rounded"
+            />
+            <textarea
+              placeholder="Message"
+              className="w-full p-2 rounded"
+              rows="4"
+            >
+              Hello, I'm interested in Yoder Storage Building’s shed with SHIN:
+              395390. Link of the shed: https://shedclick.com/395390 Thank you!
+            </textarea>
+            <button className="w-full bg-blue-900 text-white py-2 rounded">
+              Send Message
+            </button>
+          </div>
+
+          {/* Dealer Info */}
+          <div className="bg-white p-4 rounded shadow">
+            <h1 className="text-[#002D4A] font-semibold m-2">Dealer Profile</h1>
+            <hr className="text-[#002D4A] m-2"></hr>
+            <p className="font-semibold">Yoder Storage Buildings</p>
+            <p className="text-sm text-gray-500">Member Since Apr 09, 2017</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
