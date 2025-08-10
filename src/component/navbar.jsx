@@ -22,19 +22,19 @@ function Navbar() {
 
             {/* Middle Links */}
             <div className="hidden md:flex space-x-6">
-              <a href="/" className="text-gray-700 hover:text-blue-600">
+              <a href="/" className="text-[#002D4A] hover:text-[#FFA424]">
                 Shed News
               </a>
-              <a href="/" className="text-gray-700 hover:text-blue-600">
+              <a href="/" className="text-[#002D4A] hover:text-[#FFA424]">
                 Feature Sellers
               </a>
-              <a href="/" className="text-gray-700 hover:text-blue-600">
+              <a href="/" className="text-[#002D4A] hover:text-[#FFA424]">
                 Lounge
               </a>
-              <a href="/" className="text-gray-700 hover:text-blue-600">
+              <a href="/" className="text-[#002D4A] hover:text-[#FFA424]">
                 Lounge
               </a>
-              <a href="/" className="text-gray-700 hover:text-blue-600">
+              <a href="/" className="text-[#002D4A] hover:text-[#FFA424]">
                 Seller Login
               </a>
             </div>
@@ -61,7 +61,7 @@ function Navbar() {
               </button>
 
               {/* SELL Button */}
-              <button className="px-4 py-2 bg-[#FFA424] text-white text-sm rounded-[35px] flex items-center gap-2 hover:bg-[#ff9800]">
+              <button className="px-4 py-2 text-[#FFA424] border border-[#FFA424] text-sm rounded-[35px] flex items-center gap-2 hover:bg-[#FFF3E0]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4"
@@ -107,27 +107,58 @@ function Navbar() {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden px-4 pb-4 space-y-2">
-            <a href="/" className="block text-gray-700 hover:text-blue-600">
-              Home
+            <a href="/" className="block text-[#002D4A] hover:text-[#FFA424]">
+              Shed News
             </a>
-            <a href="/" className="block text-gray-700 hover:text-blue-600">
-              About
+            <a href="/" className="block text-[#002D4A] hover:text-[#FFA424]">
+              Feature Sellers
             </a>
-            <a href="/" className="block text-gray-700 hover:text-blue-600">
-              Contact
+            <a href="/" className="block text-[#002D4A] hover:text-[#FFA424]">
+              Lounge
             </a>
-            <a href="/" className="block text-gray-700 hover:text-blue-600">
-              Blog
+            <a href="/" className="block text-[#002D4A] hover:text-[#FFA424]">
+              Lounge
             </a>
-            <a href="/" className="block text-gray-700 hover:text-blue-600">
-              News
+            <a href="/" className="block text-[#002D4A] hover:text-[#FFA424]">
+              Seller Login
             </a>
             <div className="flex space-x-4 pt-2">
-              <button className="w-full px-4 py-2 border rounded text-sm text-gray-700 hover:bg-gray-100">
-                Login
+              {/* LOGIN Button */}
+              <button className="px-4 py-2 border text-sm text-[#FFA424] border-[#FFA424] rounded-[35px] flex items-center gap-2 hover:bg-[#FFF3E0] w-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5.121 17.804A10.96 10.96 0 0112 15c2.294 0 4.404.689 6.121 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                LOGIN
               </button>
-              <button className="w-full px-4 py-2 bg-blue-600 text-white rounded text-sm hover:bg-blue-700">
-                Signup
+
+              {/* SELL Button */}
+              <button className="px-4 py-2 text-[#FFA424] border border-[#FFA424] text-sm rounded-[35px] flex items-center gap-2 hover:bg-[#FFF3E0] w-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+                SELL
               </button>
             </div>
           </div>
