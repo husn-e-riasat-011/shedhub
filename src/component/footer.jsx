@@ -36,18 +36,26 @@ const Footer = () => {
                 className="w-20 h-20"
               />
               <div className="flex gap-2">
-                <img src="/appstore.png" alt="App Store" className="h-10" />
-                <img src="/googleplay.png" alt="Google Play" className="h-10" />
+                <img
+                  src="/appstore.png"
+                  alt="App Store"
+                  className="h-10 cursor-pointer"
+                />
+                <img
+                  src="/googleplay.png"
+                  alt="Google Play"
+                  className="h-10 cursor-pointer"
+                />
               </div>
             </div>
-            {/* Phone Image */}
+            {/* Phone Image
             <div className="relative">
               <img
                 src="/arrow.png"
                 alt="App Preview"
                 className="w-40 md:w-52"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

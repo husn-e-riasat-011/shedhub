@@ -1,4 +1,4 @@
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./component/navbar";
@@ -54,7 +54,7 @@ function App() {
               Studio Shed
             </h1>
 
-            <p className="font-poppins font-normal text-[20px] leading-[100%] tracking-[-0.03em] md:text-[24px] xl:text-[23px]">
+            <p className="font-poppins text-[#002D4A] font-normal text-[20px] leading-[100%] tracking-[-0.03em] md:text-[24px] xl:text-[23px]">
               With Black LP Barn Siding
             </p>
 
@@ -71,9 +71,12 @@ function App() {
               <img
                 src={images[current]}
                 alt="Slide"
-                className="w-full h-full object-cover"
+                className="w-full h-full bg-fixed object-cover bg-no-repeat bg-center"
               />
-
+              <span className="absolute top-2 right-2 bg-white text-black font-poppins font-medium text-[13px] leading-[100%] tracking-[0em] p-2 rounded-full flex items-center gap-1">
+                <FaStar className="text-[#FFA424] text-[12px]" />
+                FEATURED
+              </span>
               {/* Top Left Icons */}
               <div className="absolute top-2 left-2 flex gap-2">
                 <button className="bg-white p-2 rounded-full shadow">
@@ -116,22 +119,65 @@ function App() {
             {/* Property Info */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white p-4 rounded shadow">
               <div>
-                <p className="font-semibold">Building Type</p>
+                <div className="flex items-center justify-center gap-2">
+                  <img
+                    src="/icons/building-type.png"
+                    alt="Building Type"
+                    className="h-4 w-4"
+                  />
+                  <p className="font-semibold">Building Type</p>
+                </div>
                 <p>Studio</p>
               </div>
               <div>
-                <p className="font-semibold">Building Size</p>
+                <div className="flex items-center justify-center gap-2">
+                  <img
+                    src="/icons/building-size.png"
+                    alt="Building Size"
+                    className="h-4 w-4"
+                  />
+                  <p className="font-semibold">Building Size</p>
+                </div>
                 <p>14 x 32</p>
               </div>
               <div>
-                <p className="font-semibold">Color</p>
-                <p>Dark Grey</p>
+                <div className="flex items-center justify-center gap-1">
+                  <img
+                    src="/Fill Color.png"
+                    alt="Color"
+                    className="h-10 w-10"
+                  />
+                  <div className="text-left">
+                    <p className="font-semibold">Color</p>
+                    <p>Dark Grey</p>
+                  </div>
+                </div>
               </div>
               <div>
-                <p className="font-semibold">Condition</p>
-                <p>Pre-Loved</p>
+                <div className="flex items-center justify-center gap-1">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 42 43"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M40.5331 18.4283L21.9029 1.35466C21.386 0.881779 20.6138 0.881779 20.0969 1.35466L1.46694 18.4283C0.898094 18.951 0.840972 19.856 1.33971 20.451C1.83824 21.0461 2.70394 21.105 3.27279 20.5846L4.71535 19.2609V40.5678C4.71535 41.3574 5.32855 42 6.08521 42H16.4668H25.533H35.9146C36.6713 42 37.2845 41.3574 37.2845 40.5678V19.2631L38.727 20.5846C38.9871 20.8221 39.3091 20.9397 39.6293 20.9397C40.0103 20.9397 40.3892 20.7746 40.6601 20.451C41.1591 19.856 41.1019 18.951 40.5331 18.4283ZM17.8366 39.1356V27.3338H24.1632V39.1356H17.8366ZM34.545 16.763V39.1356H26.9031V25.9016C26.9031 25.1097 26.2897 24.4694 25.5333 24.4694H16.467C15.7106 24.4694 15.0971 25.1097 15.0971 25.9016V39.1356H7.45506V16.763L7.45463 16.7516L21 4.33676L34.5454 16.7516L34.545 16.763Z"
+                      fill="#363C45"
+                      stroke="#363C45"
+                      stroke-width="0.2"
+                    />
+                  </svg>
+
+                  <div className="text-left">
+                    <p className="font-semibold">Condition</p>
+                    <p>Pre-Loved</p>
+                  </div>
+                </div>
               </div>
             </div>
+
             {/* Details */}
             <div className="grid grid-cols-2 gap-4 mt-4 border-b pb-4 text-sm">
               <p>
