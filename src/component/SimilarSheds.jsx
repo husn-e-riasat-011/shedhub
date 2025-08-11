@@ -1,4 +1,4 @@
-import { FaMapMarkerAlt, FaHeart } from "react-icons/fa";
+import { FaMapMarkerAlt, FaHeart, FaStar } from "react-icons/fa";
 
 export default function SimilarSheds() {
   const sheds = [
@@ -45,9 +45,12 @@ export default function SimilarSheds() {
   ];
 
   return (
-    <div className="p-6 bg-gray-50">
-      <h2 className="text-2xl font-semibold mb-6">Similar Sheds</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="p-6 max-w-[1600px] mx-auto">
+      <h2 className="font-poppins font-normal  text-[25px] md:text-[48px] leading-[56px] tracking-[-0.03em] mt-3 mb-8 max-w-[1257px] mx-auto">
+        Similar Sheds
+      </h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1257px] mx-auto">
         {sheds.map((shed) => (
           <div
             key={shed.id}
@@ -62,15 +65,16 @@ export default function SimilarSheds() {
               />
               {/* Heart Icon at bottom-right */}
               <div className="absolute bottom-2 right-2 bg-white rounded-full p-2 shadow-md cursor-pointer">
-                <FaHeart className="text-orange-500 text-lg" />
+                <FaHeart className="text-[#FFA424] text-lg" />
               </div>
               {shed.featured && (
-                <span className="absolute top-2 right-2 bg-white text-black text-xs p-2  rounded-full">
+                <span className="absolute top-2 right-2 bg-white text-black font-poppins font-medium text-[13px] leading-[100%] tracking-[0em] p-2 rounded-full flex items-center gap-1">
+                  <FaStar className="text-[#FFA424] text-[12px]" />
                   FEATURED
                 </span>
               )}
-              <span className="absolute bottom-2 left-2 flex items-center gap-2 bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">
-                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+              <span className="absolute bottom-2 left-2 flex items-center gap-2 bg-[#FFFFFF] text-[#002D4A] font-poppins font-semibold text-[12px] leading-[100%] tracking-[-0.03em] px-2 py-1 rounded-full">
+                <span className="w-2 h-2 bg-[#02db40] rounded-full"></span>
                 Status Available
               </span>
             </div>
