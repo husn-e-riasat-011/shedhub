@@ -50,7 +50,7 @@ function App() {
               <span className="w-2 h-2 bg-[#02db40] rounded-full"></span>
               Status Available
             </span>
-            <h1 className="text-[#002D4A] font-poppins font-semibold text-[32px] md:text-[42px] xl:text-[42px] leading-[100%] tracking-[-0.03em]">
+            <h1 className="text-[#002D4A] font-poppins font-semibold text-[32px] md:text-[42px] xl:text-[42px] leading-[100%] tracking-[-0.03em] mt-[-4px]">
               Studio Shed
             </h1>
 
@@ -119,26 +119,48 @@ function App() {
             {/* Property Info */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white p-4 rounded shadow">
               <div>
-                <div className="flex items-center justify-center gap-2">
-                  <img
-                    src="/icons/building-type.png"
-                    alt="Building Type"
-                    className="h-4 w-4"
-                  />
-                  <p className="font-semibold">Building Type</p>
+                <div className="flex items-center justify-center gap-1">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 42 43"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M40.5331 18.4283L21.9029 1.35466C21.386 0.881779 20.6138 0.881779 20.0969 1.35466L1.46694 18.4283C0.898094 18.951 0.840972 19.856 1.33971 20.451C1.83824 21.0461 2.70394 21.105 3.27279 20.5846L4.71535 19.2609V40.5678C4.71535 41.3574 5.32855 42 6.08521 42H16.4668H25.533H35.9146C36.6713 42 37.2845 41.3574 37.2845 40.5678V19.2631L38.727 20.5846C38.9871 20.8221 39.3091 20.9397 39.6293 20.9397C40.0103 20.9397 40.3892 20.7746 40.6601 20.451C41.1591 19.856 41.1019 18.951 40.5331 18.4283ZM17.8366 39.1356V27.3338H24.1632V39.1356H17.8366ZM34.545 16.763V39.1356H26.9031V25.9016C26.9031 25.1097 26.2897 24.4694 25.5333 24.4694H16.467C15.7106 24.4694 15.0971 25.1097 15.0971 25.9016V39.1356H7.45506V16.763L7.45463 16.7516L21 4.33676L34.5454 16.7516L34.545 16.763Z"
+                      fill="#363C45"
+                      stroke="#363C45"
+                      stroke-width="0.2"
+                    />
+                  </svg>
+                  <div className="text-left">
+                    <p className="font-semibold">Building Type</p>
+                    <p>Studio</p>
+                  </div>
                 </div>
-                <p>Studio</p>
               </div>
               <div>
-                <div className="flex items-center justify-center gap-2">
-                  <img
-                    src="/icons/building-size.png"
-                    alt="Building Size"
-                    className="h-4 w-4"
-                  />
-                  <p className="font-semibold">Building Size</p>
+                <div className="flex items-center justify-center gap-1">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 32 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M29.0441 1H2.95592C1.87679 1 1 1.84758 1 2.89284V28.1072C1 29.1524 1.87679 30 2.95592 30H29.0441C30.1255 30 31 29.1524 31 28.1072V2.89284C31 1.84758 30.1255 1 29.0441 1ZM27.0881 26.2166H4.91411V4.78342H27.0881V26.2166Z"
+                      fill="#363C45"
+                      stroke="#FAFAFB"
+                      stroke-width="0.4"
+                    />
+                  </svg>
+                  <div className="text-left">
+                    <p className="font-semibold">Building Size</p>
+                    <p>14 x 32</p>
+                  </div>
                 </div>
-                <p>14 x 32</p>
               </div>
               <div>
                 <div className="flex items-center justify-center gap-1">
@@ -180,28 +202,45 @@ function App() {
 
             {/* Details */}
             <div className="grid grid-cols-2 gap-4 mt-4 border-b pb-4 text-sm">
-              <p>
-                <span className="font-semibold">Main Color:</span> Black
+              <p className="flex justify-between items-center border-b-2 pb-3 pt-2 text-[#363C45]">
+                <span className="font-semibold">Main Color</span>
+                <span className="flex items-center gap-2">
+                  Black
+                  <span className="w-4 h-4 rounded-full bg-[#363C45]"></span>
+                </span>
               </p>
-              <p>
-                <span className="font-semibold">Roofing:</span> Metal
+
+              <p className="flex justify-between border-b-2  pb-3 pt-2 text-[#363C45]">
+                <span className="font-semibold">Roofing</span>
+                <span>Metal</span>
               </p>
-              <p>
-                <span className="font-semibold">Roof Color:</span> Shiney Black
+
+              <p className="flex justify-between items-center border-b-2 pb-3 pt-2 text-[#363C45]">
+                <span className="font-semibold">Roof Color</span>
+                <span className="flex items-center gap-2">
+                  Shiney Black
+                  <span className="w-4 h-4 rounded-full bg-[#000000]"></span>
+                </span>
               </p>
-              <p>
-                <span className="font-semibold">Siding:</span> Wood
+              <p className="flex justify-between border-b-2  pb-3 pt-2 text-[#363C45]">
+                <span className="font-semibold">Siding</span>
+                <span>Wood</span>
               </p>
-              <p>
-                <span className="font-semibold">Siding Color:</span> Clay
+              <p className="flex justify-between items-center border-b-2 pb-3 pt-2 text-[#363C45]">
+                <span className="font-semibold">Siding Color</span>
+                <span className="flex items-center gap-2">
+                  Clay
+                  <span className="w-4 h-4 rounded-full bg-[#606060]"></span>
+                </span>
               </p>
-              <p>
-                <span className="font-semibold">Last Updated:</span> 02 Jun 2025
+              <p className="flex justify-between border-b-2  pb-3 pt-2 text-[#363C45]">
+                <span className="font-semibold">Last updated </span>
+                <span>02 Jun 2025</span>
               </p>
             </div>
 
             {/* Shed ID */}
-            <div className="flex justify-between items-center mt-4">
+            <div className="flex justify-between items-center mt-4 text-[#363C45]">
               <p className="font-medium">Shed ID</p>
               <p className="font-bold">395930</p>
             </div>
@@ -223,10 +262,11 @@ function App() {
 
             {/* Description */}
             <div className="mt-6">
-              <h2 className="font-semibold text-lg border-b pb-2">
+              <h2 className="font-semibold text-lg border-b-2 border-gray-500 pb-2  h-[42px] text-[#002D4A]">
                 Shed Description
               </h2>
-              <p className="text-gray-600 mt-3 text-sm">
+
+              <p className="text-[#002D4A] mt-3 text-sm  opacity-100">
                 Our studio sheds are just that. Have you ever dreamed of your
                 ideal office shed? You no longer have to wait. Our studio sheds
                 are designed just for you, and we have in-stock options. You can
@@ -240,67 +280,156 @@ function App() {
           <div className="w-full lg:w-1/3 space-y-4">
             {/* Price Box */}
             <div className="bg-white p-4 rounded shadow text-center">
-              <p className="text-orange-500 text-2xl font-bold">
+              <p className="text-[#FFA424] text-3xl font-bold">
                 $13,328.00 <span className="text-orange-300">+ Taxes</span>
               </p>
-              <p className="text-sm text-gray-500">
+              <p className="flex items-center gap-2 border border-[#002D4A] rounded-full px-3 py-1 w-fit mx-auto justify-center text-[12px] leading-[60%]  font-medium  mt-2 ">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 19 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.2 3.625H13.1867C13.3945 3.625 13.4985 3.625 13.5963 3.64918C13.6831 3.67061 13.766 3.70596 13.8421 3.75394C13.9278 3.80805 14.0013 3.88372 14.1483 4.03505L17.6017 7.58997C17.7487 7.74126 17.8222 7.81695 17.8747 7.90524C17.9214 7.98355 17.9557 8.06886 17.9765 8.1582C18 8.25891 18 8.36592 18 8.57986V11.0625C18 11.4702 18 11.674 17.9353 11.8349C17.849 12.0492 17.6835 12.2196 17.4753 12.3084C17.3191 12.375 17.121 12.375 16.725 12.375M12.475 12.375H11.2M11.2 12.375V3.8C11.2 2.81991 11.2 2.32986 11.0147 1.95552C10.8518 1.62623 10.5917 1.35851 10.2718 1.19074C9.90817 1 9.43209 1 8.48 1H3.72C2.76791 1 2.29186 1 1.92822 1.19074C1.60834 1.35851 1.34827 1.62623 1.18529 1.95552C1 2.32986 1 2.81991 1 3.8V10.625C1 11.5915 1.76112 12.375 2.7 12.375M11.2 12.375H7.8M2.7 12.375C2.7 13.8248 3.84168 15 5.25 15C6.65832 15 7.8 13.8248 7.8 12.375M2.7 12.375C2.7 10.9252 3.84168 9.75 5.25 9.75C6.65832 9.75 7.8 10.9252 7.8 12.375M16.725 12.8125C16.725 14.0206 15.7736 15 14.6 15C13.4264 15 12.475 14.0206 12.475 12.8125C12.475 11.6044 13.4264 10.625 14.6 10.625C15.7736 10.625 16.725 11.6044 16.725 12.8125Z"
+                    stroke="#002D4A"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
                 Free delivery up to 30 miles
               </p>
             </div>
 
             {/* Contact Form */}
-            <div className="bg-orange-400 p-4 rounded space-y-2">
-              <h1 className="font-bold text-[#002D4A]">Contact Dealer</h1>
-              <hr className="text-black"></hr>
+            <div className="bg-[#FFA424] p-4 rounded space-y-2">
+              <h1 className="font-medium text-[#002D4A] text-[26px] leading-[100%] tracking-[-0.03em] mb-6 ">
+                Contact Dealer
+              </h1>
+
+              <hr className="border-[#002D4A]" />
+
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full p-2 rounded"
+                className="w-full p-2 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="Phone"
-                className="w-full p-2 rounded"
+                className="w-full p-2 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] focus:outline-none"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full p-2 rounded"
+                className="w-full p-2 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] focus:outline-none"
               />
               <textarea
                 placeholder="Message"
-                className="w-full p-2 rounded"
+                className="w-full p-2 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] focus:outline-none"
                 rows="4"
-              >
-                Hello, I'm interested in Yoder Storage Building’s shed with
-                SHIN: 395390. Link of the shed: https://shedclick.com/395390
-                Thank you!
-              </textarea>
-              <button className="w-full bg-blue-900 text-white py-2 rounded">
+                defaultValue={`Hello, I'm interested in Yoder Storage Building’s shed with SHIN: 395390. Link of the shed: https://shedclick.com/395390
+Thank you!`}
+              ></textarea>
+
+              <button className="w-full bg-[#002D4A] text-white py-2 rounded">
                 Send Message
               </button>
             </div>
 
             {/* Dealer Info */}
             <div className="w-full lg:w-80 bg-white p-6 rounded-lg shadow">
-              <h2 className="font-semibold text-lg mb-2">Dealer Profile</h2>
-              <div className="border-b pb-4 mb-4">
-                <p className="font-medium">Yoder Storage Buildings</p>
-                <p className="text-sm text-gray-500">
+              <h2 className="font-semibold text-lg mb-2 text-[#002D4A] border-b pb-4">
+                Dealer Profile
+              </h2>
+              <div className=" pb-4 mb-4">
+                <p className="font-medium text-[#002D4A]">
+                  Yoder Storage Buildings
+                </p>
+                <p className="text-sm text-[#002D4A]">
                   Member Since Apr 09, 2017
                 </p>
               </div>
               <div className="space-y-3 text-sm">
-                <p>www.yodersbuildings.com</p>
-                <p>info@yodersbuildings.com</p>
-                <p>3322 Mennonite School Rd, Montezuma, GA</p>
-                <p className="text-orange-500 font-bold text-lg">
+                <p className="flex items-center gap-2 text-[#002D4A]">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 10.1433H19.4516M1 10.1433C1 15.2386 5.13053 19.3692 10.2258 19.3692M1 10.1433C1 5.04807 5.13053 0.917542 10.2258 0.917542M19.4516 10.1433C19.4516 15.2386 15.321 19.3692 10.2258 19.3692M19.4516 10.1433C19.4516 5.04807 15.321 0.917542 10.2258 0.917542M10.2258 19.3692C12.5335 16.8428 13.8449 13.5643 13.9161 10.1433C13.8449 6.72245 12.5335 3.44389 10.2258 0.917542M10.2258 19.3692C7.91817 16.8428 6.60675 13.5643 6.53548 10.1433C6.60675 6.72245 7.91817 3.44389 10.2258 0.917542"
+                      stroke="#FFA424"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  www.yodersbuildings.com
+                </p>
+                <p className="flex items-center gap-2 text-[#002D4A]">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 21 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 4.33872L8.53278 9.40883C9.14279 9.81947 9.44779 10.0247 9.77955 10.1042C10.0726 10.1745 10.379 10.1745 10.6721 10.1042C11.0038 10.0247 11.3088 9.81947 11.9188 9.40883L19.4516 4.33872M5.42839 15.871H15.0232C16.5733 15.871 17.3483 15.871 17.9404 15.5809C18.4612 15.3258 18.8846 14.9187 19.1499 14.4179C19.4516 13.8486 19.4516 13.1034 19.4516 11.6129V5.93549C19.4516 4.44503 19.4516 3.6998 19.1499 3.13052C18.8846 2.62976 18.4612 2.22264 17.9404 1.96749C17.3483 1.67743 16.5733 1.67743 15.0232 1.67743H5.42839C3.8783 1.67743 3.10326 1.67743 2.51121 1.96749C1.99043 2.22264 1.56702 2.62976 1.30167 3.13052C1 3.6998 1 4.44503 1 5.93549V11.6129C1 13.1034 1 13.8486 1.30167 14.4179C1.56702 14.9187 1.99043 15.3258 2.51121 15.5809C3.10326 15.871 3.8783 15.871 5.42839 15.871Z"
+                      stroke="#FFA424"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  info@yodersbuildings.com
+                </p>
+                <p className="flex items-center gap-2 text-[#002D4A]">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 18 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.94842 12.3484C10.5946 12.3484 11.9291 11.014 11.9291 9.36779C11.9291 7.72163 10.5946 6.38715 8.94842 6.38715C7.30221 6.38715 5.96777 7.72163 5.96777 9.36779C5.96777 11.014 7.30221 12.3484 8.94842 12.3484Z"
+                      stroke="#FFA424"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.94839 21.2903C12.9226 17.3161 16.8968 13.7576 16.8968 9.36776C16.8968 4.97798 13.3382 1.41937 8.94839 1.41937C4.55861 1.41937 1 4.97798 1 9.36776C1 13.7576 4.97419 17.3161 8.94839 21.2903Z"
+                      stroke="#FFA424"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  3322 Mennonite School Rd, Montezuma, GA
+                </p>
+                <p className="flex items-center gap-2 text-[#FFA424] font-bold text-lg">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.90983 9.14055C8.91985 11.2443 10.2968 13.2159 12.0404 14.9596C13.7841 16.7034 15.7559 18.0802 17.8595 19.0903C18.0405 19.1771 18.1309 19.2206 18.2454 19.254C18.6523 19.3725 19.1518 19.2873 19.4963 19.0406C19.5934 18.9711 19.6762 18.8883 19.8421 18.7224C20.3495 18.2149 20.6031 17.9612 20.8582 17.7955C21.8202 17.1701 23.0604 17.1701 24.0224 17.7955C24.2775 17.9612 24.5312 18.2149 25.0385 18.7224L25.3212 19.0051C26.0925 19.7764 26.4781 20.162 26.6875 20.5761C27.1042 21.3997 27.1042 22.3724 26.6875 23.1961C26.4781 23.6102 26.0925 23.9959 25.3212 24.767L25.0925 24.9957C24.324 25.7644 23.9397 26.1487 23.4171 26.4421C22.8374 26.7678 21.9369 27.002 21.272 27C20.6728 26.9982 20.2631 26.882 19.4441 26.6495C15.042 25.4 10.8881 23.0427 7.42279 19.5773C3.95738 16.1119 1.59996 11.958 0.350533 7.55599C0.118038 6.73686 0.00178301 6.32731 1.25641e-05 5.72804C-0.00197556 5.06307 0.232189 4.16263 0.557864 3.58286C0.851367 3.06039 1.23566 2.6761 2.00425 1.90751L2.233 1.67875C3.00422 0.907534 3.38985 0.521909 3.80399 0.312445C4.62762 -0.104148 5.6003 -0.104148 6.42393 0.312445C6.83807 0.521909 7.2237 0.907534 7.99492 1.67875L8.27771 1.96155C8.78505 2.46888 9.03873 2.72257 9.20457 2.97764C9.83003 3.93964 9.83003 5.17979 9.20457 6.14177C9.03873 6.39685 8.78505 6.65053 8.27771 7.15787C8.11182 7.32377 8.02888 7.4067 7.95945 7.50366C7.71273 7.84821 7.62755 8.3478 7.74614 8.75465C7.77952 8.86914 7.82295 8.95961 7.90983 9.14055Z"
+                      fill="#FFA424"
+                    />
+                  </svg>
                   478-375-4784
                 </p>
               </div>
-              <button className="mt-6 text-xs text-gray-500 underline">
-                Report This Ad
-              </button>
             </div>
           </div>
         </div>
