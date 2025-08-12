@@ -22,19 +22,35 @@ function Navbar() {
 
             {/* Middle Links */}
             <div className="hidden md:flex space-x-6">
-              <a href="/" className="text-[#002D4A] hover:text-[#FFA424]">
+              <a
+                href="/"
+                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase"
+              >
                 Shed News
               </a>
-              <a href="/" className="text-[#002D4A] hover:text-[#FFA424]">
+
+              <a
+                href="/"
+                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase"
+              >
                 Feature Sellers
               </a>
-              <a href="/" className="text-[#002D4A] hover:text-[#FFA424]">
+              <a
+                href="/"
+                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase"
+              >
                 Lounge
               </a>
-              <a href="/" className="text-[#002D4A] hover:text-[#FFA424]">
+              <a
+                href="/"
+                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase"
+              >
                 Lounge
               </a>
-              <a href="/" className="text-[#002D4A] hover:text-[#FFA424]">
+              <a
+                href="/"
+                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase"
+              >
                 Seller Login
               </a>
             </div>
@@ -44,17 +60,18 @@ function Navbar() {
               {/* LOGIN Button */}
               <button className="px-4 py-2 border text-sm text-[#FFA424] border-[#FFA424] rounded-[35px] flex items-center gap-2 hover:bg-[#FFF3E0]">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 16 18"
                   fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5.121 17.804A10.96 10.96 0 0112 15c2.294 0 4.404.689 6.121 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    d="M15 17C15 15.7595 15 15.1393 14.8493 14.6346C14.51 13.4982 13.6346 12.6089 12.516 12.2642C12.0191 12.1111 11.4086 12.1111 10.1875 12.1111H5.8125C4.59138 12.1111 3.98082 12.1111 3.484 12.2642C2.36539 12.6089 1.49003 13.4982 1.15071 14.6346C1 15.1393 1 15.7595 1 17M11.9375 5C11.9375 7.20914 10.1746 9 8 9C5.82538 9 4.0625 7.20914 4.0625 5C4.0625 2.79086 5.82538 1 8 1C10.1746 1 11.9375 2.79086 11.9375 5Z"
+                    stroke="#FFA424"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
                 </svg>
                 LOGIN
@@ -107,36 +124,52 @@ function Navbar() {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden px-4 pb-4 space-y-2">
-            <a href="/" className="block text-[#002D4A] hover:text-[#FFA424]">
+            <a
+              href="/"
+              className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase block"
+            >
               Shed News
             </a>
-            <a href="/" className="block text-[#002D4A] hover:text-[#FFA424]">
+            <a
+              href="/"
+              className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase block"
+            >
               Feature Sellers
             </a>
-            <a href="/" className="block text-[#002D4A] hover:text-[#FFA424]">
+            <a
+              href="/"
+              className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase block"
+            >
               Lounge
             </a>
-            <a href="/" className="block text-[#002D4A] hover:text-[#FFA424]">
+            <a
+              href="/"
+              className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase block"
+            >
               Lounge
             </a>
-            <a href="/" className="block text-[#002D4A] hover:text-[#FFA424]">
+            <a
+              href="/"
+              className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase block"
+            >
               Seller Login
             </a>
             <div className="flex space-x-4 pt-2">
               {/* LOGIN Button */}
               <button className="px-4 py-2 border text-sm text-[#FFA424] border-[#FFA424] rounded-[35px] flex items-center gap-2 hover:bg-[#FFF3E0] w-full">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 16 18"
                   fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5.121 17.804A10.96 10.96 0 0112 15c2.294 0 4.404.689 6.121 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    d="M15 17C15 15.7595 15 15.1393 14.8493 14.6346C14.51 13.4982 13.6346 12.6089 12.516 12.2642C12.0191 12.1111 11.4086 12.1111 10.1875 12.1111H5.8125C4.59138 12.1111 3.98082 12.1111 3.484 12.2642C2.36539 12.6089 1.49003 13.4982 1.15071 14.6346C1 15.1393 1 15.7595 1 17M11.9375 5C11.9375 7.20914 10.1746 9 8 9C5.82538 9 4.0625 7.20914 4.0625 5C4.0625 2.79086 5.82538 1 8 1C10.1746 1 11.9375 2.79086 11.9375 5Z"
+                    stroke="#FFA424"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
                 </svg>
                 LOGIN

@@ -1,4 +1,3 @@
-import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./component/navbar";
@@ -6,12 +5,7 @@ import horizental from "./assats/horizontal ad 2.png";
 import SimilarSheds from "./component/SimilarSheds";
 import Footer from "./component/footer";
 // import Foot from "./component/foot";
-import {
-  FaHeart,
-  FaShareAlt,
-  FaChevronLeft,
-  FaChevronRight,
-} from "react-icons/fa";
+import { FaStar, FaShareAlt } from "react-icons/fa";
 
 const images = ["/img1.jpg", "/img2.jpg", "/img3.jpg"];
 
@@ -39,28 +33,49 @@ function App() {
       </div>
 
       <div className="max-w-[1600px] bg-[#F7F7F7] mx-auto pb-5">
-        <p className="px-6 max-w-[1294px] mx-auto font-poppins font-light md:text-[11px] lg:text-[18px] leading-[26px] tracking-[0.01em] text-[#002D4A]">
+        <p className="px-6 max-w-[1294px] mx-auto font-poppins font-light md:text-[11px] lg:text-[18px] leading-[26px] tracking-[0.01em] text-[#002D4A] text-[13px]">
           Home / Shed Squad Somerset / 128729
         </p>
 
         <div className="flex flex-col lg:flex-row gap-6 p-6 max-w-[1294px] mx-auto">
           {/* Left Section */}
-          <div className="w-full lg:w-2/3 space-y-4 bg-white p-4 rounded shadow relative">
+          <div className="w-full lg:w-2/3 space-y-4 bg-white p-4 rounded-[13px] shadow relative">
             <span className="absolute top-5 right-3 flex items-center gap-2 bg-[#F5F5F5] text-[#002D4A] font-poppins font-semibold text-[12px] leading-[100%] tracking-[-0.03em] px-2 py-1 rounded-full">
               <span className="w-2 h-2 bg-[#02db40] rounded-full"></span>
               Status Available
             </span>
-            <h1 className="text-[#002D4A] font-poppins font-semibold text-[32px] md:text-[42px] xl:text-[42px] leading-[100%] tracking-[-0.03em] mt-[-4px]">
+            <h1 className="text-[#002D4A] font-poppins font-semibold text-[32px] md:text-[42px]  xl:text-[42px] leading-[100%] tracking-[-0.03em] ">
               Studio Shed
             </h1>
 
-            <p className="font-poppins text-[#002D4A] font-normal text-[20px] leading-[100%] tracking-[-0.03em] md:text-[24px] xl:text-[23px]">
+            <p className="font-poppins text-[#002D4A] font-normal text-[20px] leading-[100%] tracking-[-0.03em] md:text-[24px] xl:text-[23px] ">
               With Black LP Barn Siding
             </p>
 
-            <p className="flex items-center gap-2 font-poppins font-normal text-[18px] leading-[20px] tracking-[-0.03em] text-[#878B96]">
+            <p className="flex items-center gap-1 font-poppins font-normal text-[18px] leading-[20px] tracking-[-0.03em] text-[#878B96]">
               <span className="text-[#878B96]">
-                <FaMapMarkerAlt />
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 21 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5 14.0625C12.4676 14.0625 14.0625 12.4676 14.0625 10.5C14.0625 8.53249 12.4676 6.9375 10.5 6.9375C8.53243 6.9375 6.9375 8.53249 6.9375 10.5C6.9375 12.4676 8.53243 14.0625 10.5 14.0625Z"
+                    stroke="#878B96"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.5 24.75C15.25 20 20 15.7467 20 10.5C20 5.25329 15.7467 1 10.5 1C5.25329 1 1 5.25329 1 10.5C1 15.7467 5.75 20 10.5 24.75Z"
+                    stroke="#878B96"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </span>
               5000 Old Preston Highway North, Shepherdsville, KY
             </p>
@@ -83,28 +98,148 @@ function App() {
                   <FaShareAlt className="text-gray-700" />
                 </button>
                 <button className="bg-white p-2 rounded-full shadow">
-                  <FaHeart className="text-orange-400" />
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 19 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.6391 2.67663C8.03958 0.841744 5.37234 0.348162 3.36829 2.02837C1.36424 3.70858 1.08211 6.51783 2.65589 8.505C3.96439 10.1572 7.92435 13.6419 9.22222 14.7697C9.36742 14.8959 9.44006 14.9589 9.5247 14.9837C9.59862 15.0054 9.6795 15.0054 9.75342 14.9837C9.83806 14.9589 9.9107 14.8959 10.0559 14.7697C11.3537 13.6419 15.3137 10.1572 16.6222 8.505C18.196 6.51783 17.9483 3.69091 15.9098 2.02837C13.8713 0.36584 11.2385 0.841744 9.6391 2.67663Z"
+                      stroke="#FFA424"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </button>
               </div>
 
               {/* Left Arrow */}
               <button
                 onClick={prevSlide}
-                className="absolute bottom-2 left-2 bg-white p-2 rounded-full shadow"
+                className="absolute bottom-2 left-2  p-2 rounded-full shadow"
               >
-                <FaChevronLeft className="text-gray-700" />
+                <svg
+                  width="45"
+                  height="45"
+                  viewBox="0 0 45 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_308_908)">
+                    <path
+                      d="M32.7288 50.3615L13 30.6328L31.6327 12"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_308_908"
+                      x="0.878906"
+                      y="0.5"
+                      width="43.3496"
+                      height="61.3615"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="5" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_308_908"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_308_908"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
               </button>
 
               {/* Right Arrow */}
               <button
                 onClick={nextSlide}
-                className="absolute bottom-2 right-2 bg-white p-2 rounded-full shadow"
+                className="absolute bottom-2 right-2  p-2 rounded-full shadow"
               >
-                <FaChevronRight className="text-gray-700" />
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_308_909)">
+                    <path
+                      d="M11.6325 12L31.3613 31.7288L12.7286 50.3616"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_308_909"
+                      x="0.132812"
+                      y="0.500061"
+                      width="43.3496"
+                      height="61.3615"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="5" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_308_909"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_308_909"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
               </button>
 
               {/* Dots */}
-              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2">
+              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2">
                 {images.map((_, i) => (
                   <span
                     key={i}
@@ -116,8 +251,8 @@ function App() {
               </div>
             </div>
 
-            {/* Property Info */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white p-4 rounded shadow">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white p-4   border-[0.5px] rounded-[13px]">
+              {/* Property Info */}
               <div>
                 <div className="flex items-center justify-center gap-1">
                   <svg
@@ -135,12 +270,18 @@ function App() {
                     />
                   </svg>
                   <div className="text-left">
-                    <p className="font-semibold">Building Type</p>
-                    <p>Studio</p>
+                    <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                      Building Type
+                    </p>
+
+                    <p className="font-poppins font-medium text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                      Studio
+                    </p>
                   </div>
                 </div>
               </div>
-              <div>
+
+              <div className=" lg:border-l lg:border-[#E5E7EB] lg:pl-4">
                 <div className="flex items-center justify-center gap-1">
                   <svg
                     width="30"
@@ -157,12 +298,16 @@ function App() {
                     />
                   </svg>
                   <div className="text-left">
-                    <p className="font-semibold">Building Size</p>
-                    <p>14 x 32</p>
+                    <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                      Building Size
+                    </p>
+                    <p className="font-poppins font-medium text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                      14 x 32
+                    </p>
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4">
                 <div className="flex items-center justify-center gap-1">
                   <img
                     src="/Fill Color.png"
@@ -170,12 +315,16 @@ function App() {
                     className="h-10 w-10"
                   />
                   <div className="text-left">
-                    <p className="font-semibold">Color</p>
-                    <p>Dark Grey</p>
+                    <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                      Color
+                    </p>
+                    <p className="font-poppins font-medium text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                      Dark Grey
+                    </p>
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4">
                 <div className="flex items-center justify-center gap-1">
                   <svg
                     width="30"
@@ -193,8 +342,12 @@ function App() {
                   </svg>
 
                   <div className="text-left">
-                    <p className="font-semibold">Condition</p>
-                    <p>Pre-Loved</p>
+                    <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                      Condition
+                    </p>
+                    <p className="font-poppins font-medium text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                      Pre-Loved
+                    </p>
                   </div>
                 </div>
               </div>
@@ -244,7 +397,7 @@ function App() {
               <p className="font-medium">Shed ID</p>
               <p className="font-bold">395930</p>
             </div>
-            {/* Map */}
+
             {/* Map */}
             <div className="mt-4">
               <iframe
@@ -279,11 +432,11 @@ function App() {
           {/* Right Section */}
           <div className="w-full lg:w-1/3 space-y-4">
             {/* Price Box */}
-            <div className="bg-white p-4 rounded shadow text-center">
+            <div className="bg-[#FFFFFF] p-4 rounded-[13px] shadow text-center ">
               <p className="text-[#FFA424] text-3xl font-bold">
                 $13,328.00 <span className="text-orange-300">+ Taxes</span>
               </p>
-              <p className="flex items-center gap-2 border border-[#002D4A] rounded-full px-3 py-1 w-fit mx-auto justify-center text-[12px] leading-[60%]  font-medium  mt-2 ">
+              <p className="flex items-center gap-2 border border-[#002D4A] rounded-full px-3 py-1 w-fit mx-auto justify-center text-[13.5px] leading-[60%]  font-medium  mt-2 ">
                 <svg
                   width="16"
                   height="16"
@@ -304,7 +457,7 @@ function App() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-[#FFA424] p-4 rounded space-y-2">
+            <div className="bg-[#FFA424] p-4 rounded-[12px] space-y-2">
               <h1 className="font-medium text-[#002D4A] text-[26px] leading-[100%] tracking-[-0.03em] mb-6 ">
                 Contact Dealer
               </h1>
@@ -334,24 +487,51 @@ function App() {
 Thank you!`}
               ></textarea>
 
-              <button className="w-full bg-[#002D4A] text-white py-2 rounded">
+              <button className="w-full bg-[#002D4A] text-[#EEEEEE] py-2 rounded-[7px] font-poppins font-medium text-[20px] leading-[30px] tracking-[-0.03em]">
                 Send Message
               </button>
             </div>
 
             {/* Dealer Info */}
-            <div className="w-full lg:w-80 bg-white p-6 rounded-lg shadow">
+            <div className="w-full  bg-[#FFFFFF] p-6 rounded-[13px] shadow">
               <h2 className="font-semibold text-lg mb-2 text-[#002D4A] border-b pb-4">
                 Dealer Profile
               </h2>
-              <div className=" pb-4 mb-4">
-                <p className="font-medium text-[#002D4A]">
-                  Yoder Storage Buildings
-                </p>
-                <p className="text-sm text-[#002D4A]">
-                  Member Since Apr 09, 2017
-                </p>
+              <div className="pb-4 mb-4 relative flex justify-between items-center">
+                {/* Right side image */}
+                <img
+                  src="/cicle.PNG"
+                  alt="Dealer"
+                  className="md:w-28 md:h-28 w-20 h-20 absolute top-0 right-0 rounded-full object-cover bg-center bg-no-repeat"
+                />
+                <div>
+                  <p className="font-medium text-[#002D4A] flex items-center">
+                    Yoder Storage Buildings
+                    <span>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="ml-1 mt-1"
+                      >
+                        <path
+                          d="M6.95001 9.50001L8.65001 11.2L12.475 7.37501M5.53371 2.5459C6.21697 2.49137 6.86561 2.22269 7.38731 1.77811C8.6047 0.740631 10.3953 0.740631 11.6127 1.77811C12.1344 2.22269 12.7831 2.49137 13.4663 2.5459C15.0608 2.67313 16.3269 3.93925 16.4541 5.53371C16.5087 6.21697 16.7773 6.86561 17.2219 7.38731C18.2594 8.6047 18.2594 10.3953 17.2219 11.6127C16.7773 12.1344 16.5087 12.7831 16.4541 13.4663C16.3269 15.0608 15.0608 16.3269 13.4663 16.4541C12.7831 16.5087 12.1344 16.7773 11.6127 17.2219C10.3953 18.2594 8.6047 18.2594 7.38731 17.2219C6.86561 16.7773 6.21697 16.5087 5.53371 16.4541C3.93925 16.3269 2.67313 15.0608 2.5459 13.4663C2.49137 12.7831 2.22269 12.1344 1.77811 11.6127C0.740631 10.3953 0.740631 8.6047 1.77811 7.38731C2.22269 6.86561 2.49137 6.21697 2.5459 5.53371C2.67313 3.93925 3.93925 2.67313 5.53371 2.5459Z"
+                          stroke="#FFA424"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </p>
+                  <p className="text-sm text-[#002D4A]">
+                    Member Since Apr 09, 2017
+                  </p>
+                </div>
               </div>
+
               <div className="space-y-3 text-sm">
                 <p className="flex items-center gap-2 text-[#002D4A]">
                   <svg

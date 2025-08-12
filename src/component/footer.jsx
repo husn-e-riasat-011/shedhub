@@ -10,9 +10,19 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-white ">
+    <footer className="bg-white pt-32 relative z-[2px] ">
       {/* Top Banner */}
-      <div className="bg-[#002D4A] text-[#FFFFFF] py-10 relative overflow-hidden max-w-[1600px] mx-auto">
+      <div className="bg-[#002D4A] text-[#FFFFFF]  relative overflow-hidden max-w-[1600px] mx-auto ">
+        {/* <img
+          src="Mask group (1).png"
+          alt="Dealer"
+          className="  absolute -top-24 z-[10px] left-[40%]  object-cover bg-center bg-no-repeat"
+        />
+        <img
+          src="Mask group.png"
+          alt="Dealer"
+          className="  absolute -top-24 left-[50%] z-[10px]  object-cover bg-center bg-no-repeat"
+        /> */}
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4">
           {/* Left Content */}
           <div className="text-center md:text-left">
