@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="bg-white pt-32 relative z-[2px] ">
       {/* Top Banner */}
       <div className="bg-[#002D4A] text-[#FFFFFF]  relative overflow-hidden max-w-[2560px] mx-auto ">
-        {/* <img
+        <img
           src="Mask group (1).png"
           alt="Dealer"
           className="  absolute -top-24 z-[10px] left-[40%]  object-cover bg-center bg-no-repeat"
@@ -22,7 +22,7 @@ const Footer = () => {
           src="Mask group.png"
           alt="Dealer"
           className="  absolute -top-24 left-[50%] z-[10px]  object-cover bg-center bg-no-repeat"
-        /> */}
+        />
         <div className="max-w-[1538px] px-6 mx-auto flex flex-col md:flex-row items-center justify-between gap-8 ">
           {/* Left Content */}
           <div className="text-center md:text-left">
@@ -103,20 +103,15 @@ const Footer = () => {
           {/* Download Buttons */}
           <div className="flex justify-center gap-3 mt-10">
             <img
-              src="/appstore.png"
+              src="/Group 6.png"
               alt="App Store"
-              className="h-10 brightness-0 invert-[50%] sepia-[20%] saturate-[600%] hue-rotate-[80deg] cursor-pointer"
-            />
-            <img
-              src="/googleplay.png"
-              alt="Google Play"
-              className="h-10 brightness-0 invert-[50%] sepia-[20%] saturate-[600%] hue-rotate-[80deg] cursor-pointer"
+              className="h-12 cursor-pointer"
             />
           </div>
 
           {/* Logo */}
           <div className="mt-10 mb-4">
-            <img src="/Group.png" alt="ShedHub Logo" className="mx-auto h-10" />
+            <img src="/Group.png" alt="ShedHub Logo" className="mx-auto h-12" />
           </div>
 
           {/* Social Icons */}

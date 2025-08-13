@@ -54,7 +54,7 @@ export default function SimilarSheds() {
         {sheds.map((shed) => (
           <div
             key={shed.id}
-            className="bg-white rounded-[13px] border-2 border-[#FFA424] hover:shadow-lg transition duration-300 overflow-hidden"
+            className="bg-white rounded-[13px] border-2 border-[#002D4A] hover:shadow-lg transition duration-300 overflow-hidden"
           >
             {/* Image + Badges */}
             <div className="relative">
