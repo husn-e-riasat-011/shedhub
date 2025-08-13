@@ -1,11 +1,12 @@
 import { useState } from "react";
+import "@fontsource/poppins";
 import "./App.css";
 import Navbar from "./component/navbar";
 import horizental from "./assats/horizontal ad 2.png";
 import SimilarSheds from "./component/SimilarSheds";
 import Footer from "./component/footer";
 // import Foot from "./component/foot";
-import { FaStar, FaShareAlt } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
 const images = ["/img1.jpg", "/img2.jpg", "/img3.jpg"];
 
@@ -24,39 +25,41 @@ function App() {
     <div>
       <Navbar />
 
-      <div className="flex justify-center items-center max-w-[1600px] bg-[#F7F7F7] mx-auto">
-        <img
-          src={horizental}
-          alt="Example"
-          className="max-w-[80%] h-auto m-10"
-        />
+      <div className="flex justify-center items-center xl:max-w-[2560px] bg-[#F7F7F7] mx-auto">
+        <div className="xl:max-w-[1260px] lg:max-w-[960px] md:max-w-[760px] md:block hidden px-6">
+          <img
+            src={horizental}
+            alt="Example"
+            className="max-w-[99.9%] h-auto mt-12"
+          />
+        </div>
       </div>
 
-      <div className="max-w-[1600px] bg-[#F7F7F7] mx-auto pb-5">
-        <p className="px-6 max-w-[1294px] mx-auto font-poppins font-light md:text-[11px] lg:text-[18px] leading-[26px] tracking-[0.01em] text-[#002D4A] text-[13px]">
+      <div className="max-w-[2560px] md:bg-[#F7F7F7] bg-[#FFFFFF] mx-auto pb-5 md:pt-12 pt-0">
+        <p className="px-6 pb-3 max-w-[1538px]  mx-auto font-poppins font-light  lg:text-[18px] leading-[26px] tracking-[0.01em] xl:tracking-[1%] text-[#002D4A] text-[13px] md:block hidden">
           Home / Shed Squad Somerset / 128729
         </p>
 
-        <div className="flex flex-col lg:flex-row gap-6 p-6 max-w-[1294px] mx-auto">
+        <div className="flex flex-col lg:flex-row gap-6 px-6 max-w-[1538px] mx-auto">
           {/* Left Section */}
-          <div className="w-full lg:w-2/3 space-y-4 bg-white p-4 rounded-[13px] shadow relative">
-            <span className="absolute top-5 right-3 flex items-center gap-2 bg-[#F5F5F5] text-[#002D4A] font-poppins font-semibold text-[12px] leading-[100%] tracking-[-0.03em] px-2 py-1 rounded-full">
+          <div className="w-full lg:w-2/3 pt-4 bg-[#FFFFFF]  md:px-7 p-0 rounded-[13px]  relative">
+            <span className="absolute top-4 md:right-7 flex items-center gap-2 bg-[#F5F5F5] text-[#002D4A] font-poppins font-semibold text-[12px] lg:text-[16px] leading-[100%] tracking-[-0.03em] px-4 py-2 rounded-full">
               <span className="w-2 h-2 bg-[#02db40] rounded-full"></span>
               Status Available
             </span>
-            <h1 className="text-[#002D4A] font-poppins font-semibold text-[32px] md:text-[42px]  xl:text-[42px] leading-[100%] tracking-[-0.03em] ">
+            <h1 className="text-[#002D4A] font-poppins font-semibold text-[32px] xl:text-[52px] md:text-[42px]  leading-[100%] tracking-[-0.03em] ">
               Studio Shed
             </h1>
 
-            <p className="font-poppins text-[#002D4A] font-normal text-[20px] leading-[100%] tracking-[-0.03em] md:text-[24px] xl:text-[23px] ">
+            <p className="font-poppins text-[#002D4A] font-normal text-[20px] leading-[100%] tracking-[-0.03em] md:text-[24px] xl:text-[28px] not-italic pt-[2px] ">
               With Black LP Barn Siding
             </p>
 
-            <p className="flex items-center gap-1 font-poppins font-normal text-[18px] leading-[20px] tracking-[-0.03em] text-[#878B96]">
+            <p className="flex items-center gap-1 font-poppins font-normal text-[18px] xl:text-[22px] leading-[20px] tracking-[-0.03em] text-[#878B96] my-5 not-italic">
               <span className="text-[#878B96]">
                 <svg
-                  width="17"
-                  height="17"
+                  width="19"
+                  height="21"
                   viewBox="0 0 21 26"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -81,26 +84,40 @@ function App() {
             </p>
 
             {/* Image Slider (placeholder) */}
-            <div className="relative w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative w-full bg-gray-200 rounded-lg overflow-hidden">
               {/* Image */}
               <img
                 src={images[current]}
                 alt="Slide"
-                className="w-full h-full bg-fixed object-cover bg-no-repeat bg-center"
+                className="w-full md:h-[627px] h-[331px] bg-fixed object-cover bg-no-repeat bg-center rounded-[13px]"
               />
-              <span className="absolute top-2 right-2 bg-white text-black font-poppins font-medium text-[13px] leading-[100%] tracking-[0em] p-2 rounded-full flex items-center gap-1">
-                <FaStar className="text-[#FFA424] text-[12px]" />
+              <span className="absolute top-5 right-6 bg-white text-[#002D4A] font-poppins font-medium text-[14px] leading-[100%] tracking-[0em] px-3 py-2 rounded-full flex items-center gap-1">
+                <FaStar className="text-[#FFA424] text-[15px]" />
                 FEATURED
               </span>
               {/* Top Left Icons */}
-              <div className="absolute top-2 left-2 flex gap-2">
-                <button className="bg-white p-2 rounded-full shadow">
-                  <FaShareAlt className="text-gray-700" />
-                </button>
-                <button className="bg-white p-2 rounded-full shadow">
+              <div className="absolute top-5 left-6 flex gap-2">
+                <button className="bg-white p-2 rounded-full shadow w-9 h-9">
                   <svg
-                    width="17"
-                    height="17"
+                    width="18"
+                    height="19"
+                    viewBox="0 0 18 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.30286 10.7835L11.9945 14.1665M11.9862 4.8335L6.30286 8.2165M16.6445 3.55C16.6445 4.95832 15.5253 6.1 14.1445 6.1C12.7638 6.1 11.6445 4.95832 11.6445 3.55C11.6445 2.14168 12.7638 1 14.1445 1C15.5253 1 16.6445 2.14168 16.6445 3.55ZM6.64453 9.5C6.64453 10.9084 5.52524 12.05 4.14453 12.05C2.76382 12.05 1.64453 10.9084 1.64453 9.5C1.64453 8.09164 2.76382 6.95 4.14453 6.95C5.52524 6.95 6.64453 8.09164 6.64453 9.5ZM16.6445 15.45C16.6445 16.8584 15.5253 18 14.1445 18C12.7638 18 11.6445 16.8584 11.6445 15.45C11.6445 14.0416 12.7638 12.9 14.1445 12.9C15.5253 12.9 16.6445 14.0416 16.6445 15.45Z"
+                      stroke="#FFA424"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button className="bg-white p-2 rounded-full shadow w-9 h-9">
+                  <svg
+                    width="19"
+                    height="16"
                     viewBox="0 0 19 16"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -243,15 +260,15 @@ function App() {
                 {images.map((_, i) => (
                   <span
                     key={i}
-                    className={`w-2 h-2 rounded-full ${
+                    className={`w-3 h-3 rounded-full ${
                       i === current ? "bg-[#FFA424]" : "bg-white"
-                    } border border-gray-400`}
+                    } border border-white`}
                   />
                 ))}
               </div>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white p-4   border-[0.5px] rounded-[13px]">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white py-12 px-6 mt-6 border-[0.5px] rounded-[13px] border-[#a5a4a4]">
               {/* Property Info */}
               <div>
                 <div className="flex items-center justify-center gap-1">
@@ -354,8 +371,8 @@ function App() {
             </div>
 
             {/* Details */}
-            <div className="grid grid-cols-2 gap-4 mt-4 border-b pb-4 text-sm">
-              <p className="flex justify-between items-center border-b-2 pb-3 pt-2 text-[#363C45]">
+            <div className="grid grid-cols-2 gap-4 mt-4 border-b-[1px] border-[#363C45] pb-4 text-sm">
+              <p className="flex justify-between items-center border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
                 <span className="font-semibold">Main Color</span>
                 <span className="flex items-center gap-2">
                   Black
@@ -363,30 +380,30 @@ function App() {
                 </span>
               </p>
 
-              <p className="flex justify-between border-b-2  pb-3 pt-2 text-[#363C45]">
+              <p className="flex justify-between border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
                 <span className="font-semibold">Roofing</span>
                 <span>Metal</span>
               </p>
 
-              <p className="flex justify-between items-center border-b-2 pb-3 pt-2 text-[#363C45]">
+              <p className="flex justify-between items-center border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
                 <span className="font-semibold">Roof Color</span>
                 <span className="flex items-center gap-2">
                   Shiney Black
                   <span className="w-4 h-4 rounded-full bg-[#000000]"></span>
                 </span>
               </p>
-              <p className="flex justify-between border-b-2  pb-3 pt-2 text-[#363C45]">
+              <p className="flex justify-between border-b-[1px] border-[#363C45]   pb-3 pt-2 text-[#363C45]">
                 <span className="font-semibold">Siding</span>
                 <span>Wood</span>
               </p>
-              <p className="flex justify-between items-center border-b-2 pb-3 pt-2 text-[#363C45]">
+              <p className="flex justify-between items-center  pt-2 text-[#363C45]">
                 <span className="font-semibold">Siding Color</span>
                 <span className="flex items-center gap-2">
                   Clay
                   <span className="w-4 h-4 rounded-full bg-[#606060]"></span>
                 </span>
               </p>
-              <p className="flex justify-between border-b-2  pb-3 pt-2 text-[#363C45]">
+              <p className="flex justify-between    pt-2 text-[#363C45]">
                 <span className="font-semibold">Last updated </span>
                 <span>02 Jun 2025</span>
               </p>
@@ -415,11 +432,11 @@ function App() {
 
             {/* Description */}
             <div className="mt-6">
-              <h2 className="font-semibold text-lg border-b-2 border-gray-500 pb-2  h-[42px] text-[#002D4A]">
+              <h2 className="font-semibold text-lg border-b-[1px] border-[#002D4A] pb-2  h-[42px] text-[#002D4A]">
                 Shed Description
               </h2>
 
-              <p className="text-[#002D4A] mt-3 text-sm  opacity-100">
+              <p className="text-[#002D4A] mt-3 mb-6 text-sm  opacity-100">
                 Our studio sheds are just that. Have you ever dreamed of your
                 ideal office shed? You no longer have to wait. Our studio sheds
                 are designed just for you, and we have in-stock options. You can
@@ -432,13 +449,17 @@ function App() {
           {/* Right Section */}
           <div className="w-full lg:w-1/3 space-y-4">
             {/* Price Box */}
-            <div className="bg-[#FFFFFF] p-4 rounded-[13px] shadow text-center ">
-              <p className="text-[#FFA424] text-3xl font-bold">
-                $13,328.00 <span className="text-orange-300">+ Taxes</span>
+            <div className="bg-[#FFFFFF] px-4 py-10 rounded-[13px] shadow text-center ">
+              <p className="text-[#FFA424] lg:text-[40px] text-[32px] font-semibold font-poppins ">
+                $13,328.00{" "}
+                <span className="text-[42px]   font-poppins font-thin tracking-tighter">
+                  + Taxes
+                </span>
               </p>
-              <p className="flex items-center gap-2 border border-[#002D4A] rounded-full px-3 py-1 w-fit mx-auto justify-center text-[13.5px] leading-[60%]  font-medium  mt-2 ">
+
+              <p className="flex items-center gap-2 border border-[#002D4A] rounded-full px-3 py-[10px] w-fit mx-auto justify-center text-[17.5px] leading-[100%] font-poppins font-medium tracking-normal mt-2 ">
                 <svg
-                  width="16"
+                  width="22"
                   height="16"
                   viewBox="0 0 19 16"
                   fill="none"
@@ -457,7 +478,7 @@ function App() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-[#FFA424] p-4 rounded-[12px] space-y-2">
+            <div className="bg-[#FFA424] p-4 rounded-[12px] space-y-2 mt-4">
               <h1 className="font-medium text-[#002D4A] text-[26px] leading-[100%] tracking-[-0.03em] mb-6 ">
                 Contact Dealer
               </h1>

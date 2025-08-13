@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="bg-white pt-32 relative z-[2px] ">
       {/* Top Banner */}
-      <div className="bg-[#002D4A] text-[#FFFFFF]  relative overflow-hidden max-w-[1600px] mx-auto ">
+      <div className="bg-[#002D4A] text-[#FFFFFF]  relative overflow-hidden max-w-[2560px] mx-auto ">
         {/* <img
           src="Mask group (1).png"
           alt="Dealer"
@@ -23,7 +23,7 @@ const Footer = () => {
           alt="Dealer"
           className="  absolute -top-24 left-[50%] z-[10px]  object-cover bg-center bg-no-repeat"
         /> */}
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4">
+        <div className="max-w-[1538px] px-6 mx-auto flex flex-col md:flex-row items-center justify-between gap-8 ">
           {/* Left Content */}
           <div className="text-center md:text-left">
             <p className="font-poppins font-normal text-[32px] leading-[44px] tracking-[-0.03em]">
@@ -69,10 +69,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#F7F7F7] max-w-[1600px] mx-auto">
+      <div className="bg-[#F7F7F7] max-w-[2560px] mx-auto">
         {/* Middle Links */}
-        <div className="py-5 ">
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 gap-4">
+        <div className="py-5 max-w-[1538px] mx-auto">
+          <div className="max-w-[1538px] mx-auto flex flex-col md:flex-row items-center justify-between px-6">
             <div className="flex flex-wrap justify-center gap-5 text-sm text-[#002D4A]">
               <a href="/">Shin</a>
               <div className="w-px h-4 bg-[#002D4A]"></div>
@@ -89,7 +89,7 @@ const Footer = () => {
             <img src="/Group 5.png" alt="BBB Accredited" className="h-12" />
           </div>
         </div>
-        <hr className="max-w-[1200px] mx-auto" />
+        <hr className="max-w-[1490px] mx-auto " />
         {/* Bottom Section */}
         <div className="max-w-7xl mx-auto px-4 py-10 text-center text-[#878B96]">
           <p className="max-w-4xl mx-auto font-poppins font-light text-[16px] leading-[36px] tracking-[0.02em] text-center">

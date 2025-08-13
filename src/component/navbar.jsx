@@ -6,9 +6,9 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="bg-white shadow-md max-w-[1597px]  mx-auto">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
+      <nav className="bg-[#FFFFFF]  max-w-[2560px]  mx-auto">
+        <div className="max-w-[1538px]  px-6 mx-auto xl:h-[90px] h-[64px] ">
+          <div className="flex justify-between  items-center xl:h-[90px] h-[64px]">
             {/* Logo */}
             <div className="flex-shrink-0 ">
               <a href="/">
@@ -21,35 +21,35 @@ function Navbar() {
             </div>
 
             {/* Middle Links */}
-            <div className="hidden md:flex space-x-6">
+            <div className="hidden md:flex xl:space-x-10 space-x-5">
               <a
                 href="/"
-                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase"
+                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-sm text-center  lg:text-[16px]  tracking-[0] uppercase"
               >
                 Shed News
               </a>
 
               <a
                 href="/"
-                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase"
+                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-sm text-center  lg:text-[16px]  tracking-[0] uppercase"
               >
                 Feature Sellers
               </a>
               <a
                 href="/"
-                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase"
+                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-sm text-center  lg:text-[16px]  tracking-[0] uppercase"
               >
                 Lounge
               </a>
               <a
                 href="/"
-                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase"
+                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-sm text-center  lg:text-[16px]  tracking-[0] uppercase"
               >
                 Lounge
               </a>
               <a
                 href="/"
-                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px]  tracking-[0] uppercase"
+                className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-sm text-center  lg:text-[16px]  tracking-[0] uppercase"
               >
                 Seller Login
               </a>

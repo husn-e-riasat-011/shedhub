@@ -45,12 +45,12 @@ export default function SimilarSheds() {
   ];
 
   return (
-    <div className="p-6 max-w-[1600px] mx-auto">
-      <h2 className="font-poppins font-normal  text-[25px] md:text-[48px] leading-[56px] tracking-[-0.03em] mt-3 mb-8 max-w-[1257px] mx-auto">
+    <div className="p-6 max-w-[2560px] mx-auto">
+      <h2 className="font-poppins font-normal  text-[25px] md:text-[48px] leading-[56px] tracking-[-0.03em] mt-3 mb-8 max-w-[1538px] px-6 mx-auto">
         Similar Sheds
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1257px] mx-auto ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1538px] px-6 mx-auto ">
         {sheds.map((shed) => (
           <div
             key={shed.id}
