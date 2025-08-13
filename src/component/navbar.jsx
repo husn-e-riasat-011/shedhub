@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assats/Group.png";
-
+import "@fontsource/poppins";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 

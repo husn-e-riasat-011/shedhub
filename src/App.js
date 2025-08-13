@@ -268,13 +268,12 @@ function App() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white py-12 px-6 mt-6 border-[0.5px] rounded-[13px] border-[#a5a4a4]">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white py-10 px-6 mt-6 border-[0.5px] rounded-[13px] border-[#a5a4a4]">
               {/* Property Info */}
-              <div>
+              <div className="py-3">
                 <div className="flex items-center justify-center gap-1">
                   <svg
-                    width="30"
-                    height="30"
+                    className="h-11 w-11"
                     viewBox="0 0 42 43"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -286,66 +285,102 @@ function App() {
                       stroke-width="0.2"
                     />
                   </svg>
+
                   <div className="text-left">
                     <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
                       Building Type
                     </p>
 
-                    <p className="font-poppins font-medium text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                    <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
                       Studio
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className=" lg:border-l lg:border-[#E5E7EB] lg:pl-4">
-                <div className="flex items-center justify-center gap-1">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 32 31"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M29.0441 1H2.95592C1.87679 1 1 1.84758 1 2.89284V28.1072C1 29.1524 1.87679 30 2.95592 30H29.0441C30.1255 30 31 29.1524 31 28.1072V2.89284C31 1.84758 30.1255 1 29.0441 1ZM27.0881 26.2166H4.91411V4.78342H27.0881V26.2166Z"
-                      fill="#363C45"
-                      stroke="#FAFAFB"
-                      stroke-width="0.4"
-                    />
-                  </svg>
+              <div className=" lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
+                <div className="flex items-center justify-center gap-3">
+                  <div className="relative">
+                    <svg
+                      width="34"
+                      height="10"
+                      viewBox="0 0 34 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute -top-1 -right-1"
+                    >
+                      <path
+                        d="M4.62542 8.87911C4.74057 8.99699 4.91096 9.03241 5.05835 8.96876C5.20804 8.9051 5.30478 8.75659 5.30478 8.59393V6.36843H28.6958V8.59393C28.6958 8.75659 28.7925 8.9051 28.9399 8.96876C29.0896 9.03241 29.26 8.99699 29.3729 8.87911L32.8826 5.28885C33.0392 5.12855 33.0392 4.87145 32.8826 4.71115L29.3729 1.12089C29.26 1.00301 29.0896 0.967594 28.9399 1.03125C28.7925 1.0949 28.6958 1.24341 28.6958 1.40607V3.63157H5.30478V1.40607C5.30478 1.24341 5.20804 1.0949 5.05835 1.03125C4.91096 0.967594 4.74057 1.00301 4.62542 1.12089L1.11572 4.71115C0.961426 4.87145 0.961426 5.12855 1.11572 5.28885L4.62542 8.87911Z"
+                        fill="#363C45"
+                        stroke="#FAFAFB"
+                        stroke-width="0.4"
+                      />
+                    </svg>
+                    <svg
+                      width="34"
+                      // style={{ transform: "rotate(90deg)" }}
+                      height="10"
+                      viewBox="0 0 34 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute left-7 top-4 transform rotate-90"
+                    >
+                      <path
+                        d="M4.62542 8.87911C4.74057 8.99699 4.91096 9.03241 5.05835 8.96876C5.20804 8.9051 5.30478 8.75659 5.30478 8.59393V6.36843H28.6958V8.59393C28.6958 8.75659 28.7925 8.9051 28.9399 8.96876C29.0896 9.03241 29.26 8.99699 29.3729 8.87911L32.8826 5.28885C33.0392 5.12855 33.0392 4.87145 32.8826 4.71115L29.3729 1.12089C29.26 1.00301 29.0896 0.967594 28.9399 1.03125C28.7925 1.0949 28.6958 1.24341 28.6958 1.40607V3.63157H5.30478V1.40607C5.30478 1.24341 5.20804 1.0949 5.05835 1.03125C4.91096 0.967594 4.74057 1.00301 4.62542 1.12089L1.11572 4.71115C0.961426 4.87145 0.961426 5.12855 1.11572 5.28885L4.62542 8.87911Z"
+                        fill="#363C45"
+                        stroke="#FAFAFB"
+                        stroke-width="0.4"
+                      />
+                    </svg>
+
+                    <svg
+                      width="34"
+                      height="34"
+                      viewBox="0 0 32 31"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="mt-[4px] ml-[8px]"
+                    >
+                      <path
+                        d="M29.0441 1H2.95592C1.87679 1 1 1.84758 1 2.89284V28.1072C1 29.1524 1.87679 30 2.95592 30H29.0441C30.1255 30 31 29.1524 31 28.1072V2.89284C31 1.84758 30.1255 1 29.0441 1ZM27.0881 26.2166H4.91411V4.78342H27.0881V26.2166Z"
+                        fill="#363C45"
+                        stroke="#FAFAFB"
+                        stroke-width="0.4"
+                      />
+                    </svg>
+                  </div>
                   <div className="text-left">
                     <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
                       Building Size
                     </p>
-                    <p className="font-poppins font-medium text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                    <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
                       14 x 32
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4">
+              <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
                 <div className="flex items-center justify-center gap-1">
                   <img
                     src="/Fill Color.png"
                     alt="Color"
-                    className="h-10 w-10"
+                    className="h-12 w-12"
                   />
                   <div className="text-left">
                     <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
                       Color
                     </p>
-                    <p className="font-poppins font-medium text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                    <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
                       Dark Grey
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4">
+              <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
                 <div className="flex items-center justify-center gap-1">
                   <svg
-                    width="30"
-                    height="30"
+                    width="42"
+                    height="43"
                     viewBox="0 0 42 43"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -362,7 +397,7 @@ function App() {
                     <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
                       Condition
                     </p>
-                    <p className="font-poppins font-medium text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                    <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
                       Pre-Loved
                     </p>
                   </div>
@@ -371,57 +406,79 @@ function App() {
             </div>
 
             {/* Details */}
-            <div className="grid grid-cols-2 gap-4 mt-4 border-b-[1px] border-[#363C45] pb-4 text-sm">
-              <p className="flex justify-between items-center border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
-                <span className="font-semibold">Main Color</span>
-                <span className="flex items-center gap-2">
+            <div className="grid grid-cols-2 gap-x-16 mt-2 border-b-[1px] border-[#363C45]  text-sm">
+              <p className="flex justify-between items-center border-b-[1px] border-[#363C45]  text-[#363C45]">
+                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                  Main Color
+                </span>
+                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
                   Black
-                  <span className="w-4 h-4 rounded-full bg-[#363C45]"></span>
+                  <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
                 </span>
               </p>
 
               <p className="flex justify-between border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
-                <span className="font-semibold">Roofing</span>
-                <span>Metal</span>
+                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                  Roofing
+                </span>
+                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                  Metal
+                </span>
               </p>
 
               <p className="flex justify-between items-center border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
-                <span className="font-semibold">Roof Color</span>
-                <span className="flex items-center gap-2">
+                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                  Roof Color
+                </span>
+                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
                   Shiney Black
-                  <span className="w-4 h-4 rounded-full bg-[#000000]"></span>
+                  <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#000000]"></span>
                 </span>
               </p>
               <p className="flex justify-between border-b-[1px] border-[#363C45]   pb-3 pt-2 text-[#363C45]">
-                <span className="font-semibold">Siding</span>
-                <span>Wood</span>
-              </p>
-              <p className="flex justify-between items-center  pt-2 text-[#363C45]">
-                <span className="font-semibold">Siding Color</span>
-                <span className="flex items-center gap-2">
-                  Clay
-                  <span className="w-4 h-4 rounded-full bg-[#606060]"></span>
+                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                  Siding
+                </span>
+                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                  Wood
                 </span>
               </p>
-              <p className="flex justify-between    pt-2 text-[#363C45]">
-                <span className="font-semibold">Last updated </span>
-                <span>02 Jun 2025</span>
+              <p className="flex justify-between items-center  pt-2 text-[#363C45]">
+                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                  Siding Color
+                </span>
+                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                  Clay
+                  <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
+                </span>
+              </p>
+              <p className="flex justify-between    pt-2 text-[#606060]">
+                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                  Last updated{" "}
+                </span>
+                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                  02 Jun 2025
+                </span>
               </p>
             </div>
 
             {/* Shed ID */}
-            <div className="flex justify-between items-center mt-4 text-[#363C45]">
-              <p className="font-medium">Shed ID</p>
-              <p className="font-bold">395930</p>
+            <div className="flex justify-between items-center mt-2 text-[#363C45]">
+              <p className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45">
+                Shed ID
+              </p>
+              <p className="font-poppins font-semibold xl:text-[18px] text-[15px] leading-[47px] tracking-[-0.03em] text-[#363C45]">
+                395930
+              </p>
             </div>
 
             {/* Map */}
-            <div className="mt-4">
+            <div className="mt-2 rounded-[13px]">
               <iframe
                 title="Map - 5000 Old Preston Hwy N"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.0970260955945!2d-85.71276572416526!3d37.9929289009927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869070ff12be59f%3A0x8f82bb5e5edc670b!2s5000%20Old%20Preston%20Hwy%20N%2C%20Shepherdsville%2C%20KY%2040170%2C%20USA!5e0!3m2!1sen!2s!4v1723298456000!5m2!1sen!2s"
                 width="100%"
-                height="250"
+                height="330"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
@@ -432,11 +489,11 @@ function App() {
 
             {/* Description */}
             <div className="mt-6">
-              <h2 className="font-semibold text-lg border-b-[1px] border-[#002D4A] pb-2  h-[42px] text-[#002D4A]">
+              <h2 className="font-poppins font-medium xl:text-[28px] text-[24px] leading-[100%] tracking-[-0.03em] border-b-[1px] border-[#002D4A] pb-2 mt-7 h-[42px] text-[#002D4A]">
                 Shed Description
               </h2>
 
-              <p className="text-[#002D4A] mt-3 mb-6 text-sm  opacity-100">
+              <p className="font-poppins font-light xl:text-[18.5px] text-[14px] leading-[31px] tracking-[0em] text-[#002D4A] mt-3 mb-6 opacity-100">
                 Our studio sheds are just that. Have you ever dreamed of your
                 ideal office shed? You no longer have to wait. Our studio sheds
                 are designed just for you, and we have in-stock options. You can
@@ -449,7 +506,7 @@ function App() {
           {/* Right Section */}
           <div className="w-full lg:w-1/3 space-y-4">
             {/* Price Box */}
-            <div className="bg-[#FFFFFF] px-4 py-10 rounded-[13px] shadow text-center ">
+            <div className="bg-[#FFFFFF] px-4 py-5 rounded-[13px] shadow text-center ">
               <p className="text-[#FFA424] lg:text-[40px] text-[32px] font-semibold font-poppins ">
                 $13,328.00{" "}
                 <span className="text-[42px]   font-poppins font-thin tracking-tighter">
@@ -478,47 +535,56 @@ function App() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-[#FFA424] p-4 rounded-[12px] space-y-2 mt-4">
-              <h1 className="font-medium text-[#002D4A] text-[26px] leading-[100%] tracking-[-0.03em] mb-6 ">
+            <div
+              className="bg-[#FFA424] p-4 rounded-[12px] space-y-2 mt-4 max-h-[627px]  "
+              style={{ marginTop: "35px" }}
+            >
+              <h1 className="font-poppins font-medium text-[32px] leading-[100%] tracking-[-0.03em] text-[#002D4A] mb-6 mt-2">
                 Contact Dealer
               </h1>
 
-              <hr className="border-[#002D4A]" />
+              <hr className="border-[#646464]  " />
 
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full p-2 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] focus:outline-none"
+                className="w-full py-4  bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal placeholder:text-[23px] placeholder:leading-[73px] placeholder:tracking-[-0.03em]focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="Phone"
-                className="w-full p-2 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] focus:outline-none"
+                className="w-full py-4 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal placeholder:text-[23px] placeholder:leading-[73px] placeholder:tracking-[-0.03em] focus:outline-none"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full p-2 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] focus:outline-none"
+                className="w-full py-4 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal placeholder:text-[23px] placeholder:leading-[73px] placeholder:tracking-[-0.03em] focus:outline-none"
               />
               <textarea
                 placeholder="Message"
-                className="w-full p-2 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] focus:outline-none"
+                className="w-full py-4 bg-transparent  text-[#002D4A] font-poppins font-normal text-[22px] leading-[31px] tracking-[0em] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal placeholder:text-[22px] placeholder:leading-[31px] placeholder:tracking-[0em] focus:outline-none min-h-[200px]"
                 rows="4"
-                defaultValue={`Hello, I'm interested in Yoder Storage Building’s shed with SHIN: 395390. Link of the shed: https://shedclick.com/395390
+                defaultValue={`Hello, I'm interested in Yoder Storage Building’s shed with SHIN: 395390.
+Link of the shed:
+https://shedclick.com/395390
 Thank you!`}
-              ></textarea>
+              />
 
-              <button className="w-full bg-[#002D4A] text-[#EEEEEE] py-2 rounded-[7px] font-poppins font-medium text-[20px] leading-[30px] tracking-[-0.03em]">
+              <button className="w-full bg-[#002D4A] text-[#EEEEEE] py-5  rounded-[7px] font-poppins font-medium text-[27px] leading-[30px] tracking-[-0.03em]">
                 Send Message
               </button>
             </div>
 
             {/* Dealer Info */}
-            <div className="w-full  bg-[#FFFFFF] p-6 rounded-[13px] shadow">
-              <h2 className="font-semibold text-lg mb-2 text-[#002D4A] border-b pb-4">
+            <div
+              className="w-full  bg-[#FFFFFF] p-6 mt-[50px] rounded-[13px] shadow"
+              style={{ marginTop: "35px" }}
+            >
+              <h2 className="font-poppins font-medium text-[25px] xl:text-[32px] leading-[100%] tracking-[-0.03em] text-[#002D4A] border-b pb-6">
                 Dealer Profile
               </h2>
-              <div className="pb-4 mb-4 relative flex justify-between items-center">
+
+              <div className="pb-4 mb-4 relative flex justify-between items-center mt-6">
                 {/* Right side image */}
                 <img
                   src="/cicle.PNG"
@@ -526,12 +592,12 @@ Thank you!`}
                   className="md:w-28 md:h-28 w-20 h-20 absolute top-0 right-0 rounded-full object-cover bg-center bg-no-repeat"
                 />
                 <div>
-                  <p className="font-medium text-[#002D4A] flex items-center">
+                  <p className="font-poppins font-semibold xl:text-[23px] text-[19px]     leading-[100%] tracking-[-0.03em] text-[#002D4A] flex items-center">
                     Yoder Storage Buildings
                     <span>
                       <svg
-                        width="16"
-                        height="16"
+                        width="17"
+                        height="17"
                         viewBox="0 0 19 19"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -547,17 +613,20 @@ Thank you!`}
                       </svg>
                     </span>
                   </p>
-                  <p className="text-sm text-[#002D4A]">
+                  <p className="font-poppins font-normal xl:text-[18px] text-[15px] mt-3 leading-[100%] tracking-[-0.03em] text-[#002D4A]">
                     Member Since Apr 09, 2017
                   </p>
                 </div>
               </div>
 
               <div className="space-y-3 text-sm">
-                <p className="flex items-center gap-2 text-[#002D4A]">
+                <p
+                  className="font-poppins font-normal text-[19px] leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
+                  style={{ marginTop: "20px" }}
+                >
                   <svg
-                    width="16"
-                    height="16"
+                    width="18"
+                    height="18"
                     viewBox="0 0 21 21"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -572,10 +641,13 @@ Thank you!`}
                   </svg>
                   www.yodersbuildings.com
                 </p>
-                <p className="flex items-center gap-2 text-[#002D4A]">
+                <p
+                  className="font-poppins font-normal text-[19px] leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
+                  style={{ marginTop: "20px" }}
+                >
                   <svg
-                    width="16"
-                    height="16"
+                    width="18"
+                    height="18"
                     viewBox="0 0 21 17"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -590,13 +662,17 @@ Thank you!`}
                   </svg>
                   info@yodersbuildings.com
                 </p>
-                <p className="flex items-center gap-2 text-[#002D4A]">
+                <p
+                  className="font-poppins font-normal text-[19px] leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
+                  style={{ marginTop: "20px" }}
+                >
                   <svg
-                    width="16"
-                    height="16"
+                    width="20"
+                    height="20"
                     viewBox="0 0 18 23"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="-mt-4"
                   >
                     <path
                       d="M8.94842 12.3484C10.5946 12.3484 11.9291 11.014 11.9291 9.36779C11.9291 7.72163 10.5946 6.38715 8.94842 6.38715C7.30221 6.38715 5.96777 7.72163 5.96777 9.36779C5.96777 11.014 7.30221 12.3484 8.94842 12.3484Z"
@@ -613,12 +689,15 @@ Thank you!`}
                       stroke-linejoin="round"
                     />
                   </svg>
-                  3322 Mennonite School Rd, Montezuma, GA
+                  3322 Mennonite School Rd, <br /> Montezuma, GA
                 </p>
-                <p className="flex items-center gap-2 text-[#FFA424] font-bold text-lg">
+                <p
+                  className="font-poppins font-semibold text-[35px] leading-[100%] tracking-[-0.03em] flex items-center gap-2 text-[#FFA424] "
+                  style={{ marginTop: "37px" }}
+                >
                   <svg
-                    width="20"
-                    height="20"
+                    width="27"
+                    height="27"
                     viewBox="0 0 27 27"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"

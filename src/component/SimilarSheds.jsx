@@ -1,5 +1,5 @@
 import { FaStar } from "react-icons/fa";
-
+import "@fontsource/poppins";
 export default function SimilarSheds() {
   const sheds = [
     {

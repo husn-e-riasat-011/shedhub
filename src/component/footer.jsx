@@ -1,4 +1,4 @@
-import React from "react";
+import "@fontsource/poppins";
 import {
   FaFacebookF,
   FaPinterestP,
