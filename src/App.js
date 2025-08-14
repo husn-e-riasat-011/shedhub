@@ -26,32 +26,35 @@ function App() {
       <Navbar />
 
       <div className="flex justify-center items-center xl:max-w-[2560px] bg-[#F7F7F7] mx-auto">
-        <div className="xl:max-w-[1260px] lg:max-w-[960px] md:max-w-[760px] md:block hidden px-6">
+        <div className="xl:max-w-[1538px] lg:max-w-[960px] md:max-w-[760px] md:block hidden px-6">
           <img
             src={horizental}
             alt="Example"
-            className="max-w-[99.9%] h-auto mt-12"
+            className="w-[1260px] h-[140px] mt-12"
           />
         </div>
       </div>
 
       <div className="max-w-[2560px] md:bg-[#F7F7F7] bg-[#FFFFFF] mx-auto pb-5 md:pt-12 pt-0">
-        <p className="px-6 pb-3 max-w-[1538px]  mx-auto font-poppins font-light  lg:text-[18px] leading-[26px] tracking-[0.01em] xl:tracking-[1%] text-[#002D4A] text-[13px] md:block hidden">
+        <p className="px-6 pb-4 max-w-[1538px]  mx-auto font-poppins font-light  lg:text-[18px] leading-[26px] tracking-[0.01em]  text-[#002D4A] text-[13px] md:block hidden">
           Home / Shed Squad Somerset / 128729
         </p>
 
         <div className="flex flex-col lg:flex-row gap-6 px-6 max-w-[1538px] mx-auto">
           {/* Left Section */}
-          <div className="w-full lg:w-2/3 pt-4 bg-[#FFFFFF]  md:px-7 p-0 rounded-[13px]  relative">
-            <span className="absolute top-4 md:right-7 flex items-center gap-2 bg-[#F5F5F5] text-[#002D4A] font-poppins font-semibold text-[12px] lg:text-[16px] leading-[100%] tracking-[-0.03em] px-4 py-2 rounded-full">
+          <div className="w-full xl:w-[1024px]  lg:w-2/3 pt-6 bg-[#FFFFFF]  md:px-7 p-0 rounded-[13px]  relative">
+            <span className="absolute top-6 md:right-7 flex items-center gap-2 bg-[#F5F5F5] text-[#002D4A] font-poppins font-semibold text-[12px] lg:text-[16px] leading-[100%] tracking-[-0.03em] px-4 py-2 rounded-full">
               <span className="w-2 h-2 bg-[#02db40] rounded-full"></span>
               Status Available
             </span>
-            <h1 className="text-[#002D4A] font-poppins font-semibold text-[32px] xl:text-[52px] md:text-[42px]  leading-[100%] tracking-[-0.03em] ">
+            <h1
+              className="text-[#002D4A] font-poppins font-semibold text-[32px] xl:text-[52px] md:text-[42px]  leading-[100%] tracking-[-0.03em] "
+              style={{ marginTop: "5px" }}
+            >
               Studio Shed
             </h1>
 
-            <p className="font-poppins text-[#002D4A] font-normal text-[20px] leading-[100%] tracking-[-0.03em] md:text-[24px] xl:text-[28px] not-italic pt-[2px] ">
+            <p className="font-poppins text-[#002D4A] font-normal text-[20px] leading-[100%] tracking-[-0.03em] md:text-[24px] xl:text-[28px] not-italic pt-[7px] ">
               With Black LP Barn Siding
             </p>
 
@@ -84,12 +87,15 @@ function App() {
             </p>
 
             {/* Image Slider (placeholder) */}
-            <div className="relative w-full bg-gray-200 rounded-lg overflow-hidden">
+            <div
+              className="relative w-full bg-gray-200 rounded-lg overflow-hidden "
+              style={{ marginTop: "30px" }}
+            >
               {/* Image */}
               <img
                 src={images[current]}
                 alt="Slide"
-                className="w-full md:h-[627px] h-[331px] bg-fixed object-cover bg-no-repeat bg-center rounded-[13px]"
+                className="w-full md:h-[587px] h-[331px] bg-fixed object-cover bg-no-repeat bg-center rounded-[13px]"
               />
               <span className="absolute top-5 right-6 bg-white text-[#002D4A] font-poppins font-medium text-[14px] leading-[100%] tracking-[0em] px-3 py-2 rounded-full flex items-center gap-1">
                 <FaStar className="text-[#FFA424] text-[15px]" />
@@ -268,7 +274,7 @@ function App() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white py-10 px-6 mt-6 border-[0.5px] rounded-[13px] border-[#a5a4a4]">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white py-10 px-6 mt-7 border-[0.5px] rounded-[13px] border-[#a5a4a4]">
               {/* Property Info */}
               <div className="py-3">
                 <div className="flex items-center justify-center gap-1">
@@ -504,9 +510,9 @@ function App() {
           </div>
 
           {/* Right Section */}
-          <div className="w-full lg:w-1/3 space-y-4">
+          <div className="w-full  xl:w-[488px] lg:w-1/3 space-y-4">
             {/* Price Box */}
-            <div className="bg-[#FFFFFF] px-4 py-5 rounded-[13px] shadow text-center ">
+            <div className="bg-[#FFFFFF] px-4 py-6 rounded-[13px] shadow text-center ">
               <p className="text-[#FFA424] lg:text-[40px] text-[32px] font-semibold font-poppins ">
                 $13,328.00{" "}
                 <span className="text-[42px]   font-poppins font-thin tracking-tighter">
@@ -536,8 +542,8 @@ function App() {
 
             {/* Contact Form */}
             <div
-              className="bg-[#FFA424] p-4 rounded-[12px] space-y-2 mt-4 max-h-[627px]  "
-              style={{ marginTop: "35px" }}
+              className="bg-[#FFA424] p-4 rounded-[12px] space-y-2  max-h-[627px]  "
+              style={{ marginTop: "27px" }}
             >
               <h1 className="font-poppins font-medium text-[32px] leading-[100%] tracking-[-0.03em] text-[#002D4A] mb-6 mt-2">
                 Contact Dealer
@@ -578,7 +584,7 @@ Thank you!`}
             {/* Dealer Info */}
             <div
               className="w-full  bg-[#FFFFFF] p-6 mt-[50px] rounded-[13px] shadow"
-              style={{ marginTop: "35px" }}
+              style={{ marginTop: "27px" }}
             >
               <h2 className="font-poppins font-medium text-[25px] xl:text-[32px] leading-[100%] tracking-[-0.03em] text-[#002D4A] border-b pb-6">
                 Dealer Profile

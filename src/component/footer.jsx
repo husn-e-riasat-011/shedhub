@@ -10,20 +10,20 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-white pt-32 relative z-[2px] ">
+    <footer className="bg-white mt-32 relative z-[2px] ">
       {/* Top Banner */}
-      <div className="bg-[#002D4A] text-[#FFFFFF]  relative overflow-hidden max-w-[2560px] mx-auto ">
+      <div className="bg-[#002D4A] text-[#FFFFFF] relative max-w-[2560px] h-[230px] mx-auto">
         <img
           src="Mask group (1).png"
           alt="Dealer"
-          className="  absolute -top-24 z-[10px] left-[40%]  object-cover bg-center bg-no-repeat"
+          className="absolute -top-[108px] z-[999] left-[43.5%] object-cover bg-center bg-no-repeat"
         />
         <img
           src="Mask group.png"
           alt="Dealer"
-          className="  absolute -top-24 left-[50%] z-[10px]  object-cover bg-center bg-no-repeat"
+          className="absolute -top-[127px] bottom-6 left-[50%] z-[1000] object-cover bg-center bg-no-repeat"
         />
-        <div className="max-w-[1538px] px-6 mx-auto flex flex-col md:flex-row items-center justify-between gap-8 ">
+        <div className="max-w-[1538px] px-6 mx-auto flex flex-col md:flex-row items-center justify-between gap-8 h-[230px] ">
           {/* Left Content */}
           <div className="text-center md:text-left">
             <p className="font-poppins font-normal text-[32px] leading-[44px] tracking-[-0.03em]">
@@ -73,26 +73,34 @@ const Footer = () => {
         {/* Middle Links */}
         <div className="py-5 max-w-[1538px] mx-auto">
           <div className="max-w-[1538px] mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-            <div className="flex flex-wrap justify-center gap-5 text-sm text-[#002D4A]">
+            <div className="flex flex-wrap justify-center gap-7 text-[#002D4A] font-poppins font-normal text-[20px] leading-[33px] tracking-[-0.03em]">
               <a href="/">Shin</a>
-              <div className="w-px h-4 bg-[#002D4A]"></div>
+              <div className="w-px h-4 mt-2 bg-[#002D4A]"></div>
+
               <a href="/">For Seller</a>
-              <div className="w-px h-4 bg-[#002D4A]"></div>
+              <div className="w-px h-4 mt-2  bg-[#002D4A]"></div>
+
               <a href="/">For Manufacturers</a>
-              <div className="w-px h-4 bg-[#002D4A]"></div>
+              <div className="w-px h-4  mt-2 bg-[#002D4A]"></div>
+
               <a href="/">Terms of Service</a>
-              <div className="w-px h-4 bg-[#002D4A]"></div>
+              <div className="w-px h-4  mt-2 bg-[#002D4A]"></div>
+
               <a href="/">Legal</a>
-              <div className="w-px h-4 bg-[#002D4A]"></div>
+              <div className="w-px h-4 mt-2  bg-[#002D4A]"></div>
+
               <a href="/">Disclaimers</a>
             </div>
+
             <img src="/Group 5.png" alt="BBB Accredited" className="h-12" />
           </div>
         </div>
-        <hr className="max-w-[1490px] mx-auto " />
+        {/* <hr className="max-w-[1490px] mx-auto text-black" /> */}
+        <hr className="max-w-[1490px] mx-auto h-[1px] bg-[#000000] border-0" />
+
         {/* Bottom Section */}
         <div className="max-w-7xl mx-auto px-4 py-10 text-center text-[#878B96]">
-          <p className="max-w-4xl mx-auto font-poppins font-light text-[16px] leading-[36px] tracking-[0.02em] text-center">
+          <p className="max-w-[1115px] mx-auto font-poppins font-light text-[16px] leading-[36px] tracking-[0.02em] text-center">
             ShedHub is the #1 place to find sheds for sale in your local area.
             Browse thousands of sheds from sellers across the country. With our
             Advanced Shed Search tool, you can easily sort through our expansive
