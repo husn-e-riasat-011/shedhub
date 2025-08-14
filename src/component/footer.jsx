@@ -16,12 +16,12 @@ const Footer = () => {
         <img
           src="Mask group (1).png"
           alt="Dealer"
-          className="absolute -top-[108px] z-[999] left-[43.5%] object-cover bg-center bg-no-repeat"
+          className="absolute -top-[108px] z-[999] left-[38.5%] object-cover bg-center bg-no-repeat"
         />
         <img
           src="Mask group.png"
           alt="Dealer"
-          className="absolute -top-[127px] bottom-6 left-[50%] z-[1000] object-cover bg-center bg-no-repeat"
+          className="absolute -top-[127px] bottom-6 left-[45%] z-[1000] object-cover bg-center bg-no-repeat"
         />
         <div className="max-w-[1538px] px-6 mx-auto flex flex-col md:flex-row items-center justify-between gap-8 h-[230px] ">
           {/* Left Content */}
@@ -36,37 +36,43 @@ const Footer = () => {
           </div>
 
           {/* Right Content */}
-          <div className="flex items-center gap-8">
-            {/* QR Section */}
-            <div className="flex flex-col items-center gap-3 bg-white/5 rounded-lg p-4">
-              <span className="text-sm">Scan the QR to get the App</span>
-              <img
-                src="/QR_code_for_mobile_English_Wikipedia.svg 2.png"
-                alt="QR Code"
-                className="w-20 h-20"
-              />
-              <div className="flex gap-2">
+          <div className="flex items-center gap-[75px]">
+            {/* Left Side - Text + QR */}
+            <div className="flex  items-center justify-between gap-10">
+              <span className="text-white text-lg relative mr-16 text-center">
+                Scan the QR <br /> to get the App
+                {/* Arrow image */}
                 <img
-                  src="/appstore.png"
-                  alt="App Store"
-                  className="h-10 cursor-pointer"
+                  src="/arrow.png"
+                  alt="Arrow"
+                  className="absolute -right-24 top-[70px] -translate-y-1/2 w-28"
                 />
+              </span>
+              <div className="relative flex items-center">
                 <img
-                  src="/googleplay.png"
-                  alt="Google Play"
-                  className="h-10 cursor-pointer"
+                  src="/QR_code_for_mobile_English_Wikipedia.svg 2.png"
+                  alt="QR Code"
+                  className="w-20 h-20"
                 />
               </div>
             </div>
-            {/* Phone Image
-            <div className="relative">
+
+            {/* Right Side - Store Buttons */}
+            <div className="flex flex-col gap-3">
               <img
-                src="/arrow.png"
-                alt="App Preview"
-                className="w-40 md:w-52"
+                src="/appstore.png"
+                alt="App Store"
+                className="h-12 cursor-pointer"
               />
-            </div> */}
+              <img
+                src="/googleplay.png"
+                alt="Google Play"
+                className="h-12 cursor-pointer"
+              />
+            </div>
           </div>
+
+          {/* bus */}
         </div>
       </div>
       <div className="bg-[#F7F7F7] max-w-[2560px] mx-auto">
