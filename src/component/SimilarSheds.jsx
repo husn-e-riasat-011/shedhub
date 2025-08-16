@@ -54,14 +54,14 @@ export default function SimilarSheds() {
         {sheds.map((shed) => (
           <div
             key={shed.id}
-            className="bg-white rounded-[13px] border-2 border-[#002D4A] hover:border-[#FFA424] hover:shadow-lg transition duration-300 overflow-hidde cursor-pointer"
+            className="bg-white rounded-[13px] border-[1.5px] border-[#002D4A] hover:border-[#FFA424] hover:shadow-lg transition duration-300 overflow-hidde cursor-pointer"
           >
             {/* Image + Badges */}
             <div className="relative">
               <img
                 src={shed.image}
                 alt={shed.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover border-[#002D4A] rounded-t-[11px]"
               />
               {/* Heart Icon at bottom-right */}
               <div className="absolute bottom-2 right-2 bg-white rounded-full p-2 shadow-md cursor-pointer">
