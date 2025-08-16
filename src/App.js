@@ -42,457 +42,499 @@ function App() {
 
         <div className="flex flex-col lg:flex-row gap-6 px-6 max-w-[1538px] mx-auto">
           {/* Left Section */}
-          <div className="w-full xl:w-[1024px]  lg:w-2/3 pt-6 bg-[#FFFFFF]  md:px-7 p-0 rounded-[13px]  relative">
-            <span className="absolute top-6 md:right-7 flex items-center gap-2 bg-[#F5F5F5] text-[#002D4A] font-poppins font-semibold text-[12px] lg:text-[16px] leading-[100%] tracking-[-0.03em] px-4 py-2 rounded-full">
-              <span className="w-2 h-2 bg-[#02db40] rounded-full"></span>
-              Status Available
-            </span>
-            <h1
-              className="text-[#002D4A] font-poppins font-semibold text-[32px] xl:text-[52px] md:text-[42px]  leading-[100%] tracking-[-0.03em] "
-              style={{ marginTop: "5px" }}
-            >
-              Studio Shed
-            </h1>
-
-            <p className="font-poppins text-[#002D4A] font-normal text-[20px] leading-[100%] tracking-[-0.03em] md:text-[24px] xl:text-[28px] not-italic pt-[7px] ">
-              With Black LP Barn Siding
-            </p>
-
-            <p className="flex items-center gap-1 font-poppins font-normal text-[18px] xl:text-[22px] leading-[20px] tracking-[-0.03em] text-[#878B96] my-5 not-italic">
-              <span className="text-[#878B96]">
-                <svg
-                  width="19"
-                  height="21"
-                  viewBox="0 0 21 26"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+          <div className="w-full xl:w-[1024px]  lg:w-2/3 pt-6 bg-[#FFFFFF]  md:px-7 p-0 rounded-[13px]   ">
+            {/* img and text */}
+            <div className="flex md:flex-col flex-col-reverse ">
+              <div className="relative">
+                <span className="absolute top-6 md:right-7 flex items-center gap-2 bg-[#F5F5F5] text-[#002D4A] font-poppins font-semibold text-[12px] lg:text-[16px] leading-[100%] tracking-[-0.03em] px-4 py-2 rounded-full">
+                  <span className="w-2 h-2 bg-[#02db40] rounded-full"></span>
+                  Status Available
+                </span>
+                <h1
+                  className="text-[#002D4A] font-poppins font-semibold text-[32px] xl:text-[52px] md:text-[42px]  leading-[100%] tracking-[-0.03em] "
+                  style={{ marginTop: "5px" }}
                 >
-                  <path
-                    d="M10.5 14.0625C12.4676 14.0625 14.0625 12.4676 14.0625 10.5C14.0625 8.53249 12.4676 6.9375 10.5 6.9375C8.53243 6.9375 6.9375 8.53249 6.9375 10.5C6.9375 12.4676 8.53243 14.0625 10.5 14.0625Z"
-                    stroke="#878B96"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.5 24.75C15.25 20 20 15.7467 20 10.5C20 5.25329 15.7467 1 10.5 1C5.25329 1 1 5.25329 1 10.5C1 15.7467 5.75 20 10.5 24.75Z"
-                    stroke="#878B96"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              5000 Old Preston Highway North, Shepherdsville, KY
-            </p>
+                  Studio Shed
+                </h1>
 
-            {/* Image Slider (placeholder) */}
-            <div
-              className="relative w-full bg-gray-200 rounded-lg overflow-hidden "
-              style={{ marginTop: "30px" }}
-            >
-              {/* Image */}
-              <img
-                src={images[current]}
-                alt="Slide"
-                className="w-full md:h-[587px] h-[331px] bg-fixed object-cover bg-no-repeat bg-center rounded-[13px]"
-              />
-              <span className="absolute top-5 right-6 bg-white text-[#002D4A] font-poppins font-medium text-[14px] leading-[100%] tracking-[0em] px-3 py-2 rounded-full flex items-center gap-1">
-                <FaStar className="text-[#FFA424] text-[15px]" />
-                FEATURED
-              </span>
-              {/* Top Left Icons */}
-              <div className="absolute top-5 left-6 flex gap-2">
-                <button className="bg-white p-2 rounded-full shadow w-9 h-9">
+                <p className="font-poppins text-[#002D4A] font-normal text-[20px] leading-[100%] tracking-[-0.03em] md:text-[24px] xl:text-[28px] not-italic pt-[7px] ">
+                  With Black LP Barn Siding
+                </p>
+                <div className="bg-[#FFFFFF] py-6 rounded-[13px]  md:text-center flex flex-col md:hidden ">
+                  <p className="text-[#FFA424] lg:text-[40px] text-[32px] font-semibold font-poppins ">
+                    $13,328.00{" "}
+                    <span className="text-[42px]   font-poppins font-thin tracking-tighter">
+                      + Taxes
+                    </span>
+                  </p>
+
+                  <p className="flex items-center text-left gap-2 border border-[#002D4A] rounded-full px-3 py-[10px] w-fit mx-auto justify-center text-[17.5px] leading-[100%] font-poppins font-medium tracking-normal mt-2 ">
+                    <svg
+                      width="22"
+                      height="16"
+                      viewBox="0 0 19 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.2 3.625H13.1867C13.3945 3.625 13.4985 3.625 13.5963 3.64918C13.6831 3.67061 13.766 3.70596 13.8421 3.75394C13.9278 3.80805 14.0013 3.88372 14.1483 4.03505L17.6017 7.58997C17.7487 7.74126 17.8222 7.81695 17.8747 7.90524C17.9214 7.98355 17.9557 8.06886 17.9765 8.1582C18 8.25891 18 8.36592 18 8.57986V11.0625C18 11.4702 18 11.674 17.9353 11.8349C17.849 12.0492 17.6835 12.2196 17.4753 12.3084C17.3191 12.375 17.121 12.375 16.725 12.375M12.475 12.375H11.2M11.2 12.375V3.8C11.2 2.81991 11.2 2.32986 11.0147 1.95552C10.8518 1.62623 10.5917 1.35851 10.2718 1.19074C9.90817 1 9.43209 1 8.48 1H3.72C2.76791 1 2.29186 1 1.92822 1.19074C1.60834 1.35851 1.34827 1.62623 1.18529 1.95552C1 2.32986 1 2.81991 1 3.8V10.625C1 11.5915 1.76112 12.375 2.7 12.375M11.2 12.375H7.8M2.7 12.375C2.7 13.8248 3.84168 15 5.25 15C6.65832 15 7.8 13.8248 7.8 12.375M2.7 12.375C2.7 10.9252 3.84168 9.75 5.25 9.75C6.65832 9.75 7.8 10.9252 7.8 12.375M16.725 12.8125C16.725 14.0206 15.7736 15 14.6 15C13.4264 15 12.475 14.0206 12.475 12.8125C12.475 11.6044 13.4264 10.625 14.6 10.625C15.7736 10.625 16.725 11.6044 16.725 12.8125Z"
+                        stroke="#002D4A"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    Free delivery up to 30 miles
+                  </p>
+                </div>
+
+                <p className="flex items-center gap-1 font-poppins font-normal text-[18px] xl:text-[22px] leading-[20px] tracking-[-0.03em] text-[#878B96] my-5 not-italic">
+                  <span className="text-[#878B96]">
+                    <svg
+                      width="19"
+                      height="21"
+                      viewBox="0 0 21 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.5 14.0625C12.4676 14.0625 14.0625 12.4676 14.0625 10.5C14.0625 8.53249 12.4676 6.9375 10.5 6.9375C8.53243 6.9375 6.9375 8.53249 6.9375 10.5C6.9375 12.4676 8.53243 14.0625 10.5 14.0625Z"
+                        stroke="#878B96"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 24.75C15.25 20 20 15.7467 20 10.5C20 5.25329 15.7467 1 10.5 1C5.25329 1 1 5.25329 1 10.5C1 15.7467 5.75 20 10.5 24.75Z"
+                        stroke="#878B96"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  5000 Old Preston Highway North, Shepherdsville, KY
+                </p>
+              </div>
+              {/* Image Slider (placeholder) */}
+              <div
+                className="relative w-full bg-gray-200 rounded-lg overflow-hidden "
+                style={{ marginTop: "12px" }}
+              >
+                {/* Image */}
+                <img
+                  src={images[current]}
+                  alt="Slide"
+                  className="w-full md:h-[587px] h-[331px] bg-fixed object-cover bg-no-repeat bg-center rounded-[13px]"
+                />
+                <span className="absolute md:top-5 md:right-6 top-3 right-3 bg-white text-[#002D4A] font-poppins font-medium text-[14px] leading-[100%] tracking-[0em] px-3 py-2 rounded-full flex items-center gap-1">
+                  <FaStar className="text-[#FFA424] text-[15px]" />
+                  FEATURED
+                </span>
+                {/* Top Left Icons */}
+                <div className="absolute md:top-5 md:left-6 bottom-2 right-3 flex gap-2">
+                  <button className="bg-white p-2 rounded-full shadow w-9 h-9">
+                    <svg
+                      width="18"
+                      height="19"
+                      viewBox="0 0 18 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.30286 10.7835L11.9945 14.1665M11.9862 4.8335L6.30286 8.2165M16.6445 3.55C16.6445 4.95832 15.5253 6.1 14.1445 6.1C12.7638 6.1 11.6445 4.95832 11.6445 3.55C11.6445 2.14168 12.7638 1 14.1445 1C15.5253 1 16.6445 2.14168 16.6445 3.55ZM6.64453 9.5C6.64453 10.9084 5.52524 12.05 4.14453 12.05C2.76382 12.05 1.64453 10.9084 1.64453 9.5C1.64453 8.09164 2.76382 6.95 4.14453 6.95C5.52524 6.95 6.64453 8.09164 6.64453 9.5ZM16.6445 15.45C16.6445 16.8584 15.5253 18 14.1445 18C12.7638 18 11.6445 16.8584 11.6445 15.45C11.6445 14.0416 12.7638 12.9 14.1445 12.9C15.5253 12.9 16.6445 14.0416 16.6445 15.45Z"
+                        stroke="#FFA424"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <button className="bg-white p-2 rounded-full shadow w-9 h-9">
+                    <svg
+                      width="19"
+                      height="16"
+                      viewBox="0 0 19 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.6391 2.67663C8.03958 0.841744 5.37234 0.348162 3.36829 2.02837C1.36424 3.70858 1.08211 6.51783 2.65589 8.505C3.96439 10.1572 7.92435 13.6419 9.22222 14.7697C9.36742 14.8959 9.44006 14.9589 9.5247 14.9837C9.59862 15.0054 9.6795 15.0054 9.75342 14.9837C9.83806 14.9589 9.9107 14.8959 10.0559 14.7697C11.3537 13.6419 15.3137 10.1572 16.6222 8.505C18.196 6.51783 17.9483 3.69091 15.9098 2.02837C13.8713 0.36584 11.2385 0.841744 9.6391 2.67663Z"
+                        stroke="#FFA424"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                {/* Left Arrow */}
+                <button
+                  onClick={prevSlide}
+                  className="absolute hidden md:flex bottom-2 left-2  p-2 rounded-full shadow"
+                >
                   <svg
-                    width="18"
-                    height="19"
-                    viewBox="0 0 18 19"
+                    width="45"
+                    height="45"
+                    viewBox="0 0 45 62"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      d="M6.30286 10.7835L11.9945 14.1665M11.9862 4.8335L6.30286 8.2165M16.6445 3.55C16.6445 4.95832 15.5253 6.1 14.1445 6.1C12.7638 6.1 11.6445 4.95832 11.6445 3.55C11.6445 2.14168 12.7638 1 14.1445 1C15.5253 1 16.6445 2.14168 16.6445 3.55ZM6.64453 9.5C6.64453 10.9084 5.52524 12.05 4.14453 12.05C2.76382 12.05 1.64453 10.9084 1.64453 9.5C1.64453 8.09164 2.76382 6.95 4.14453 6.95C5.52524 6.95 6.64453 8.09164 6.64453 9.5ZM16.6445 15.45C16.6445 16.8584 15.5253 18 14.1445 18C12.7638 18 11.6445 16.8584 11.6445 15.45C11.6445 14.0416 12.7638 12.9 14.1445 12.9C15.5253 12.9 16.6445 14.0416 16.6445 15.45Z"
-                      stroke="#FFA424"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                    <g filter="url(#filter0_d_308_908)">
+                      <path
+                        d="M32.7288 50.3615L13 30.6328L31.6327 12"
+                        stroke="white"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_d_308_908"
+                        x="0.878906"
+                        y="0.5"
+                        width="43.3496"
+                        height="61.3615"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_308_908"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow_308_908"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
                   </svg>
                 </button>
-                <button className="bg-white p-2 rounded-full shadow w-9 h-9">
+
+                {/* Right Arrow */}
+                <button
+                  onClick={nextSlide}
+                  className="absolute bottom-2 right-2  p-2 rounded-full shadow hidden md:flex"
+                >
                   <svg
-                    width="19"
-                    height="16"
-                    viewBox="0 0 19 16"
+                    width="44"
+                    height="44"
+                    viewBox="0 0 44 62"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M9.6391 2.67663C8.03958 0.841744 5.37234 0.348162 3.36829 2.02837C1.36424 3.70858 1.08211 6.51783 2.65589 8.505C3.96439 10.1572 7.92435 13.6419 9.22222 14.7697C9.36742 14.8959 9.44006 14.9589 9.5247 14.9837C9.59862 15.0054 9.6795 15.0054 9.75342 14.9837C9.83806 14.9589 9.9107 14.8959 10.0559 14.7697C11.3537 13.6419 15.3137 10.1572 16.6222 8.505C18.196 6.51783 17.9483 3.69091 15.9098 2.02837C13.8713 0.36584 11.2385 0.841744 9.6391 2.67663Z"
-                      stroke="#FFA424"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                    <g filter="url(#filter0_d_308_909)">
+                      <path
+                        d="M11.6325 12L31.3613 31.7288L12.7286 50.3616"
+                        stroke="white"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_d_308_909"
+                        x="0.132812"
+                        y="0.500061"
+                        width="43.3496"
+                        height="61.3615"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_308_909"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow_308_909"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
                   </svg>
                 </button>
-              </div>
 
-              {/* Left Arrow */}
-              <button
-                onClick={prevSlide}
-                className="absolute bottom-2 left-2  p-2 rounded-full shadow"
-              >
-                <svg
-                  width="45"
-                  height="45"
-                  viewBox="0 0 45 62"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g filter="url(#filter0_d_308_908)">
-                    <path
-                      d="M32.7288 50.3615L13 30.6328L31.6327 12"
-                      stroke="white"
-                      stroke-width="3"
-                      stroke-linecap="round"
+                {/* Dots */}
+                <div className="absolute md:bottom-8 bottom-3 left-1/2 transform -translate-x-1/2 flex md:gap-2 gap-[6px]">
+                  {images.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setCurrent(i)} // 👈 is line se click karne pe current slide change hoga
+                      className={`md:w-3 md:h-3 w-2 h-2 rounded-full transition-all duration-300 ${
+                        i === current ? "bg-[#FFA424] scale-110" : "bg-white"
+                      } border border-white`}
                     />
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_d_308_908"
-                      x="0.878906"
-                      y="0.5"
-                      width="43.3496"
-                      height="61.3615"
-                      filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
-                    >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feColorMatrix
-                        in="SourceAlpha"
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                        result="hardAlpha"
-                      />
-                      <feOffset />
-                      <feGaussianBlur stdDeviation="5" />
-                      <feComposite in2="hardAlpha" operator="out" />
-                      <feColorMatrix
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
-                      />
-                      <feBlend
-                        mode="normal"
-                        in2="BackgroundImageFix"
-                        result="effect1_dropShadow_308_908"
-                      />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="effect1_dropShadow_308_908"
-                        result="shape"
-                      />
-                    </filter>
-                  </defs>
-                </svg>
-              </button>
-
-              {/* Right Arrow */}
-              <button
-                onClick={nextSlide}
-                className="absolute bottom-2 right-2  p-2 rounded-full shadow"
-              >
-                <svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 62"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g filter="url(#filter0_d_308_909)">
-                    <path
-                      d="M11.6325 12L31.3613 31.7288L12.7286 50.3616"
-                      stroke="white"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                    />
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_d_308_909"
-                      x="0.132812"
-                      y="0.500061"
-                      width="43.3496"
-                      height="61.3615"
-                      filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
-                    >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feColorMatrix
-                        in="SourceAlpha"
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                        result="hardAlpha"
-                      />
-                      <feOffset />
-                      <feGaussianBlur stdDeviation="5" />
-                      <feComposite in2="hardAlpha" operator="out" />
-                      <feColorMatrix
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
-                      />
-                      <feBlend
-                        mode="normal"
-                        in2="BackgroundImageFix"
-                        result="effect1_dropShadow_308_909"
-                      />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="effect1_dropShadow_308_909"
-                        result="shape"
-                      />
-                    </filter>
-                  </defs>
-                </svg>
-              </button>
-
-              {/* Dots */}
-              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2">
-                {images.map((_, i) => (
-                  <span
-                    key={i}
-                    className={`w-3 h-3 rounded-full ${
-                      i === current ? "bg-[#FFA424]" : "bg-white"
-                    } border border-white`}
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white py-10 px-6 mt-7 border-[0.5px] rounded-[13px] border-[#a5a4a4]">
-              {/* Property Info */}
-              <div className="py-3">
-                <div className="flex items-center justify-center gap-1">
-                  <svg
-                    className="h-11 w-11"
-                    viewBox="0 0 42 43"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M40.5331 18.4283L21.9029 1.35466C21.386 0.881779 20.6138 0.881779 20.0969 1.35466L1.46694 18.4283C0.898094 18.951 0.840972 19.856 1.33971 20.451C1.83824 21.0461 2.70394 21.105 3.27279 20.5846L4.71535 19.2609V40.5678C4.71535 41.3574 5.32855 42 6.08521 42H16.4668H25.533H35.9146C36.6713 42 37.2845 41.3574 37.2845 40.5678V19.2631L38.727 20.5846C38.9871 20.8221 39.3091 20.9397 39.6293 20.9397C40.0103 20.9397 40.3892 20.7746 40.6601 20.451C41.1591 19.856 41.1019 18.951 40.5331 18.4283ZM17.8366 39.1356V27.3338H24.1632V39.1356H17.8366ZM34.545 16.763V39.1356H26.9031V25.9016C26.9031 25.1097 26.2897 24.4694 25.5333 24.4694H16.467C15.7106 24.4694 15.0971 25.1097 15.0971 25.9016V39.1356H7.45506V16.763L7.45463 16.7516L21 4.33676L34.5454 16.7516L34.545 16.763Z"
-                      fill="#363C45"
-                      stroke="#363C45"
-                      stroke-width="0.2"
-                    />
-                  </svg>
-
-                  <div className="text-left">
-                    <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
-                      Building Type
-                    </p>
-
-                    <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
-                      Studio
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className=" lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
-                <div className="flex items-center justify-center gap-3">
-                  <div className="relative">
-                    <svg
-                      width="34"
-                      height="10"
-                      viewBox="0 0 34 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="absolute -top-1 -right-1"
-                    >
-                      <path
-                        d="M4.62542 8.87911C4.74057 8.99699 4.91096 9.03241 5.05835 8.96876C5.20804 8.9051 5.30478 8.75659 5.30478 8.59393V6.36843H28.6958V8.59393C28.6958 8.75659 28.7925 8.9051 28.9399 8.96876C29.0896 9.03241 29.26 8.99699 29.3729 8.87911L32.8826 5.28885C33.0392 5.12855 33.0392 4.87145 32.8826 4.71115L29.3729 1.12089C29.26 1.00301 29.0896 0.967594 28.9399 1.03125C28.7925 1.0949 28.6958 1.24341 28.6958 1.40607V3.63157H5.30478V1.40607C5.30478 1.24341 5.20804 1.0949 5.05835 1.03125C4.91096 0.967594 4.74057 1.00301 4.62542 1.12089L1.11572 4.71115C0.961426 4.87145 0.961426 5.12855 1.11572 5.28885L4.62542 8.87911Z"
-                        fill="#363C45"
-                        stroke="#FAFAFB"
-                        stroke-width="0.4"
-                      />
-                    </svg>
-                    <svg
-                      width="34"
-                      // style={{ transform: "rotate(90deg)" }}
-                      height="10"
-                      viewBox="0 0 34 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-7 top-4 transform rotate-90"
-                    >
-                      <path
-                        d="M4.62542 8.87911C4.74057 8.99699 4.91096 9.03241 5.05835 8.96876C5.20804 8.9051 5.30478 8.75659 5.30478 8.59393V6.36843H28.6958V8.59393C28.6958 8.75659 28.7925 8.9051 28.9399 8.96876C29.0896 9.03241 29.26 8.99699 29.3729 8.87911L32.8826 5.28885C33.0392 5.12855 33.0392 4.87145 32.8826 4.71115L29.3729 1.12089C29.26 1.00301 29.0896 0.967594 28.9399 1.03125C28.7925 1.0949 28.6958 1.24341 28.6958 1.40607V3.63157H5.30478V1.40607C5.30478 1.24341 5.20804 1.0949 5.05835 1.03125C4.91096 0.967594 4.74057 1.00301 4.62542 1.12089L1.11572 4.71115C0.961426 4.87145 0.961426 5.12855 1.11572 5.28885L4.62542 8.87911Z"
-                        fill="#363C45"
-                        stroke="#FAFAFB"
-                        stroke-width="0.4"
-                      />
-                    </svg>
-
-                    <svg
-                      width="34"
-                      height="34"
-                      viewBox="0 0 32 31"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="mt-[4px] ml-[8px]"
-                    >
-                      <path
-                        d="M29.0441 1H2.95592C1.87679 1 1 1.84758 1 2.89284V28.1072C1 29.1524 1.87679 30 2.95592 30H29.0441C30.1255 30 31 29.1524 31 28.1072V2.89284C31 1.84758 30.1255 1 29.0441 1ZM27.0881 26.2166H4.91411V4.78342H27.0881V26.2166Z"
-                        fill="#363C45"
-                        stroke="#FAFAFB"
-                        stroke-width="0.4"
-                      />
-                    </svg>
-                  </div>
-                  <div className="text-left">
-                    <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
-                      Building Size
-                    </p>
-                    <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
-                      14 x 32
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
-                <div className="flex items-center justify-center gap-1">
-                  <img
-                    src="/Fill Color.png"
-                    alt="Color"
-                    className="h-12 w-12"
-                  />
-                  <div className="text-left">
-                    <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
-                      Color
-                    </p>
-                    <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
-                      Dark Grey
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
-                <div className="flex items-center justify-center gap-1">
-                  <svg
-                    width="42"
-                    height="43"
-                    viewBox="0 0 42 43"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M40.5331 18.4283L21.9029 1.35466C21.386 0.881779 20.6138 0.881779 20.0969 1.35466L1.46694 18.4283C0.898094 18.951 0.840972 19.856 1.33971 20.451C1.83824 21.0461 2.70394 21.105 3.27279 20.5846L4.71535 19.2609V40.5678C4.71535 41.3574 5.32855 42 6.08521 42H16.4668H25.533H35.9146C36.6713 42 37.2845 41.3574 37.2845 40.5678V19.2631L38.727 20.5846C38.9871 20.8221 39.3091 20.9397 39.6293 20.9397C40.0103 20.9397 40.3892 20.7746 40.6601 20.451C41.1591 19.856 41.1019 18.951 40.5331 18.4283ZM17.8366 39.1356V27.3338H24.1632V39.1356H17.8366ZM34.545 16.763V39.1356H26.9031V25.9016C26.9031 25.1097 26.2897 24.4694 25.5333 24.4694H16.467C15.7106 24.4694 15.0971 25.1097 15.0971 25.9016V39.1356H7.45506V16.763L7.45463 16.7516L21 4.33676L34.5454 16.7516L34.545 16.763Z"
-                      fill="#363C45"
-                      stroke="#363C45"
-                      stroke-width="0.2"
-                    />
-                  </svg>
-
-                  <div className="text-left">
-                    <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
-                      Condition
-                    </p>
-                    <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
-                      Pre-Loved
-                    </p>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
+            {/* img and text end */}
+            <div className="flex md:flex-col flex-col-reverse ">
+              <div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white py-10 px-6 mt-7 border-[0.5px] rounded-[13px] border-[#a5a4a4]">
+                  {/* Property Info */}
+                  <div className="py-3">
+                    <div className="flex items-center justify-center gap-1">
+                      <svg
+                        className="h-11 w-11"
+                        viewBox="0 0 42 43"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M40.5331 18.4283L21.9029 1.35466C21.386 0.881779 20.6138 0.881779 20.0969 1.35466L1.46694 18.4283C0.898094 18.951 0.840972 19.856 1.33971 20.451C1.83824 21.0461 2.70394 21.105 3.27279 20.5846L4.71535 19.2609V40.5678C4.71535 41.3574 5.32855 42 6.08521 42H16.4668H25.533H35.9146C36.6713 42 37.2845 41.3574 37.2845 40.5678V19.2631L38.727 20.5846C38.9871 20.8221 39.3091 20.9397 39.6293 20.9397C40.0103 20.9397 40.3892 20.7746 40.6601 20.451C41.1591 19.856 41.1019 18.951 40.5331 18.4283ZM17.8366 39.1356V27.3338H24.1632V39.1356H17.8366ZM34.545 16.763V39.1356H26.9031V25.9016C26.9031 25.1097 26.2897 24.4694 25.5333 24.4694H16.467C15.7106 24.4694 15.0971 25.1097 15.0971 25.9016V39.1356H7.45506V16.763L7.45463 16.7516L21 4.33676L34.5454 16.7516L34.545 16.763Z"
+                          fill="#363C45"
+                          stroke="#363C45"
+                          stroke-width="0.2"
+                        />
+                      </svg>
 
-            {/* Details */}
-            <div className="grid grid-cols-2 gap-x-16 mt-2 border-b-[1px] border-[#363C45]  text-sm">
-              <p className="flex justify-between items-center border-b-[1px] border-[#363C45]  text-[#363C45]">
-                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                  Main Color
-                </span>
-                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                  Black
-                  <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
-                </span>
-              </p>
+                      <div className="text-left">
+                        <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                          Building Type
+                        </p>
 
-              <p className="flex justify-between border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
-                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                  Roofing
-                </span>
-                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                  Metal
-                </span>
-              </p>
+                        <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                          Studio
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-              <p className="flex justify-between items-center border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
-                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                  Roof Color
-                </span>
-                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                  Shiney Black
-                  <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#000000]"></span>
-                </span>
-              </p>
-              <p className="flex justify-between border-b-[1px] border-[#363C45]   pb-3 pt-2 text-[#363C45]">
-                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                  Siding
-                </span>
-                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                  Wood
-                </span>
-              </p>
-              <p className="flex justify-between items-center  pt-2 text-[#363C45]">
-                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                  Siding Color
-                </span>
-                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                  Clay
-                  <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
-                </span>
-              </p>
-              <p className="flex justify-between    pt-2 text-[#606060]">
-                <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                  Last updated{" "}
-                </span>
-                <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                  02 Jun 2025
-                </span>
-              </p>
+                  <div className=" lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
+                    <div className="flex items-center justify-center gap-3">
+                      <div className="relative">
+                        <svg
+                          width="34"
+                          height="10"
+                          viewBox="0 0 34 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute -top-1 -right-1"
+                        >
+                          <path
+                            d="M4.62542 8.87911C4.74057 8.99699 4.91096 9.03241 5.05835 8.96876C5.20804 8.9051 5.30478 8.75659 5.30478 8.59393V6.36843H28.6958V8.59393C28.6958 8.75659 28.7925 8.9051 28.9399 8.96876C29.0896 9.03241 29.26 8.99699 29.3729 8.87911L32.8826 5.28885C33.0392 5.12855 33.0392 4.87145 32.8826 4.71115L29.3729 1.12089C29.26 1.00301 29.0896 0.967594 28.9399 1.03125C28.7925 1.0949 28.6958 1.24341 28.6958 1.40607V3.63157H5.30478V1.40607C5.30478 1.24341 5.20804 1.0949 5.05835 1.03125C4.91096 0.967594 4.74057 1.00301 4.62542 1.12089L1.11572 4.71115C0.961426 4.87145 0.961426 5.12855 1.11572 5.28885L4.62542 8.87911Z"
+                            fill="#363C45"
+                            stroke="#FAFAFB"
+                            stroke-width="0.4"
+                          />
+                        </svg>
+                        <svg
+                          width="34"
+                          // style={{ transform: "rotate(90deg)" }}
+                          height="10"
+                          viewBox="0 0 34 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-7 top-4 transform rotate-90"
+                        >
+                          <path
+                            d="M4.62542 8.87911C4.74057 8.99699 4.91096 9.03241 5.05835 8.96876C5.20804 8.9051 5.30478 8.75659 5.30478 8.59393V6.36843H28.6958V8.59393C28.6958 8.75659 28.7925 8.9051 28.9399 8.96876C29.0896 9.03241 29.26 8.99699 29.3729 8.87911L32.8826 5.28885C33.0392 5.12855 33.0392 4.87145 32.8826 4.71115L29.3729 1.12089C29.26 1.00301 29.0896 0.967594 28.9399 1.03125C28.7925 1.0949 28.6958 1.24341 28.6958 1.40607V3.63157H5.30478V1.40607C5.30478 1.24341 5.20804 1.0949 5.05835 1.03125C4.91096 0.967594 4.74057 1.00301 4.62542 1.12089L1.11572 4.71115C0.961426 4.87145 0.961426 5.12855 1.11572 5.28885L4.62542 8.87911Z"
+                            fill="#363C45"
+                            stroke="#FAFAFB"
+                            stroke-width="0.4"
+                          />
+                        </svg>
+
+                        <svg
+                          width="34"
+                          height="34"
+                          viewBox="0 0 32 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="mt-[4px] ml-[8px]"
+                        >
+                          <path
+                            d="M29.0441 1H2.95592C1.87679 1 1 1.84758 1 2.89284V28.1072C1 29.1524 1.87679 30 2.95592 30H29.0441C30.1255 30 31 29.1524 31 28.1072V2.89284C31 1.84758 30.1255 1 29.0441 1ZM27.0881 26.2166H4.91411V4.78342H27.0881V26.2166Z"
+                            fill="#363C45"
+                            stroke="#FAFAFB"
+                            stroke-width="0.4"
+                          />
+                        </svg>
+                      </div>
+                      <div className="text-left">
+                        <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                          Building Size
+                        </p>
+                        <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                          14 x 32
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
+                    <div className="flex items-center justify-center gap-1">
+                      <img
+                        src="/Fill Color.png"
+                        alt="Color"
+                        className="h-12 w-12"
+                      />
+                      <div className="text-left">
+                        <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                          Color
+                        </p>
+                        <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                          Dark Grey
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
+                    <div className="flex items-center justify-center gap-1">
+                      <svg
+                        width="42"
+                        height="43"
+                        viewBox="0 0 42 43"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M40.5331 18.4283L21.9029 1.35466C21.386 0.881779 20.6138 0.881779 20.0969 1.35466L1.46694 18.4283C0.898094 18.951 0.840972 19.856 1.33971 20.451C1.83824 21.0461 2.70394 21.105 3.27279 20.5846L4.71535 19.2609V40.5678C4.71535 41.3574 5.32855 42 6.08521 42H16.4668H25.533H35.9146C36.6713 42 37.2845 41.3574 37.2845 40.5678V19.2631L38.727 20.5846C38.9871 20.8221 39.3091 20.9397 39.6293 20.9397C40.0103 20.9397 40.3892 20.7746 40.6601 20.451C41.1591 19.856 41.1019 18.951 40.5331 18.4283ZM17.8366 39.1356V27.3338H24.1632V39.1356H17.8366ZM34.545 16.763V39.1356H26.9031V25.9016C26.9031 25.1097 26.2897 24.4694 25.5333 24.4694H16.467C15.7106 24.4694 15.0971 25.1097 15.0971 25.9016V39.1356H7.45506V16.763L7.45463 16.7516L21 4.33676L34.5454 16.7516L34.545 16.763Z"
+                          fill="#363C45"
+                          stroke="#363C45"
+                          stroke-width="0.2"
+                        />
+                      </svg>
+
+                      <div className="text-left">
+                        <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                          Condition
+                        </p>
+                        <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                          Pre-Loved
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Details */}
+                <div className="grid grid-cols-2 gap-x-16 mt-2 border-b-[1px] border-[#363C45]  text-sm">
+                  <p className="flex justify-between items-center border-b-[1px] border-[#363C45]  text-[#363C45]">
+                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      Main Color
+                    </span>
+                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      Black
+                      <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
+                    </span>
+                  </p>
+
+                  <p className="flex justify-between border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
+                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      Roofing
+                    </span>
+                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      Metal
+                    </span>
+                  </p>
+
+                  <p className="flex justify-between items-center border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
+                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      Roof Color
+                    </span>
+                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      Shiney Black
+                      <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#000000]"></span>
+                    </span>
+                  </p>
+                  <p className="flex justify-between border-b-[1px] border-[#363C45]   pb-3 pt-2 text-[#363C45]">
+                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      Siding
+                    </span>
+                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      Wood
+                    </span>
+                  </p>
+                  <p className="flex justify-between items-center  pt-2 text-[#363C45]">
+                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      Siding Color
+                    </span>
+                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      Clay
+                      <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
+                    </span>
+                  </p>
+                  <p className="flex justify-between    pt-2 text-[#606060]">
+                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      Last updated{" "}
+                    </span>
+                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      02 Jun 2025
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div>
+                {/* Shed ID */}
+                <div className="flex justify-between items-center mt-2 text-[#363C45]">
+                  <p className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45">
+                    Shed ID
+                  </p>
+                  <p className="font-poppins font-semibold xl:text-[18px] text-[15px] leading-[47px] tracking-[-0.03em] text-[#363C45]">
+                    395930
+                  </p>
+                </div>
+
+                {/* Map */}
+                <div className="mt-2 rounded-[13px]">
+                  <iframe
+                    title="Map - 5000 Old Preston Hwy N"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.0970260955945!2d-85.71276572416526!3d37.9929289009927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869070ff12be59f%3A0x8f82bb5e5edc670b!2s5000%20Old%20Preston%20Hwy%20N%2C%20Shepherdsville%2C%20KY%2040170%2C%20USA!5e0!3m2!1sen!2s!4v1723298456000!5m2!1sen!2s"
+                    width="100%"
+                    height="330"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="rounded-lg"
+                  ></iframe>
+                </div>
+              </div>
             </div>
-
-            {/* Shed ID */}
-            <div className="flex justify-between items-center mt-2 text-[#363C45]">
-              <p className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45">
-                Shed ID
-              </p>
-              <p className="font-poppins font-semibold xl:text-[18px] text-[15px] leading-[47px] tracking-[-0.03em] text-[#363C45]">
-                395930
-              </p>
-            </div>
-
-            {/* Map */}
-            <div className="mt-2 rounded-[13px]">
-              <iframe
-                title="Map - 5000 Old Preston Hwy N"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.0970260955945!2d-85.71276572416526!3d37.9929289009927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869070ff12be59f%3A0x8f82bb5e5edc670b!2s5000%20Old%20Preston%20Hwy%20N%2C%20Shepherdsville%2C%20KY%2040170%2C%20USA!5e0!3m2!1sen!2s!4v1723298456000!5m2!1sen!2s"
-                width="100%"
-                height="330"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-lg"
-              ></iframe>
-            </div>
-
             {/* Description */}
             <div className="mt-6">
               <h2 className="font-poppins font-medium xl:text-[28px] text-[24px] leading-[100%] tracking-[-0.03em] border-b-[1px] border-[#002D4A] pb-2 mt-7 h-[42px] text-[#002D4A]">
@@ -512,7 +554,7 @@ function App() {
           {/* Right Section */}
           <div className="w-full  xl:w-[488px] lg:w-1/3 space-y-4">
             {/* Price Box */}
-            <div className="bg-[#FFFFFF] px-4 py-6 rounded-[13px] shadow text-center ">
+            <div className="bg-[#FFFFFF] px-4 py-6 rounded-[13px] shadow text-center md:flex md:flex-col hidden">
               <p className="text-[#FFA424] lg:text-[40px] text-[32px] font-semibold font-poppins ">
                 $13,328.00{" "}
                 <span className="text-[42px]   font-poppins font-thin tracking-tighter">
