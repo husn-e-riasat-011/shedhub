@@ -719,12 +719,15 @@ Thank you!`}
                       stroke-linejoin="round"
                     />
                   </svg>
+                 
                   <a
                     href="mailto: info@yodersbuildings.com"
                     className="  hover:underline"
                   >
                     info@yodersbuildings.com
                   </a>
+
+
                 </p>
                 <p
                   className="font-poppins font-normal md:text-[19px] text-[14px]  leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
