@@ -538,13 +538,13 @@ function App() {
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="rounded-lg  h-[148px] md:h-[33opx]"
+                    className="rounded-lg  h-[148px] md:h-[330px]"
                   ></iframe>
                 </div>
               </div>
             </div>
             {/* Description */}
-            <div className="mt-6 md-bg-[#ffffff] bg-[#F5F5F5] rounded-[13px] px-3 py-[1px]">
+            <div className="mt-6 md-bg-[#ffffff] md:bg-[#ffffff] bg-[#F5F5F5] rounded-[13px] px-3 py-[1px]">
               <h2 className="font-poppins font-medium xl:text-[28px] text-[22px] leading-[100%] tracking-[-0.03em] md:border-b-[1px] border-[#002D4A] pb-2 mt-7 h-[42px] text-[#002D4A] ">
                 Shed Description
               </h2>
