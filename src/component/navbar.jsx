@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div>
       <nav className="bg-[#FFFFFF] max-w-[2560px] mx-auto">
-        <div className="max-w-[1538px] px-6 mx-auto xl:h-[90px] h-[64px]">
+        <div className="max-w-[1538px] md:px-6 mx-auto xl:h-[90px] h-[64px]">
           <div className="flex justify-between items-center xl:h-[90px] h-[64px]">
             {/* Left: Logo */}
             <div className="hidden md:flex items-center">

@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="bg-white mt-32 relative z-[2px] ">
       {/* Top Banner */}
-      <div className="bg-[#002D4A] text-[#FFFFFF] relative max-w-[2560px] h-[230px] mx-auto">
+      <div className="bg-[#002D4A] text-[#FFFFFF] relative max-w-[2560px] h-[230px] mx-auto hidden md:block ">
         <img
           src="Mask group (1).png"
           alt="Dealer"
@@ -23,7 +23,7 @@ const Footer = () => {
           alt="Dealer"
           className="absolute -top-[127px] bottom-6 left-[45%] z-[1000] object-cover bg-center bg-no-repeat"
         />
-        <div className="max-w-[1538px] px-6 mx-auto flex flex-col md:flex-row items-center justify-between gap-8 h-[230px] ">
+        <div className="max-w-[1538px] px-6 mx-auto md:flex flex-col  md:flex-row items-center justify-between gap-8 h-[230px] ">
           {/* Left Content */}
           <div className="text-center md:text-left">
             <p className="font-poppins font-normal text-[32px] leading-[44px] tracking-[-0.03em]">
