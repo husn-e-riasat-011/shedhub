@@ -674,7 +674,7 @@ Thank you!`}
                   </svg>
                   <a 
   href="mailto: info@yodersbuildings.com" 
-  className="  hover:underline"
+  className=" hover:underline"
 >
  info@yodersbuildings.com
 </a>
