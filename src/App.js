@@ -645,7 +645,7 @@ Thank you!`}
                 <img
                   src="/piccc.PNG"
                   alt="Dealer"
-                  className="md:w-[100px] md:h-[100px] w-20 h-24 absolute top-0 right-0 sm:rounded-full rounded-[12px] object-cover bg-center bg-no-repeat"
+                  className="md:w-[100px] md:h-[100px] w-20 h-[86px] absolute top-0 -right-3 sm:right-0 sm:rounded-full rounded-[12px] object-cover bg-center bg-no-repeat"
                 />
 
                 <div>
