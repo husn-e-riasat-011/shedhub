@@ -592,33 +592,33 @@ function App() {
 
             {/* Contact Form */}
             <div
-              className="bg-[#FFA424] p-4 rounded-[12px] space-y-2  max-h-[627px]  "
+              className="bg-[#FFA424] p-4 rounded-[12px] space-y-2  max-h-[627px] "
               style={{ marginTop: "27px" }}
             >
-              <h1 className="font-poppins font-medium text-[32px] leading-[100%] tracking-[-0.03em] text-[#002D4A] mb-6 mt-2">
+              <h1 className="font-poppins font-medium text-[22px] md:text-[32px] leading-[100%] tracking-[-0.03em] text-[#002D4A] mb-6 mt-2">
                 Contact Dealer
               </h1>
 
-              <hr className="border-[#646464]  " />
+              <hr className="border-[#646464]  md:block hidden" />
 
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full py-4  bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal placeholder:text-[23px] placeholder:leading-[73px] placeholder:tracking-[-0.03em]focus:outline-none"
+                className="w-full py-4  bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal md:placeholder:text-[23px] placeholder:text-[16px] placeholder:leading-[73px] placeholder:tracking-[-0.03em] focus:outline-none "
               />
               <input
                 type="text"
                 placeholder="Phone"
-                className="w-full py-4 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal placeholder:text-[23px] placeholder:leading-[73px] placeholder:tracking-[-0.03em] focus:outline-none"
+                className="w-full py-4 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal md:placeholder:text-[23px] placeholder:text-[16px]  placeholder:leading-[73px] placeholder:tracking-[-0.03em] focus:outline-none"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full py-4 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal placeholder:text-[23px] placeholder:leading-[73px] placeholder:tracking-[-0.03em] focus:outline-none"
+                className="w-full py-4 bg-transparent border-b-2 border-[#002D4A] text-[#002D4A] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal md:placeholder:text-[23px] placeholder:text-[16px]  placeholder:leading-[73px] placeholder:tracking-[-0.03em] focus:outline-none"
               />
               <textarea
                 placeholder="Message"
-                className="w-full py-4 bg-transparent  text-[#002D4A] font-poppins font-normal text-[22px] leading-[31px] tracking-[0em] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal placeholder:text-[22px] placeholder:leading-[31px] placeholder:tracking-[0em] focus:outline-none min-h-[200px]"
+                className="w-full py-4 bg-transparent  text-[#002D4A] font-poppins font-normal text-[22px] leading-[31px] tracking-[0em] placeholder-[#002D4A] placeholder:font-poppins placeholder:font-normal md:placeholder:text-[22px] placeholder:text-[16px] placeholder:leading-[31px] placeholder:tracking-[0em] focus:outline-none min-h-[200px]"
                 rows="4"
                 defaultValue={`Hello, I'm interested in Yoder Storage Building’s shed with SHIN: 395390.
 Link of the shed:
@@ -626,17 +626,17 @@ https://shedclick.com/395390
 Thank you!`}
               />
 
-              <button className="w-full bg-[#002D4A] text-[#EEEEEE] py-5  rounded-[7px] font-poppins font-medium text-[27px] leading-[30px] tracking-[-0.03em]">
+              <button className="w-full bg-[#002D4A] text-[#EEEEEE] md:py-5 py-3  rounded-[7px] font-poppins font-medium  text-[16px] md:text-[27px] leading-[30px] tracking-[-0.03em]">
                 Send Message
               </button>
             </div>
 
             {/* Dealer Info */}
             <div
-              className="w-full  bg-[#FFFFFF] p-6 mt-[50px] rounded-[13px] shadow"
+              className="w-full  md:bg-[#FFFFFF] bg-[#F5F5F5] p-6 mt-[50px] rounded-[13px] shadow"
               style={{ marginTop: "27px" }}
             >
-              <h2 className="font-poppins font-medium text-[25px] xl:text-[32px] leading-[100%] tracking-[-0.03em] text-[#002D4A] border-b pb-6">
+              <h2 className="font-poppins font-medium text-[22px] xl:text-[32px] leading-[100%] tracking-[-0.03em] text-[#002D4A] border-b pb-6">
                 Dealer Profile
               </h2>
 
@@ -649,16 +649,14 @@ Thank you!`}
                 />
 
                 <div>
-                  <p className="font-poppins font-semibold xl:text-[23px] text-[19px]     leading-[100%] tracking-[-0.03em] text-[#002D4A] flex items-center">
+                  <p className="font-poppins font-semibold xl:text-[23px] md:text-[17px] leading-[100%] tracking-[-0.03em] text-[#002D4A] flex items-center">
                     Yoder Storage Buildings
                     <span>
                       <svg
-                        width="17"
-                        height="17"
                         viewBox="0 0 19 19"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="ml-1 mt-1"
+                        className="ml-1 mt-1 md:h-[17px] md:w-[17px] h-[12px] w-[12px]"
                       >
                         <path
                           d="M6.95001 9.50001L8.65001 11.2L12.475 7.37501M5.53371 2.5459C6.21697 2.49137 6.86561 2.22269 7.38731 1.77811C8.6047 0.740631 10.3953 0.740631 11.6127 1.77811C12.1344 2.22269 12.7831 2.49137 13.4663 2.5459C15.0608 2.67313 16.3269 3.93925 16.4541 5.53371C16.5087 6.21697 16.7773 6.86561 17.2219 7.38731C18.2594 8.6047 18.2594 10.3953 17.2219 11.6127C16.7773 12.1344 16.5087 12.7831 16.4541 13.4663C16.3269 15.0608 15.0608 16.3269 13.4663 16.4541C12.7831 16.5087 12.1344 16.7773 11.6127 17.2219C10.3953 18.2594 8.6047 18.2594 7.38731 17.2219C6.86561 16.7773 6.21697 16.5087 5.53371 16.4541C3.93925 16.3269 2.67313 15.0608 2.5459 13.4663C2.49137 12.7831 2.22269 12.1344 1.77811 11.6127C0.740631 10.3953 0.740631 8.6047 1.77811 7.38731C2.22269 6.86561 2.49137 6.21697 2.5459 5.53371C2.67313 3.93925 3.93925 2.67313 5.53371 2.5459Z"
@@ -670,7 +668,7 @@ Thank you!`}
                       </svg>
                     </span>
                   </p>
-                  <p className="font-poppins font-normal xl:text-[18px] text-[15px] mt-3 leading-[100%] tracking-[-0.03em] text-[#002D4A]">
+                  <p className="font-poppins font-normal xl:text-[18px] text-[12px] mt-3 leading-[100%] tracking-[-0.03em] text-[#002D4A]">
                     Member Since Apr 09, 2017
                   </p>
                 </div>
@@ -678,15 +676,14 @@ Thank you!`}
 
               <div className="space-y-3 text-sm">
                 <p
-                  className="font-poppins font-normal text-[19px] leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
+                  className="font-poppins font-normal md:text-[19px] text-[14px] leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
                   style={{ marginTop: "20px" }}
                 >
                   <svg
-                    width="18"
-                    height="18"
                     viewBox="0 0 21 21"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className=" md:h-[17px] md:w-[17px] h-[12px] w-[12px]"
                   >
                     <path
                       d="M1 10.1433H19.4516M1 10.1433C1 15.2386 5.13053 19.3692 10.2258 19.3692M1 10.1433C1 5.04807 5.13053 0.917542 10.2258 0.917542M19.4516 10.1433C19.4516 15.2386 15.321 19.3692 10.2258 19.3692M19.4516 10.1433C19.4516 5.04807 15.321 0.917542 10.2258 0.917542M10.2258 19.3692C12.5335 16.8428 13.8449 13.5643 13.9161 10.1433C13.8449 6.72245 12.5335 3.44389 10.2258 0.917542M10.2258 19.3692C7.91817 16.8428 6.60675 13.5643 6.53548 10.1433C6.60675 6.72245 7.91817 3.44389 10.2258 0.917542"
@@ -699,15 +696,14 @@ Thank you!`}
                   www.yodersbuildings.com
                 </p>
                 <p
-                  className="font-poppins font-normal text-[19px] leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
+                  className="font-poppins font-normal md:text-[19px] text-[14px] leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
                   style={{ marginTop: "20px" }}
                 >
                   <svg
-                    width="18"
-                    height="18"
                     viewBox="0 0 21 17"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className=" md:h-[17px] md:w-[17px] h-[12px] w-[12px]"
                   >
                     <path
                       d="M1 4.33872L8.53278 9.40883C9.14279 9.81947 9.44779 10.0247 9.77955 10.1042C10.0726 10.1745 10.379 10.1745 10.6721 10.1042C11.0038 10.0247 11.3088 9.81947 11.9188 9.40883L19.4516 4.33872M5.42839 15.871H15.0232C16.5733 15.871 17.3483 15.871 17.9404 15.5809C18.4612 15.3258 18.8846 14.9187 19.1499 14.4179C19.4516 13.8486 19.4516 13.1034 19.4516 11.6129V5.93549C19.4516 4.44503 19.4516 3.6998 19.1499 3.13052C18.8846 2.62976 18.4612 2.22264 17.9404 1.96749C17.3483 1.67743 16.5733 1.67743 15.0232 1.67743H5.42839C3.8783 1.67743 3.10326 1.67743 2.51121 1.96749C1.99043 2.22264 1.56702 2.62976 1.30167 3.13052C1 3.6998 1 4.44503 1 5.93549V11.6129C1 13.1034 1 13.8486 1.30167 14.4179C1.56702 14.9187 1.99043 15.3258 2.51121 15.5809C3.10326 15.871 3.8783 15.871 5.42839 15.871Z"
@@ -720,16 +716,14 @@ Thank you!`}
                   info@yodersbuildings.com
                 </p>
                 <p
-                  className="font-poppins font-normal text-[19px] leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
+                  className="font-poppins font-normal md:text-[19px] text-[14px]  leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
                   style={{ marginTop: "20px" }}
                 >
                   <svg
-                    width="20"
-                    height="20"
                     viewBox="0 0 18 23"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="-mt-4"
+                    className="-mt-4  md:h-[19px] md:w-[19px] h-[12px] w-[12px]"
                   >
                     <path
                       d="M8.94842 12.3484C10.5946 12.3484 11.9291 11.014 11.9291 9.36779C11.9291 7.72163 10.5946 6.38715 8.94842 6.38715C7.30221 6.38715 5.96777 7.72163 5.96777 9.36779C5.96777 11.014 7.30221 12.3484 8.94842 12.3484Z"
@@ -749,15 +743,14 @@ Thank you!`}
                   3322 Mennonite School Rd, <br /> Montezuma, GA
                 </p>
                 <p
-                  className="font-poppins font-semibold text-[35px] leading-[100%] tracking-[-0.03em] flex items-center gap-2 text-[#FFA424] "
+                  className="font-poppins font-semibold md:text-[35px] text-[26px] leading-[100%] tracking-[-0.03em] flex items-center gap-2 text-[#FFA424] "
                   style={{ marginTop: "37px" }}
                 >
                   <svg
-                    width="27"
-                    height="27"
                     viewBox="0 0 27 27"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="md:h-[27px] md:w-[27px] h-[18px] w-[18px]"
                   >
                     <path
                       d="M7.90983 9.14055C8.91985 11.2443 10.2968 13.2159 12.0404 14.9596C13.7841 16.7034 15.7559 18.0802 17.8595 19.0903C18.0405 19.1771 18.1309 19.2206 18.2454 19.254C18.6523 19.3725 19.1518 19.2873 19.4963 19.0406C19.5934 18.9711 19.6762 18.8883 19.8421 18.7224C20.3495 18.2149 20.6031 17.9612 20.8582 17.7955C21.8202 17.1701 23.0604 17.1701 24.0224 17.7955C24.2775 17.9612 24.5312 18.2149 25.0385 18.7224L25.3212 19.0051C26.0925 19.7764 26.4781 20.162 26.6875 20.5761C27.1042 21.3997 27.1042 22.3724 26.6875 23.1961C26.4781 23.6102 26.0925 23.9959 25.3212 24.767L25.0925 24.9957C24.324 25.7644 23.9397 26.1487 23.4171 26.4421C22.8374 26.7678 21.9369 27.002 21.272 27C20.6728 26.9982 20.2631 26.882 19.4441 26.6495C15.042 25.4 10.8881 23.0427 7.42279 19.5773C3.95738 16.1119 1.59996 11.958 0.350533 7.55599C0.118038 6.73686 0.00178301 6.32731 1.25641e-05 5.72804C-0.00197556 5.06307 0.232189 4.16263 0.557864 3.58286C0.851367 3.06039 1.23566 2.6761 2.00425 1.90751L2.233 1.67875C3.00422 0.907534 3.38985 0.521909 3.80399 0.312445C4.62762 -0.104148 5.6003 -0.104148 6.42393 0.312445C6.83807 0.521909 7.2237 0.907534 7.99492 1.67875L8.27771 1.96155C8.78505 2.46888 9.03873 2.72257 9.20457 2.97764C9.83003 3.93964 9.83003 5.17979 9.20457 6.14177C9.03873 6.39685 8.78505 6.65053 8.27771 7.15787C8.11182 7.32377 8.02888 7.4067 7.95945 7.50366C7.71273 7.84821 7.62755 8.3478 7.74614 8.75465C7.77952 8.86914 7.82295 8.95961 7.90983 9.14055Z"
