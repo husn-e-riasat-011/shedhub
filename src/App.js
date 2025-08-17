@@ -50,10 +50,7 @@ function App() {
                   <span className="w-2 h-2 bg-[#02db40] rounded-full"></span>
                   Status Available
                 </span>
-                <h1
-                  className="text-[#002D4A] font-poppins font-semibold text-[32px] xl:text-[52px] md:text-[42px]  leading-[100%] tracking-[-0.03em] "
-                  style={{ marginTop: "5px" }}
-                >
+                <h1 className="text-[#002D4A] font-poppins font-semibold text-[32px] xl:text-[52px] md:text-[42px]  leading-[100%] tracking-[-0.03em] md:mt-1 md:pt-0 pt-16">
                   Studio Shed
                 </h1>
 
@@ -68,7 +65,7 @@ function App() {
                     </span>
                   </p>
 
-                  <p className="flex items-center text-left gap-2 border border-[#002D4A] rounded-full px-3 py-[10px] w-fit mx-auto justify-center text-[17.5px] leading-[100%] font-poppins font-medium tracking-normal mt-2 ">
+                  <p className="flex items-center text-left gap-2 border border-[#002D4A] rounded-full px-3 py-[10px] w-fit md:mx-auto justify-center text-[17.5px] leading-[100%] font-poppins font-medium tracking-normal mt-2 ">
                     <svg
                       width="22"
                       height="16"
@@ -314,10 +311,10 @@ function App() {
             {/* img and text end */}
             <div className="flex md:flex-col flex-col-reverse ">
               <div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white py-10 px-6 mt-7 border-[0.5px] rounded-[13px] border-[#a5a4a4]">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white sm:py-10 sm:px-6 mt-7 sm:border-[0.5px] rounded-[13px] border-[#a5a4a4]">
                   {/* Property Info */}
-                  <div className="py-3">
-                    <div className="flex items-center justify-center gap-1">
+                  <div className="py-2">
+                    <div className="flex items-center justify-start sm:justify-center gap-1">
                       <svg
                         className="h-11 w-11"
                         viewBox="0 0 42 43"
@@ -344,8 +341,8 @@ function App() {
                     </div>
                   </div>
 
-                  <div className=" lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
-                    <div className="flex items-center justify-center gap-3">
+                  <div className=" lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-2 ">
+                    <div className="flex items-center justify-start sm:justify-center gap-2 md:gap-1">
                       <div className="relative">
                         <svg
                           width="34"
@@ -405,8 +402,8 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
-                    <div className="flex items-center justify-center gap-1">
+                  <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-2">
+                    <div className="flex items-center justify-start sm:justify-center  gap-1">
                       <img
                         src="/Fill Color.png"
                         alt="Color"
@@ -423,7 +420,7 @@ function App() {
                     </div>
                   </div>
                   <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
-                    <div className="flex items-center justify-center gap-1">
+                    <div className="flex items-center justify-start sm:justify-center  gap-1">
                       <svg
                         width="42"
                         height="43"
@@ -452,65 +449,85 @@ function App() {
                 </div>
 
                 {/* Details */}
-                <div className="grid grid-cols-2 gap-x-16 mt-2 border-b-[1px] border-[#363C45]  text-sm">
-                  <p className="flex justify-between items-center border-b-[1px] border-[#363C45]  text-[#363C45]">
-                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                      Main Color
-                    </span>
-                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                      Black
-                      <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
-                    </span>
-                  </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 mt-2 border-b border-[#363C45] ">
+                  {/* Left group: Main Color, Roof Color, Siding Color */}
+                  <div className="flex flex-col sm:gap-2 gap-1">
+                    {/* Main Color */}
+                    <p className="flex justify-between items-center border-b-[1px] border-[#363C45]  text-[#363C45]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                        Main Color
+                      </span>
+                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                        Black
+                        <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
+                      </span>
+                    </p>
 
-                  <p className="flex justify-between border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
-                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                      Roofing
-                    </span>
-                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                      Metal
-                    </span>
-                  </p>
+                    {/* Roof Color */}
+                    <p className="flex justify-between items-center border-b-[1px] border-[#363C45] sm:pb-3 sm:pt-2 text-[#363C45]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                        Roof Color
+                      </span>
+                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                        Shiny Black
+                        <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-black"></span>
+                      </span>
+                    </p>
 
-                  <p className="flex justify-between items-center border-b-[1px] border-[#363C45] pb-3 pt-2 text-[#363C45]">
-                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                      Roof Color
-                    </span>
-                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                      Shiney Black
-                      <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#000000]"></span>
-                    </span>
+                    {/* Siding Color */}
+                    <p className="flex justify-between items-center sm:border-b-[0px] border-b-[1px] border-[#363C45] sm:pb-3 sm:pt-2 text-[#363C45]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                        Siding Color
+                      </span>
+                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                        Clay
+                        <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
+                      </span>
+                    </p>
+                  </div>
+
+                  {/* Right group: Roofing, Siding, Last updated */}
+                  <div className="flex flex-col sm:gap-2 gap-1">
+                    <p className="flex justify-between border-b-[1px] border-[#363C45]  text-[#363C45]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                        Roofing
+                      </span>
+                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                        Metal
+                      </span>
+                    </p>
+
+                    <p className="flex justify-between border-b-[1px] border-[#363C45]   sm:pb-3 sm:pt-2 text-[#363C45]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                        Siding
+                      </span>
+                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                        Wood
+                      </span>
+                    </p>
+
+                    <p className="flex justify-between   sm:pb-3 sm:pt-2 text-[#606060]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                        Last updated
+                      </span>
+                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                        02 Jun 2025
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div className=" justify-between items-center mt-2 text-[#363C45] flex sm:hidden">
+                  <p className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45">
+                    Shed ID
                   </p>
-                  <p className="flex justify-between border-b-[1px] border-[#363C45]   pb-3 pt-2 text-[#363C45]">
-                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                      Siding
-                    </span>
-                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                      Wood
-                    </span>
-                  </p>
-                  <p className="flex justify-between items-center  pt-2 text-[#363C45]">
-                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                      Siding Color
-                    </span>
-                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                      Clay
-                      <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
-                    </span>
-                  </p>
-                  <p className="flex justify-between    pt-2 text-[#606060]">
-                    <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
-                      Last updated{" "}
-                    </span>
-                    <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
-                      02 Jun 2025
-                    </span>
+                  <p className="font-poppins font-semibold xl:text-[18px] text-[15px] leading-[47px] tracking-[-0.03em] text-[#363C45]">
+                    395930
                   </p>
                 </div>
               </div>
               <div>
-                {/* Shed ID */}
-                <div className="flex justify-between items-center mt-2 text-[#363C45]">
+                {/* Shed ID unused */}
+                <div className=" justify-between items-center mt-2 text-[#363C45] hidden md:flex">
                   <p className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45">
                     Shed ID
                   </p>
@@ -536,8 +553,8 @@ function App() {
               </div>
             </div>
             {/* Description */}
-            <div className="mt-6">
-              <h2 className="font-poppins font-medium xl:text-[28px] text-[24px] leading-[100%] tracking-[-0.03em] border-b-[1px] border-[#002D4A] pb-2 mt-7 h-[42px] text-[#002D4A]">
+            <div className="mt-6 md-bg-[#ffffff] bg-[#F5F5F5] rounded-[13px]">
+              <h2 className="font-poppins font-medium xl:text-[28px] text-[24px] leading-[100%] tracking-[-0.03em] md:border-b-[1px] border-[#002D4A] pb-2 mt-7 h-[42px] text-[#002D4A] ">
                 Shed Description
               </h2>
 
@@ -635,10 +652,11 @@ Thank you!`}
               <div className="pb-4 mb-4 relative flex justify-between items-center mt-6">
                 {/* Right side image */}
                 <img
-                  src="/cicle.PNG"
+                  src="/piccc.PNG"
                   alt="Dealer"
-                  className="md:w-28 md:h-28 w-20 h-20 absolute top-0 right-0 rounded-full object-cover bg-center bg-no-repeat"
+                  className="md:w-[100px] md:h-[100px] w-20 h-24 absolute top-0 right-0 sm:rounded-full rounded-[12px] object-cover bg-center bg-no-repeat"
                 />
+
                 <div>
                   <p className="font-poppins font-semibold xl:text-[23px] text-[19px]     leading-[100%] tracking-[-0.03em] text-[#002D4A] flex items-center">
                     Yoder Storage Buildings

@@ -78,27 +78,33 @@ const Footer = () => {
       <div className="bg-[#F7F7F7] max-w-[2560px] mx-auto">
         {/* Middle Links */}
         <div className="py-5 max-w-[1538px] mx-auto">
-          <div className="max-w-[1538px] mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-            <div className="flex flex-wrap justify-center gap-7 text-[#002D4A] font-poppins font-normal text-[20px] leading-[33px] tracking-[-0.03em]">
+          <div className="max-w-[1538px] mx-auto flex flex-col md:flex-row justify-between px-6 relative">
+            {/* Links Section */}
+            <div className="flex flex-col md:flex-row md:items-center gap-7 text-[#002D4A] font-poppins font-normal text-[20px] leading-[33px] tracking-[-0.03em]">
               <a href="/">Shin</a>
-              <div className="w-px h-4 mt-2 bg-[#002D4A]"></div>
+              <div className="hidden md:block w-px h-4 mt-2 bg-[#002D4A]"></div>
 
               <a href="/">For Seller</a>
-              <div className="w-px h-4 mt-2  bg-[#002D4A]"></div>
+              <div className="hidden md:block w-px h-4 mt-2 bg-[#002D4A]"></div>
 
               <a href="/">For Manufacturers</a>
-              <div className="w-px h-4  mt-2 bg-[#002D4A]"></div>
+              <div className="hidden md:block w-px h-4 mt-2 bg-[#002D4A]"></div>
 
               <a href="/">Terms of Service</a>
-              <div className="w-px h-4  mt-2 bg-[#002D4A]"></div>
+              <div className="hidden md:block w-px h-4 mt-2 bg-[#002D4A]"></div>
 
               <a href="/">Legal</a>
-              <div className="w-px h-4 mt-2  bg-[#002D4A]"></div>
+              <div className="hidden md:block w-px h-4 mt-2 bg-[#002D4A]"></div>
 
               <a href="/">Disclaimers</a>
             </div>
 
-            <img src="/Group 5.png" alt="BBB Accredited" className="h-12" />
+            {/* Image Section */}
+            <img
+              src="/Group 5.png"
+              alt="BBB Accredited"
+              className="h-12 absolute right-6 top-0 md:static md:mt-0 mt-2"
+            />
           </div>
         </div>
         {/* <hr className="max-w-[1490px] mx-auto text-black" /> */}
