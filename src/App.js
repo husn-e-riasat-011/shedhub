@@ -645,7 +645,7 @@ Thank you!`}
                 <img
                   src="/piccc.PNG"
                   alt="Dealer"
-                  className="sm:w-[100px] sm:h-[100px] w-20 h-[86px] absolute top-0 -right-3 sm:right-0 sm:rounded-full rounded-[12px] object-cover bg-center bg-no-repeat"
+                  className="sm:w-[100px] sm:h-[100px] w-20 h-[86px] absolute top-0 -right-4 sm:right-0 sm:rounded-full rounded-[12px] object-cover bg-center bg-no-repeat"
                 />
 
                 <div>
@@ -693,13 +693,13 @@ Thank you!`}
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <a 
-  href="https://shedhub.com/shed-inventory-listing/Yoder-Storage-Buildings/8x14-Dog-Kennel-for-sale/6088E" target="_blank"
-  className=" hover:text-blue-800 hover:underline"
->
-    www.yodersbuildings.com
-</a>
-                
+                  <a
+                    href="https://shedhub.com/shed-inventory-listing/Yoder-Storage-Buildings/8x14-Dog-Kennel-for-sale/6088E"
+                    target="_blank"
+                    className=" hover:text-blue-800 hover:underline"
+                  >
+                    www.yodersbuildings.com
+                  </a>
                 </p>
                 <p
                   className="font-poppins font-normal md:text-[19px] text-[14px] leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
@@ -719,13 +719,12 @@ Thank you!`}
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <a 
-  href="mailto: info@yodersbuildings.com" 
-  className="  hover:underline"
->
- info@yodersbuildings.com
-</a>
-                 
+                  <a
+                    href="mailto: info@yodersbuildings.com"
+                    className="  hover:underline"
+                  >
+                    info@yodersbuildings.com
+                  </a>
                 </p>
                 <p
                   className="font-poppins font-normal md:text-[19px] text-[14px]  leading-[100%] tracking-[-0.03em] flex items-center gap-2  text-[#002D4A]"
