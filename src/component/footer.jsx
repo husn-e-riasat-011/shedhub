@@ -139,7 +139,7 @@ const Footer = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex justify-center gap-3 mt-10 md:mb-5 mb- text-gray-600">
+          <div className="flex justify-center gap-3 mt-10 md:mb-5 mb-24 text-gray-600">
             <a
               href="/"
               className="w-8 h-8 flex items-center justify-center text-white bg-[#002D4A] hover:text-[#002D4A] rounded-full border border-gray-400 hover:bg-gray-200 transition"
