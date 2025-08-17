@@ -42,11 +42,11 @@ function App() {
 
         <div className="flex flex-col lg:flex-row gap-6 px-6 max-w-[1538px] mx-auto">
           {/* Left Section */}
-          <div className="w-full xl:w-[1024px]  lg:w-2/3 pt-6 bg-[#FFFFFF]  md:px-7 p-0 rounded-[13px]   ">
+          <div className="w-full xl:w-[1024px]  lg:w-2/3 md:pt-6 pt-0 bg-[#FFFFFF]  md:px-7 p-0 rounded-[13px]   ">
             {/* img and text */}
             <div className="flex md:flex-col flex-col-reverse ">
               <div className="relative">
-                <span className="absolute top-6 md:right-7 flex items-center gap-2 bg-[#F5F5F5] text-[#002D4A] font-poppins font-semibold text-[12px] lg:text-[16px] leading-[100%] tracking-[-0.03em] px-4 py-2 rounded-full">
+                <span className="absolute top-4 md:right-7 flex items-center gap-2 bg-[#F5F5F5] text-[#002D4A] font-poppins font-semibold text-[11px] lg:text-[16px] leading-[100%] tracking-[-0.03em] px-4 py-2 rounded-full">
                   <span className="w-2 h-2 bg-[#02db40] rounded-full"></span>
                   Status Available
                 </span>
@@ -58,14 +58,14 @@ function App() {
                   With Black LP Barn Siding
                 </p>
                 <div className="bg-[#FFFFFF] py-6 rounded-[13px]  md:text-center flex flex-col md:hidden ">
-                  <p className="text-[#FFA424] lg:text-[40px] text-[32px] font-semibold font-poppins ">
+                  <p className="text-[#FFA424] lg:text-[40px] text-[35px] font-semibold font-poppins ">
                     $13,328.00{" "}
-                    <span className="text-[42px]   font-poppins font-thin tracking-tighter">
+                    <span className="text-[35px]  font-poppins font-thin tracking-tighter">
                       + Taxes
                     </span>
                   </p>
 
-                  <p className="flex items-center text-left gap-2 border border-[#002D4A] rounded-full px-3 py-[10px] w-fit md:mx-auto justify-center text-[17.5px] leading-[100%] font-poppins font-medium tracking-normal mt-2 ">
+                  <p className="flex items-center text-left gap-2 border border-[#002D4A] rounded-full px-3 py-[10px] w-fit md:mx-auto justify-center text-[16px] leading-[100%] font-poppins font-medium tracking-normal mt-2 ">
                     <svg
                       width="22"
                       height="16"
@@ -85,7 +85,7 @@ function App() {
                   </p>
                 </div>
 
-                <p className="flex items-center gap-1 font-poppins font-normal text-[18px] xl:text-[22px] leading-[20px] tracking-[-0.03em] text-[#878B96] my-5 not-italic">
+                <p className="flex items-center gap-1 font-poppins font-normal text-[17px] xl:text-[22px] leading-[20px] tracking-[-0.03em] text-[#878B96] md:my-5 not-italic">
                   <span className="text-[#878B96]">
                     <svg
                       width="19"
@@ -114,18 +114,15 @@ function App() {
                 </p>
               </div>
               {/* Image Slider (placeholder) */}
-              <div
-                className="relative w-full bg-gray-200 rounded-lg overflow-hidden "
-                style={{ marginTop: "12px" }}
-              >
+              <div className="relative w-full bg-gray-200 rounded-lg overflow-hidden md:mt-3 mt-0 ">
                 {/* Image */}
                 <img
                   src={images[current]}
                   alt="Slide"
                   className="w-full md:h-[587px] h-[331px] bg-fixed object-cover bg-no-repeat bg-center rounded-[13px]"
                 />
-                <span className="absolute md:top-5 md:right-6 top-3 right-3 bg-white text-[#002D4A] font-poppins font-medium text-[14px] leading-[100%] tracking-[0em] px-3 py-2 rounded-full flex items-center gap-1">
-                  <FaStar className="text-[#FFA424] text-[15px]" />
+                <span className="absolute md:top-5 md:right-6 top-3 right-3 bg-white text-[#002D4A] font-poppins font-medium text-[11px] lg:text-[14px] leading-[100%] tracking-[0em] px-3 py-2 rounded-full flex items-center gap-1">
+                  <FaStar className="text-[#FFA424] lg:text-[15px] text-[12px]" />
                   FEATURED
                 </span>
                 {/* Top Left Icons */}
@@ -311,7 +308,7 @@ function App() {
             {/* img and text end */}
             <div className="flex md:flex-col flex-col-reverse ">
               <div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white sm:py-10 sm:px-6 mt-7 sm:border-[0.5px] rounded-[13px] border-[#a5a4a4]">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center bg-white sm:py-10 sm:px-6 md:mt-7 mt-10 sm:border-[0.5px] rounded-[13px] border-[#a5a4a4]">
                   {/* Property Info */}
                   <div className="py-2">
                     <div className="flex items-center justify-start sm:justify-center gap-1">
@@ -537,7 +534,7 @@ function App() {
                 </div>
 
                 {/* Map */}
-                <div className="mt-2 rounded-[13px]">
+                <div className="md:mt-2 mt-5 rounded-[13px]">
                   <iframe
                     title="Map - 5000 Old Preston Hwy N"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.0970260955945!2d-85.71276572416526!3d37.9929289009927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869070ff12be59f%3A0x8f82bb5e5edc670b!2s5000%20Old%20Preston%20Hwy%20N%2C%20Shepherdsville%2C%20KY%2040170%2C%20USA!5e0!3m2!1sen!2s!4v1723298456000!5m2!1sen!2s"
@@ -547,7 +544,7 @@ function App() {
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="rounded-lg"
+                    className="rounded-lg  h-[148px] md:h-[33opx]"
                   ></iframe>
                 </div>
               </div>
