@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="bg-white mt-32 relative z-[2px] ">
       {/* Top Banner */}
-      <div className="bg-[#002D4A] text-[#FFFFFF] relative max-w-[2560px] h-[230px] mx-auto hidden md:block ">
+      <div className="bg-[#002D4A] text-[#FFFFFF] relative max-w-[2560px] h-[230px] mx-auto hidden lg:block ">
         <img
           src="Mask group (1).png"
           alt="Dealer"
@@ -125,7 +125,7 @@ const Footer = () => {
             <img
               src="/Group 6.png"
               alt="App Store"
-              className="h-12 cursor-pointer md:w-full w-[274px]"
+              className="h-12 cursor-pointer md:w-[350px] w-[274px]"
             />
           </div>
 
@@ -134,7 +134,7 @@ const Footer = () => {
             <img
               src="/Group.png"
               alt="ShedHub Logo"
-              className="mx-auto md:w-full w-[167px] h-12"
+              className="mx-auto md:w-{229px} w-[167px] h-12"
             />
           </div>
 
