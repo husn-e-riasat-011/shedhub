@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="bg-white mt-32 relative z-[2px] ">
       {/* Top Banner */}
-      <div className="bg-[#002D4A] text-[#FFFFFF] relative max-w-[2560px] h-[230px] mx-auto">
+      <div className="bg-[#002D4A] text-[#FFFFFF] relative max-w-[2560px] h-[230px] mx-auto hidden lg:block ">
         <img
           src="Mask group (1).png"
           alt="Dealer"
@@ -23,7 +23,7 @@ const Footer = () => {
           alt="Dealer"
           className="absolute -top-[127px] bottom-6 left-[45%] z-[1000] object-cover bg-center bg-no-repeat"
         />
-        <div className="max-w-[1538px] px-6 mx-auto flex flex-col md:flex-row items-center justify-between gap-8 h-[230px] ">
+        <div className="max-w-[1538px] px-6 mx-auto md:flex flex-col  md:flex-row items-center justify-between gap-8 h-[230px] ">
           {/* Left Content */}
           <div className="text-center md:text-left">
             <p className="font-poppins font-normal text-[32px] leading-[44px] tracking-[-0.03em]">
@@ -78,35 +78,41 @@ const Footer = () => {
       <div className="bg-[#F7F7F7] max-w-[2560px] mx-auto">
         {/* Middle Links */}
         <div className="py-5 max-w-[1538px] mx-auto">
-          <div className="max-w-[1538px] mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-            <div className="flex flex-wrap justify-center gap-7 text-[#002D4A] font-poppins font-normal text-[20px] leading-[33px] tracking-[-0.03em]">
+          <div className="max-w-[1538px] mx-auto flex flex-col md:flex-row justify-between px-6 relative">
+            {/* Links Section */}
+            <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-7 text-[#002D4A] font-poppins font-normal text-[17px] leading-[33px] tracking-[-0.03em]">
               <a href="/">Shin</a>
-              <div className="w-px h-4 mt-2 bg-[#002D4A]"></div>
+              <div className="hidden md:block w-px h-4 mt-2 bg-[#002D4A]"></div>
 
               <a href="/">For Seller</a>
-              <div className="w-px h-4 mt-2  bg-[#002D4A]"></div>
+              <div className="hidden md:block w-px h-4 mt-2 bg-[#002D4A]"></div>
 
               <a href="/">For Manufacturers</a>
-              <div className="w-px h-4  mt-2 bg-[#002D4A]"></div>
+              <div className="hidden md:block w-px h-4 mt-2 bg-[#002D4A]"></div>
 
               <a href="/">Terms of Service</a>
-              <div className="w-px h-4  mt-2 bg-[#002D4A]"></div>
+              <div className="hidden md:block w-px h-4 mt-2 bg-[#002D4A]"></div>
 
               <a href="/">Legal</a>
-              <div className="w-px h-4 mt-2  bg-[#002D4A]"></div>
+              <div className="hidden md:block w-px h-4 mt-2 bg-[#002D4A]"></div>
 
               <a href="/">Disclaimers</a>
             </div>
 
-            <img src="/Group 5.png" alt="BBB Accredited" className="h-12" />
+            {/* Image Section */}
+            <img
+              src="/Group 5.png"
+              alt="BBB Accredited"
+              className="md:h-12 h-10 absolute right-6 top-0 md:static md:mt-0 mt-2"
+            />
           </div>
         </div>
         {/* <hr className="max-w-[1490px] mx-auto text-black" /> */}
-        <hr className="max-w-[1490px] mx-auto h-[1px] bg-[#000000] border-0" />
+        <hr className=" md:max-w-[1490px] w-[90%] mx-auto h-[1px] bg-[#000000] border-0" />
 
         {/* Bottom Section */}
-        <div className="max-w-7xl mx-auto px-4 py-10 text-center text-[#878B96]">
-          <p className="max-w-[1115px] mx-auto font-poppins font-light text-[16px] leading-[36px] tracking-[0.02em] text-center">
+        <div className="max-w-7xl mx-auto px-4 py-10 text-center text-black md:text-[#878B96]">
+          <p className="max-w-[1115px] mx-auto font-poppins font-light text-[12px] md:text-[16px] leading-[36px] tracking-[0.02em] text-center">
             ShedHub is the #1 place to find sheds for sale in your local area.
             Browse thousands of sheds from sellers across the country. With our
             Advanced Shed Search tool, you can easily sort through our expansive
@@ -119,17 +125,21 @@ const Footer = () => {
             <img
               src="/Group 6.png"
               alt="App Store"
-              className="h-12 cursor-pointer"
+              className="h-12 cursor-pointer md:w-[350px] w-[274px]"
             />
           </div>
 
           {/* Logo */}
           <div className="mt-10 mb-4">
-            <img src="/Group.png" alt="ShedHub Logo" className="mx-auto h-12" />
+            <img
+              src="/Group.png"
+              alt="ShedHub Logo"
+              className="mx-auto md:w-{229px} w-[167px] h-12"
+            />
           </div>
 
           {/* Social Icons */}
-          <div className="flex justify-center gap-3 mt-10 mb-5 text-gray-600">
+          <div className="flex justify-center gap-3 mt-10 md:mb-5 mb-14 text-gray-600">
             <a
               href="/"
               className="w-8 h-8 flex items-center justify-center text-white bg-[#002D4A] hover:text-[#002D4A] rounded-full border border-gray-400 hover:bg-gray-200 transition"
@@ -161,7 +171,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Copyright */}
-      <div className="mt-3 mb-6 text-center text-[#002D4A] font-poppins font-normal text-[19px] leading-[33px] tracking-[-0.03em]">
+      <div className="mt-3 mb-6 text-center text-[#002D4A] font-poppins font-normal text-[19px] leading-[33px] tracking-[-0.03em] md:block hidden">
         ©2025 ShedHub. All Rights Reserved
       </div>
 
