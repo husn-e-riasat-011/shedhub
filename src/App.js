@@ -636,7 +636,7 @@ Thank you!`}
               className="w-full  md:bg-[#FFFFFF] bg-[#F5F5F5] p-6 mt-[50px] rounded-[13px] shadow"
               style={{ marginTop: "27px" }}
             >
-              <h2 className="font-poppins font-medium text-[22px] xl:text-[32px] leading-[100%] tracking-[-0.03em] text-[#002D4A] border-b pb-6">
+              <h2 className="font-poppins font-medium text-[22px]  md:text-[29px] xl:text-[32px] leading-[100%] tracking-[-0.03em] text-[#002D4A] border-b pb-6">
                 Dealer Profile
               </h2>
 
@@ -645,11 +645,11 @@ Thank you!`}
                 <img
                   src="/piccc.PNG"
                   alt="Dealer"
-                  className="md:w-[100px] md:h-[100px] w-20 h-[86px] absolute top-0 -right-3 sm:right-0 sm:rounded-full rounded-[12px] object-cover bg-center bg-no-repeat"
+                  className="sm:w-[100px] sm:h-[100px] w-20 h-[86px] absolute top-0 -right-3 sm:right-0 sm:rounded-full rounded-[12px] object-cover bg-center bg-no-repeat"
                 />
 
                 <div>
-                  <p className="font-poppins font-semibold xl:text-[23px] md:text-[17px] leading-[100%] tracking-[-0.03em] text-[#002D4A] flex items-center">
+                  <p className="font-poppins font-semibold xl:text-[23px] text-[17px] leading-[100%] tracking-[-0.03em] text-[#002D4A] flex items-center">
                     Yoder Storage Buildings
                     <span>
                       <svg
