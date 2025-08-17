@@ -7,7 +7,7 @@ import {
   FaTiktok,
   FaYoutube,
 } from "react-icons/fa";
-import StickyNote from "./StickyNote";
+
 const Footer = () => {
   return (
     <footer className="bg-white mt-32 relative z-[2px] ">
@@ -139,7 +139,7 @@ const Footer = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex justify-center gap-3 mt-10 md:mb-5 mb-14 text-gray-600">
+          <div className="flex justify-center gap-3 mt-10 md:mb-5 mb- text-gray-600">
             <a
               href="/"
               className="w-8 h-8 flex items-center justify-center text-white bg-[#002D4A] hover:text-[#002D4A] rounded-full border border-gray-400 hover:bg-gray-200 transition"
@@ -174,11 +174,6 @@ const Footer = () => {
       <div className="mt-3 mb-6 text-center text-[#002D4A] font-poppins font-normal text-[19px] leading-[33px] tracking-[-0.03em] md:block hidden">
         ©2025 ShedHub. All Rights Reserved
       </div>
-
-      {/* Sticky Note Component */}
-      <div className="block sm:hidden">    <StickyNote/></div>
-       
-  
     </footer>
   );
 };
