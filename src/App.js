@@ -313,7 +313,7 @@ function App() {
                   <div className="py-2">
                     <div className="flex items-center justify-start sm:justify-center gap-1">
                       <svg
-                        className="h-11 w-11"
+                        className="md:h-11 md:w-11 h-5 w-5"
                         viewBox="0 0 42 43"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -327,27 +327,25 @@ function App() {
                       </svg>
 
                       <div className="text-left">
-                        <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                        <p className="font-poppins font-medium text-[10px] md:text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
                           Building Type
                         </p>
 
-                        <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                        <p className="font-poppins font-medium xl:text-[23px] md:text-[20px] text-[16px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
                           Studio
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className=" lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-2 ">
-                    <div className="flex items-center justify-start sm:justify-center gap-2 md:gap-1">
+                  <div className=" lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-2 md:-ml-0  -ml-3">
+                    <div className="flex items-center justify-start sm:justify-center gap-2 ">
                       <div className="relative">
                         <svg
-                          width="34"
-                          height="10"
                           viewBox="0 0 34 10"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute -top-1 -right-1"
+                          className="absolute md:-top-[10px] md:-right-1 md:w-10 md:h-5 w-5 h-5 -top-[8px] -right-[3px]"
                         >
                           <path
                             d="M4.62542 8.87911C4.74057 8.99699 4.91096 9.03241 5.05835 8.96876C5.20804 8.9051 5.30478 8.75659 5.30478 8.59393V6.36843H28.6958V8.59393C28.6958 8.75659 28.7925 8.9051 28.9399 8.96876C29.0896 9.03241 29.26 8.99699 29.3729 8.87911L32.8826 5.28885C33.0392 5.12855 33.0392 4.87145 32.8826 4.71115L29.3729 1.12089C29.26 1.00301 29.0896 0.967594 28.9399 1.03125C28.7925 1.0949 28.6958 1.24341 28.6958 1.40607V3.63157H5.30478V1.40607C5.30478 1.24341 5.20804 1.0949 5.05835 1.03125C4.91096 0.967594 4.74057 1.00301 4.62542 1.12089L1.11572 4.71115C0.961426 4.87145 0.961426 5.12855 1.11572 5.28885L4.62542 8.87911Z"
@@ -357,13 +355,10 @@ function App() {
                           />
                         </svg>
                         <svg
-                          width="34"
-                          // style={{ transform: "rotate(90deg)" }}
-                          height="10"
                           viewBox="0 0 34 10"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute left-7 top-4 transform rotate-90"
+                          className="absolute md:left-9 md:top-4 left-[25px] top-1 transform rotate-90 md:w-10 md:h-5 w-5 h-5"
                         >
                           <path
                             d="M4.62542 8.87911C4.74057 8.99699 4.91096 9.03241 5.05835 8.96876C5.20804 8.9051 5.30478 8.75659 5.30478 8.59393V6.36843H28.6958V8.59393C28.6958 8.75659 28.7925 8.9051 28.9399 8.96876C29.0896 9.03241 29.26 8.99699 29.3729 8.87911L32.8826 5.28885C33.0392 5.12855 33.0392 4.87145 32.8826 4.71115L29.3729 1.12089C29.26 1.00301 29.0896 0.967594 28.9399 1.03125C28.7925 1.0949 28.6958 1.24341 28.6958 1.40607V3.63157H5.30478V1.40607C5.30478 1.24341 5.20804 1.0949 5.05835 1.03125C4.91096 0.967594 4.74057 1.00301 4.62542 1.12089L1.11572 4.71115C0.961426 4.87145 0.961426 5.12855 1.11572 5.28885L4.62542 8.87911Z"
@@ -379,7 +374,7 @@ function App() {
                           viewBox="0 0 32 31"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="mt-[4px] ml-[8px]"
+                          className="md:h-10 md:w-10 h-5 w-5 mt-[4px] ml-[12px]"
                         >
                           <path
                             d="M29.0441 1H2.95592C1.87679 1 1 1.84758 1 2.89284V28.1072C1 29.1524 1.87679 30 2.95592 30H29.0441C30.1255 30 31 29.1524 31 28.1072V2.89284C31 1.84758 30.1255 1 29.0441 1ZM27.0881 26.2166H4.91411V4.78342H27.0881V26.2166Z"
@@ -390,10 +385,10 @@ function App() {
                         </svg>
                       </div>
                       <div className="text-left">
-                        <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                        <p className="font-poppins font-medium text-[10px] md:text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
                           Building Size
                         </p>
-                        <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                        <p className="font-poppins font-medium xl:text-[23px] md:text-[20px] text-[16px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
                           14 x 32
                         </p>
                       </div>
@@ -404,13 +399,13 @@ function App() {
                       <img
                         src="/Fill Color.png"
                         alt="Color"
-                        className="h-12 w-12"
+                        className="md:h-11 md:w-11 h-7 w-7"
                       />
                       <div className="text-left">
-                        <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                        <p className="font-poppins font-medium text-[10px] md:text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
                           Color
                         </p>
-                        <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                        <p className="font-poppins font-medium xl:text-[23px] md:text-[20px] text-[16px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
                           Dark Grey
                         </p>
                       </div>
@@ -419,8 +414,7 @@ function App() {
                   <div className="lg:border-l lg:border-[#E5E7EB] lg:pl-4 py-3">
                     <div className="flex items-center justify-start sm:justify-center  gap-1">
                       <svg
-                        width="42"
-                        height="43"
+                        className="md:h-11 md:w-11 h-5 w-5"
                         viewBox="0 0 42 43"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -434,10 +428,10 @@ function App() {
                       </svg>
 
                       <div className="text-left">
-                        <p className="font-poppins font-medium text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                        <p className="font-poppins font-medium text-[10px] md:text-[17px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
                           Condition
                         </p>
-                        <p className="font-poppins font-medium xl:text-[23px] text-[20px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                        <p className="font-poppins font-medium xl:text-[23px] md:text-[20px] text-[16px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
                           Pre-Loved
                         </p>
                       </div>
@@ -448,13 +442,13 @@ function App() {
                 {/* Details */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 mt-2 border-b border-[#363C45] ">
                   {/* Left group: Main Color, Roof Color, Siding Color */}
-                  <div className="flex flex-col sm:gap-2 gap-1">
+                  <div className="flex flex-col sm:gap-2 ">
                     {/* Main Color */}
                     <p className="flex justify-between items-center border-b-[1px] border-[#363C45]  text-[#363C45]">
-                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
                         Main Color
                       </span>
-                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      <span className="flex items-center gap-2 font-poppins font-normal md:font-semibold xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
                         Black
                         <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
                       </span>
@@ -462,10 +456,10 @@ function App() {
 
                     {/* Roof Color */}
                     <p className="flex justify-between items-center border-b-[1px] border-[#363C45] sm:pb-3 sm:pt-2 text-[#363C45]">
-                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
                         Roof Color
                       </span>
-                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      <span className="flex items-center gap-2 font-poppins font-normal md:font-semibold xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
                         Shiny Black
                         <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-black"></span>
                       </span>
@@ -473,10 +467,10 @@ function App() {
 
                     {/* Siding Color */}
                     <p className="flex justify-between items-center sm:border-b-[0px] border-b-[1px] border-[#363C45] sm:pb-3 sm:pt-2 text-[#363C45]">
-                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
                         Siding Color
                       </span>
-                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      <span className="flex items-center gap-2 font-poppins font-normal md:font-semibold xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
                         Clay
                         <span className="xl:w-7 xl:h-7 w-4 h-4 rounded-full bg-[#363C45]"></span>
                       </span>
@@ -486,38 +480,38 @@ function App() {
                   {/* Right group: Roofing, Siding, Last updated */}
                   <div className="flex flex-col sm:gap-2 gap-1">
                     <p className="flex justify-between border-b-[1px] border-[#363C45]  text-[#363C45]">
-                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
                         Roofing
                       </span>
-                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      <span className="flex items-center gap-2 font-poppins font-normal md:font-semibold xl:text-[16px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
                         Metal
                       </span>
                     </p>
 
                     <p className="flex justify-between border-b-[1px] border-[#363C45]   sm:pb-3 sm:pt-2 text-[#363C45]">
-                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
                         Siding
                       </span>
-                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      <span className="flex items-center gap-2 font-poppins font-normal md:font-semibold xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
                         Wood
                       </span>
                     </p>
 
                     <p className="flex justify-between   sm:pb-3 sm:pt-2 text-[#606060]">
-                      <span className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
+                      <span className="font-poppins font-normal xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45]">
                         Last updated
                       </span>
-                      <span className="flex items-center gap-2 font-poppins font-semibold xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
+                      <span className="flex items-center gap-2 font-poppins font-normal md:font-semibold xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45] text-right">
                         02 Jun 2025
                       </span>
                     </p>
                   </div>
                 </div>
                 <div className=" justify-between items-center mt-2 text-[#363C45] flex sm:hidden">
-                  <p className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45">
+                  <p className="font-poppins font-normal xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45">
                     Shed ID
                   </p>
-                  <p className="font-poppins font-semibold xl:text-[18px] text-[15px] leading-[47px] tracking-[-0.03em] text-[#363C45]">
+                  <p className="font-poppins font-normal md:font-semibold xl:text-[18px] text-[16px] leading-[47px] tracking-[-0.03em] text-[#363C45]">
                     395930
                   </p>
                 </div>
@@ -525,10 +519,10 @@ function App() {
               <div>
                 {/* Shed ID unused */}
                 <div className=" justify-between items-center mt-2 text-[#363C45] hidden md:flex">
-                  <p className="font-poppins font-normal xl:text-[18px] text-[15px] leading-[67px] tracking-[-0.03em] text-[#363C45">
+                  <p className="font-poppins font-normal xl:text-[18px] text-[16px] leading-[67px] tracking-[-0.03em] text-[#363C45">
                     Shed ID
                   </p>
-                  <p className="font-poppins font-semibold xl:text-[18px] text-[15px] leading-[47px] tracking-[-0.03em] text-[#363C45]">
+                  <p className="font-poppins font-normal md:font-semibold xl:text-[18px] text-[16px] leading-[47px] tracking-[-0.03em] text-[#363C45]">
                     395930
                   </p>
                 </div>
@@ -550,12 +544,12 @@ function App() {
               </div>
             </div>
             {/* Description */}
-            <div className="mt-6 md-bg-[#ffffff] bg-[#F5F5F5] rounded-[13px]">
-              <h2 className="font-poppins font-medium xl:text-[28px] text-[24px] leading-[100%] tracking-[-0.03em] md:border-b-[1px] border-[#002D4A] pb-2 mt-7 h-[42px] text-[#002D4A] ">
+            <div className="mt-6 md-bg-[#ffffff] bg-[#F5F5F5] rounded-[13px] px-3 py-[1px]">
+              <h2 className="font-poppins font-medium xl:text-[28px] text-[22px] leading-[100%] tracking-[-0.03em] md:border-b-[1px] border-[#002D4A] pb-2 mt-7 h-[42px] text-[#002D4A] ">
                 Shed Description
               </h2>
 
-              <p className="font-poppins font-light xl:text-[18.5px] text-[14px] leading-[31px] tracking-[0em] text-[#002D4A] mt-3 mb-6 opacity-100">
+              <p className="font-poppins font-light xl:text-[18.5px] text-[12px] leading-[31px] tracking-[0em] text-[#002D4A] md:mt-3 -mt-2 mb-6 opacity-100">
                 Our studio sheds are just that. Have you ever dreamed of your
                 ideal office shed? You no longer have to wait. Our studio sheds
                 are designed just for you, and we have in-stock options. You can
