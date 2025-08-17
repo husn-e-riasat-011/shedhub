@@ -7,7 +7,7 @@ import {
   FaTiktok,
   FaYoutube,
 } from "react-icons/fa";
-
+import StickyNote from "./StickyNote";
 const Footer = () => {
   return (
     <footer className="bg-white mt-32 relative z-[2px] ">
@@ -173,6 +173,9 @@ const Footer = () => {
       {/* Copyright */}
       <div className="mt-3 mb-6 text-center text-[#002D4A] font-poppins font-normal text-[19px] leading-[33px] tracking-[-0.03em] md:block hidden">
         ©2025 ShedHub. All Rights Reserved
+      </div>
+      <div className="block sm:hidden">
+        <StickyNote />
       </div>
     </footer>
   );
