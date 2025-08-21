@@ -82,7 +82,7 @@ const Allsheds = () => {
 
       <div className="flex max-w-7xl mx-auto p-6 gap-6">
         {/* Left Sidebar Filter */}
-        <div className="w-1/4 bg-white p-4 shadow-md rounded-lg">
+        <div className="w-1/4 bg-white p-4 shadow-md mb-1 rounded-lg">
           {/* ✅ Search Box */}
           <div className="relative mb-6">
             <input
