@@ -1,108 +1,144 @@
 import React from "react";
+import { ChevronRight } from "lucide-react"; // arrow icon
 
 const PropertyListings = () => {
   const listings = [
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "LUstings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "LUstings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "LUstings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "LUstings starting at",
     },
     {
       title: "BREMEN, OH",
       price: "$1,581",
-      description: "Ustings starting at",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
+    },
+    {
+      title: "BREMEN, OH",
+      price: "$1,581",
     },
   ];
-
   return (
-    <div className="max-w-[1538px] mx-auto mt-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="max-w-[1538px] mx-auto mt-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20 px-7">
         {listings.map((listing, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            className="flex items-center justify-between cursor-pointer hover:opacity-80 transition max-w-[362px]"
           >
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">
+            {/* Left Side */}
+            <div>
+              <h3 className="text-[28px] font-medium text-[#002D4A]">
                 {listing.title}
               </h3>
-              <p className="text-gray-600 mb-1">
-                {listing.description}
-                <span className="text-2xl font-bold text-[#FFA424] mt-3">
+              <p className="text-[18px] font-medium text-[#002D4A]">
+                Listings starting at{" "}
+                <span className="text-[#FFA424] font-semibold">
                   {listing.price}
                 </span>
               </p>
             </div>
+
+            {/* Right Arrow */}
+            <ChevronRight className="text-[#002D4A] w-7 h-6" />
           </div>
         ))}
       </div>
