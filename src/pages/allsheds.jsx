@@ -429,15 +429,15 @@ const Allsheds = () => {
               APPLY
             </button>
 
-            <div className="  flex items-center justify-center mt-4">
-              <div className="bg-gray-50 rounded-lg shadow-lg p-6 w-full max-w-md border">
+            <div className="  flex items-center justify-center mt-8">
+              <div className="bg-[#F7F7F7] border-1 border-black rounded-lg shadow-lg p-6 w-full max-w-md border">
                 {/* Bell Icon and Title */}
                 <div className="flex items-center mb-4">
                   <div className="w-6 h-6 mr-2">
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
-                      className="w-full h-full text-orange-500"
+                      className="w-full h-full text-[#FFA424]"
                     >
                       <path
                         d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
@@ -455,13 +455,13 @@ const Allsheds = () => {
                       />
                     </svg>
                   </div>
-                  <h2 className="text-orange-500 font-semibold text-lg">
+                  <h2 className="text-[#FFA424] font-semibold text-lg">
                     NOTIFY ME
                   </h2>
                 </div>
 
                 {/* Description */}
-                <p className="font-poppins font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-[#002D4A] mb-6">
+                <p className="font-poppins font-normal text-[17px] leading-[100%] tracking-[-0.03em] text-[#002D4A] mb-6">
                   Get email alerts for new ads that match your search
                   preferences
                 </p>
@@ -484,7 +484,7 @@ const Allsheds = () => {
                     className={`w-full py-3 rounded-lg font-semibold text-white text-sm transition-colors ${
                       isSubmitted
                         ? "bg-green-500 hover:bg-green-600"
-                        : "bg-[#FFA424] hover:bg-orange-600"
+                        : "bg-[#FFA424] hover:bg-orange-500"
                     }`}
                   >
                     {isSubmitted ? "SUBSCRIBED!" : "SUBMIT"}
