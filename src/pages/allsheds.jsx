@@ -442,7 +442,7 @@ const Allsheds = () => {
                       <img
                         src={shed.image}
                         alt={shed.category}
-                        className="w-[280px] h-full rounded-[6px]  object-cover"
+                        className="w-[326px] h-full rounded-[6px]  object-cover"
                       />
                       {/* Status Tag */}
 
@@ -474,7 +474,7 @@ const Allsheds = () => {
                       </div>
                     </div>
 
-                    <div className="p-3 w-full">
+                    <div className="p-6 w-full">
                       {/* 1 */}
                       <div className="flex justify-between ">
                         <div>
