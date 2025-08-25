@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "@fontsource/poppins";
 import Navbar from "../component/navbar";
 
@@ -13,12 +13,19 @@ const Home = () => {
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
-    setCurrent((current + 1) % images.length);
+    setCurrent((prev) => (prev + 1) % images.length);
   };
 
   const prevSlide = () => {
-    setCurrent((current - 1 + images.length) % images.length);
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
   };
+
+  // ✅ Auto slide
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 3000); // 3s baad agla slide
+    return () => clearInterval(interval); // cleanup
+  }, [current]);
+
   return (
     <div>
       <Navbar />
