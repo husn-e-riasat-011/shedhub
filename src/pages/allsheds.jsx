@@ -6,6 +6,10 @@ import { FaList, FaTh } from "react-icons/fa";
 import Footer from "../component/footer";
 import PropertyListings from "../component/links";
 
+import { useSheds } from "../hooks/useSheds";
+
+
+
 const shedsData = [
   {
     id: 1,
@@ -59,6 +63,7 @@ const shedsData = [
 
 const Allsheds = () => {
   const [sheds] = useState(shedsData);
+  const { allsheds, loading, error } = useSheds();
 
   // ✅ Filter States
   const [category, setCategory] = useState("");
