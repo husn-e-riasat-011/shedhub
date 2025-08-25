@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "../component/navbar";
 import FinanceAd from "../component/financeAd";
 import { FaList, FaTh } from "react-icons/fa";
@@ -33,14 +33,14 @@ const shedsData = [
     location: "Kentucky",
     zipcode: "40202",
     price: 14500,
-    status: "Sold",
+    status: "Available",
   },
   {
     id: 3,
     image:
       "https://d6bvpt6ekkwt0.cloudfront.net/5941031dca2f3a64708b4569/Product%20List/img_8991-1-.jpg?1642093417",
     category: "Garage",
-    color: "Brown",
+    color: "Black",
     size: "12x16",
     location: "Louisville",
     zipcode: "40203",
@@ -51,8 +51,8 @@ const shedsData = [
     id: 4,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWW4Mg8mTkiCFkorOkQ36RVNqgJxYFzLYyBw&s",
-    category: "Backyard",
-    color: "Gray",
+    category: "Featured",
+    color: "Green",
     size: "8x10",
     location: "Kentucky",
     zipcode: "40201",
@@ -64,6 +64,20 @@ const shedsData = [
 const Allsheds = () => {
   const [sheds] = useState(shedsData);
   const { allsheds, loading, error } = useSheds();
+
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const handleSubmit = () => {
+    if (!email) return;
+
+    setIsSubmitted(true);
+    console.log("Email submitted:", email);
+    setEmail("");
+    // Reset after 3 seconds
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 1000);
+  };
 
   // ✅ Filter States
   const [category, setCategory] = useState("");
@@ -201,7 +215,16 @@ const Allsheds = () => {
               By Category
             </h3>
             <div className="space-y-1 my-5">
-              {["Backyard", "Cottage", "Garage"].map((cat) => {
+              {[
+                "Featured",
+                "New Listing",
+                "Barn",
+                "Cottage",
+                "Gazebo",
+                "playhouse",
+                "Livestock Shelter",
+                "Repo",
+              ].map((cat) => {
                 const count = sheds.filter((s) => s.category === cat).length;
                 return (
                   <label
@@ -242,7 +265,16 @@ const Allsheds = () => {
               By Color
             </h3>
             <div className="space-y-1 my-5">
-              {["Gray", "Red", "Brown"].map((clr) => {
+              {[
+                "Black",
+                "Brown",
+                "Burgundy",
+                "Blue",
+                "Green",
+                "Orange",
+                "Purple",
+                "Red",
+              ].map((clr) => {
                 const count = sheds.filter((s) => s.color === clr).length;
                 return (
                   <label
@@ -281,7 +313,7 @@ const Allsheds = () => {
               By Status
             </h3>
             <div className="space-y-1 my-5">
-              {["Available", "Sold"].map((st) => {
+              {["Available", "Online Only", "Sold"].map((st) => {
                 const count = sheds.filter((s) => s.status === st).length;
                 return (
                   <label
@@ -403,6 +435,76 @@ const Allsheds = () => {
             >
               APPLY
             </button>
+
+            <div className="  flex items-center justify-center mt-8">
+              <div className="bg-[#F7F7F7] border-1 border-black rounded-lg shadow-lg p-6 w-full max-w-md border">
+                {/* Bell Icon and Title */}
+                <div className="flex items-center mb-4">
+                  <div className="w-6 h-6 mr-2">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="w-full h-full text-[#FFA424]"
+                    >
+                      <path
+                        d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M13.73 21a2 2 0 0 1-3.46 0"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <h2 className="text-[#FFA424] font-semibold text-lg">
+                    NOTIFY ME
+                  </h2>
+                </div>
+
+                {/* Description */}
+                <p className="font-poppins font-normal text-[17px] leading-[100%] tracking-[-0.03em] text-[#002D4A] mb-6">
+                  Get email alerts for new ads that match your search
+                  preferences
+                </p>
+
+                {/* Form */}
+                <div className="space-y-4">
+                  <div>
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Email Address"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-[35px] focus:outline-none focus:ring-2 focus:ring-[#FFA424] focus:border-transparent text-sm"
+                    />
+                  </div>
+
+                  <button
+                    onClick={handleSubmit}
+                    disabled={isSubmitted}
+                    className={`w-full py-3 rounded-lg font-semibold text-white text-sm transition-colors ${
+                      isSubmitted
+                        ? "bg-green-500 hover:bg-green-600"
+                        : "bg-[#FFA424] hover:bg-orange-500"
+                    }`}
+                  >
+                    {isSubmitted ? "SUBSCRIBED!" : "SUBMIT"}
+                  </button>
+                </div>
+
+                {isSubmitted && (
+                  <p className="text-green-600 text-sm mt-3 text-center">
+                    ✓ You'll receive email notifications for matching ads!
+                  </p>
+                )}
+              </div>
+            </div>
           </div>
 
           {/* Shed Listings */}
@@ -479,7 +581,7 @@ const Allsheds = () => {
                       </div>
                     </div>
 
-                    <div className="p-6 w-full">
+                    <div className="px-6 w-full ">
                       {/* 1 */}
                       <div className="flex justify-between ">
                         <div>
@@ -634,13 +736,13 @@ const Allsheds = () => {
                       </div>
                       <hr className="text-[#a5a4a4] my-3" />
                       {/* 3  */}
-                      <div className="flex justify-between p-4 min-w-[180px]">
+                      <div className="flex justify-between  min-w-[180px]">
                         {/* Seller Info */}
                         <div className="mt-4 text-xs text-gray-500 flex items-center gap-2">
                           <img
                             src="/location.png"
                             alt="Seller Logo"
-                            className="w-6 h-6 rounded-full"
+                            className="w-10 h-10 rounded-full"
                           />
                           <div>
                             <span className="font-poppins font-medium text-[14px] leading-[100%] tracking-[-0.03em] text-[#002D4A]">
@@ -684,6 +786,12 @@ const Allsheds = () => {
                     </div>
                   </div>
                 ))}
+                <div className="flex justify-center items-center py-12">
+                  <button className="flex items-center gap-2 border border-[#002D4A] rounded-full px-6 py-2 text-[#002D4A] font-semibold">
+                    LOAD MORE
+                    <span className="text-lg">↓</span>
+                  </button>
+                </div>
               </div>
             ) : (
               <div className="grid grid-cols-3 gap-6">
