@@ -21,7 +21,8 @@ const shedsData = [
   },
   {
     id: 2,
-    image: "https://via.placeholder.com/200x150",
+    image:
+      "https://rowlinsongarden.co.uk/images/10x12-trentvale-metal-apex-shed-dark-grey-p165-1262_image.jpg",
     category: "Cottage",
     color: "Red",
     size: "10x12",
@@ -32,7 +33,8 @@ const shedsData = [
   },
   {
     id: 3,
-    image: "https://via.placeholder.com/200x150",
+    image:
+      "https://d6bvpt6ekkwt0.cloudfront.net/5941031dca2f3a64708b4569/Product%20List/img_8991-1-.jpg?1642093417",
     category: "Garage",
     color: "Brown",
     size: "12x16",
@@ -43,7 +45,8 @@ const shedsData = [
   },
   {
     id: 4,
-    image: "https://via.placeholder.com/200x150",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWW4Mg8mTkiCFkorOkQ36RVNqgJxYFzLYyBw&s",
     category: "Backyard",
     color: "Gray",
     size: "8x10",
@@ -401,7 +404,9 @@ const Allsheds = () => {
           <div className="w-3/4">
             <div className="flex justify-between items-center max-w-7xl mx-auto mt-4 mb-6">
               {/* Left Heading */}
-              <h1 className="text-3xl font-bold">Sheds for Sale in Kentucky</h1>
+              <h1 className="text-3xl font-bold text-[#002D4A]">
+                Sheds for Sale in Kentucky
+              </h1>
 
               {/* Right View Section */}
               <div className="flex items-center gap-3">
@@ -430,14 +435,14 @@ const Allsheds = () => {
                 {filteredSheds.map((shed) => (
                   <div
                     key={shed.id}
-                    className="flex bg-white shadow-md rounded-xl overflow-hidden border border-gray-200"
+                    className="flex bg-white p-2  shadow-md rounded-xl overflow-hidden border border-gray-200"
                   >
                     {/* Left Image Section */}
                     <div className="relative">
                       <img
                         src={shed.image}
                         alt={shed.category}
-                        className="w-[280px] h-[240px] object-cover"
+                        className="w-[280px] h-full rounded-[6px]  object-cover"
                       />
                       {/* Status Tag */}
 
@@ -446,7 +451,7 @@ const Allsheds = () => {
                         status {shed.status}
                       </span>
                       {/* Top Left heart Icon */}
-                      <div className="absolute md:top-2 md:left-3 bottom-2 right-3 ">
+                      <div className="absolute top-2 left-3">
                         <button className="bg-white p-2 rounded-full shadow w-9 h-9">
                           <svg
                             width="19"
@@ -469,60 +474,208 @@ const Allsheds = () => {
                       </div>
                     </div>
 
-                    {/* Middle Content */}
-                    <div className="flex-1 p-4">
-                      <h2 className="font-semibold text-[20px] text-[#002D4A]">
-                        {shed.size} {shed.category} Shed
-                      </h2>
-                      <p className="text-sm text-gray-500 mb-2">
-                        With Grandview LP Siding Siding
-                      </p>
-
-                      <div className="grid grid-cols-2 gap-3 mt-4 text-sm">
-                        <div className="flex items-center gap-2">
-                          <span className="text-gray-600">🏠 Type:</span>
-                          <span className="font-medium">
-                            {shed.buildingType || "Studio"}
+                    <div className="p-3 w-full">
+                      {/* 1 */}
+                      <div className="flex justify-between ">
+                        <div>
+                          <h2 className="font-poppins font-semibold text-[28px] leading-[100%] tracking-[-0.03em] text-[#002D4A]">
+                            {shed.size} {shed.category} Shed
+                          </h2>
+                          <p className="font-poppins font-normal text-[20px] leading-[100%] tracking-[-0.03em] text-[#002D4A] my-3">
+                            With Grandview LP Siding Siding
+                          </p>
+                        </div>
+                        <div>
+                          <span className="font-poppins font-semibold text-[36px] leading-[100%] tracking-[-0.03em] text-[#FFA424] block">
+                            ${shed.price.toLocaleString()}.00
                           </span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="text-gray-600">📐 Size:</span>
-                          <span className="font-medium">{shed.size}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="text-gray-600">🎨 Color:</span>
-                          <span className="font-medium">{shed.color}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="text-gray-600">⭐ Condition:</span>
-                          <span className="font-medium">
-                            {shed.condition || "Pre-Loved"}
+
+                          <span className="font-poppins font-light text-[21px] leading-[100%] tracking-[-0.03em] text-[#FFA424] block text-right">
+                            + Taxes
                           </span>
                         </div>
                       </div>
+                      <hr className="text-[#a5a4a4] my-3" />
+                      {/* 2 */}
+                      <div className="flex text-center justify-between bg-white  ">
+                        {/* Property Info */}
+                        <div className="py-2 ">
+                          <div className="flex items-center justify-center gap-1 ">
+                            <svg
+                              className="h-7 w-7"
+                              viewBox="0 0 42 43"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M40.5331 18.4283L21.9029 1.35466C21.386 0.881779 20.6138 0.881779 20.0969 1.35466L1.46694 18.4283C0.898094 18.951 0.840972 19.856 1.33971 20.451C1.83824 21.0461 2.70394 21.105 3.27279 20.5846L4.71535 19.2609V40.5678C4.71535 41.3574 5.32855 42 6.08521 42H16.4668H25.533H35.9146C36.6713 42 37.2845 41.3574 37.2845 40.5678V19.2631L38.727 20.5846C38.9871 20.8221 39.3091 20.9397 39.6293 20.9397C40.0103 20.9397 40.3892 20.7746 40.6601 20.451C41.1591 19.856 41.1019 18.951 40.5331 18.4283ZM17.8366 39.1356V27.3338H24.1632V39.1356H17.8366ZM34.545 16.763V39.1356H26.9031V25.9016C26.9031 25.1097 26.2897 24.4694 25.5333 24.4694H16.467C15.7106 24.4694 15.0971 25.1097 15.0971 25.9016V39.1356H7.45506V16.763L7.45463 16.7516L21 4.33676L34.5454 16.7516L34.545 16.763Z"
+                                fill="#363C45"
+                                stroke="#363C45"
+                                stroke-width="0.2"
+                              />
+                            </svg>
 
-                      {/* Seller Info */}
-                      <div className="mt-4 text-xs text-gray-500 flex items-center gap-2">
-                        <img
-                          src="/logo.png"
-                          alt="Seller Logo"
-                          className="w-6 h-6 rounded-full"
-                        />
-                        <span>Urban Shed Concepts LLC, {shed.location}</span>
-                      </div>
-                    </div>
+                            <div className="text-left">
+                              <p className="font-poppins font-medium text-[10px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                                Building Type
+                              </p>
 
-                    {/* Right Price & Button */}
-                    <div className="flex flex-col justify-between items-end p-4 min-w-[180px]">
-                      <div>
-                        <span className="text-[#FFA424] font-bold text-xl block">
-                          ${shed.price.toLocaleString()}
-                        </span>
-                        <span className="text-xs text-gray-500">+ Taxes</span>
+                              <p className="font-poppins font-medium  text-[16px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                                Studio
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className=" lg:border-l   lg:border-[#E5E7EB] lg:pl-4 py-2 ">
+                          <div className="flex items-center justify-center   gap-2 ">
+                            <div className="relative">
+                              <svg
+                                viewBox="0 0 34 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="absolute  w-7 h-7 -top-[12px] -right-[3px]"
+                              >
+                                <path
+                                  d="M4.62542 8.87911C4.74057 8.99699 4.91096 9.03241 5.05835 8.96876C5.20804 8.9051 5.30478 8.75659 5.30478 8.59393V6.36843H28.6958V8.59393C28.6958 8.75659 28.7925 8.9051 28.9399 8.96876C29.0896 9.03241 29.26 8.99699 29.3729 8.87911L32.8826 5.28885C33.0392 5.12855 33.0392 4.87145 32.8826 4.71115L29.3729 1.12089C29.26 1.00301 29.0896 0.967594 28.9399 1.03125C28.7925 1.0949 28.6958 1.24341 28.6958 1.40607V3.63157H5.30478V1.40607C5.30478 1.24341 5.20804 1.0949 5.05835 1.03125C4.91096 0.967594 4.74057 1.00301 4.62542 1.12089L1.11572 4.71115C0.961426 4.87145 0.961426 5.12855 1.11572 5.28885L4.62542 8.87911Z"
+                                  fill="#363C45"
+                                  stroke="#FAFAFB"
+                                  stroke-width="0.4"
+                                />
+                              </svg>
+                              <svg
+                                viewBox="0 0 34 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="absolute  left-[28px] top-1 transform rotate-90  w-7 h-7"
+                              >
+                                <path
+                                  d="M4.62542 8.87911C4.74057 8.99699 4.91096 9.03241 5.05835 8.96876C5.20804 8.9051 5.30478 8.75659 5.30478 8.59393V6.36843H28.6958V8.59393C28.6958 8.75659 28.7925 8.9051 28.9399 8.96876C29.0896 9.03241 29.26 8.99699 29.3729 8.87911L32.8826 5.28885C33.0392 5.12855 33.0392 4.87145 32.8826 4.71115L29.3729 1.12089C29.26 1.00301 29.0896 0.967594 28.9399 1.03125C28.7925 1.0949 28.6958 1.24341 28.6958 1.40607V3.63157H5.30478V1.40607C5.30478 1.24341 5.20804 1.0949 5.05835 1.03125C4.91096 0.967594 4.74057 1.00301 4.62542 1.12089L1.11572 4.71115C0.961426 4.87145 0.961426 5.12855 1.11572 5.28885L4.62542 8.87911Z"
+                                  fill="#363C45"
+                                  stroke="#FAFAFB"
+                                  stroke-width="0.4"
+                                />
+                              </svg>
+
+                              <svg
+                                width="20"
+                                height="24"
+                                viewBox="0 0 32 31"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className=" h-7 w-7 mt-[4px] ml-[12px]"
+                              >
+                                <path
+                                  d="M29.0441 1H2.95592C1.87679 1 1 1.84758 1 2.89284V28.1072C1 29.1524 1.87679 30 2.95592 30H29.0441C30.1255 30 31 29.1524 31 28.1072V2.89284C31 1.84758 30.1255 1 29.0441 1ZM27.0881 26.2166H4.91411V4.78342H27.0881V26.2166Z"
+                                  fill="#363C45"
+                                  stroke="#FAFAFB"
+                                  stroke-width="0.4"
+                                />
+                              </svg>
+                            </div>
+                            <div className="text-left">
+                              <p className="font-poppins font-medium text-[10px]  leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                                Building Size
+                              </p>
+                              <p className="font-poppins font-medium  text-[16px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                                14 x 32
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="lg:border-l   lg:border-[#E5E7EB] lg:pl-4 py-2">
+                          <div className="flex items-center justify-center   gap-1">
+                            <img
+                              src="/Fill Color.png"
+                              alt="Color"
+                              className=" h-7 w-7"
+                            />
+                            <div className="text-left">
+                              <p className="font-poppins font-medium text-[10px]  leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                                Color
+                              </p>
+                              <p className="font-poppins font-medium  text-[16px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                                Dark Grey
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="lg:border-l  lg:border-[#E5E7EB] lg:pl-4 py-3">
+                          <div className="flex items-center justify-center    gap-1">
+                            <svg
+                              className=" h-7 w-7"
+                              viewBox="0 0 42 43"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M40.5331 18.4283L21.9029 1.35466C21.386 0.881779 20.6138 0.881779 20.0969 1.35466L1.46694 18.4283C0.898094 18.951 0.840972 19.856 1.33971 20.451C1.83824 21.0461 2.70394 21.105 3.27279 20.5846L4.71535 19.2609V40.5678C4.71535 41.3574 5.32855 42 6.08521 42H16.4668H25.533H35.9146C36.6713 42 37.2845 41.3574 37.2845 40.5678V19.2631L38.727 20.5846C38.9871 20.8221 39.3091 20.9397 39.6293 20.9397C40.0103 20.9397 40.3892 20.7746 40.6601 20.451C41.1591 19.856 41.1019 18.951 40.5331 18.4283ZM17.8366 39.1356V27.3338H24.1632V39.1356H17.8366ZM34.545 16.763V39.1356H26.9031V25.9016C26.9031 25.1097 26.2897 24.4694 25.5333 24.4694H16.467C15.7106 24.4694 15.0971 25.1097 15.0971 25.9016V39.1356H7.45506V16.763L7.45463 16.7516L21 4.33676L34.5454 16.7516L34.545 16.763Z"
+                                fill="#363C45"
+                                stroke="#363C45"
+                                stroke-width="0.2"
+                              />
+                            </svg>
+
+                            <div className="text-left">
+                              <p className="font-poppins font-medium text-[10px] leading-[100%] tracking-[-0.03em] text-[#878B96]">
+                                Condition
+                              </p>
+                              <p className="font-poppins font-medium text-[16px] leading-[100%] tracking-[-0.03em] text-[#363C45]">
+                                Pre-Loved
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <button className="bg-[#FFA424] text-white text-sm px-4 py-2 rounded-md mt-4 hover:bg-[#e8931d] transition">
-                        Contact Seller
-                      </button>
+                      <hr className="text-[#a5a4a4] my-3" />
+                      {/* 3  */}
+                      <div className="flex justify-between p-4 min-w-[180px]">
+                        {/* Seller Info */}
+                        <div className="mt-4 text-xs text-gray-500 flex items-center gap-2">
+                          <img
+                            src="/location.png"
+                            alt="Seller Logo"
+                            className="w-6 h-6 rounded-full"
+                          />
+                          <div>
+                            <span className="font-poppins font-medium text-[14px] leading-[100%] tracking-[-0.03em] text-[#002D4A]">
+                              Urban Shed Concepts LLC, {shed.location}
+                            </span>
+                            <p className="flex items-center gap-1 font-poppins font-normal text-[13px] leading-[100%] tracking-[-0.03em] text-[#878B96] not-italic mt-1">
+                              <span className="text-[#878B96]">
+                                <svg
+                                  width="10"
+                                  height="13"
+                                  viewBox="0 0 21 26"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M10.5 14.0625C12.4676 14.0625 14.0625 12.4676 14.0625 10.5C14.0625 8.53249 12.4676 6.9375 10.5 6.9375C8.53243 6.9375 6.9375 8.53249 6.9375 10.5C6.9375 12.4676 8.53243 14.0625 10.5 14.0625Z"
+                                    stroke="#878B96"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M10.5 24.75C15.25 20 20 15.7467 20 10.5C20 5.25329 15.7467 1 10.5 1C5.25329 1 1 5.25329 1 10.5C1 15.7467 5.75 20 10.5 24.75Z"
+                                    stroke="#878B96"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </span>
+                              6024551571, Phoenix, AZ
+                            </p>
+                          </div>
+                        </div>
+                        <div className="w-full max-w-[342px]">
+                          <button className="bg-[#FFA424] w-full font-poppins font-medium text-[19px] leading-[100%] tracking-[-0.03em] text-center align-middle text-white px-5 py-2 rounded-md mt-4 hover:bg-[#e8931d] transition">
+                            Contact Seller
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 ))}
