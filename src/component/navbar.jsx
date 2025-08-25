@@ -193,7 +193,7 @@ function Navbar() {
                 Lounge
               </a>
               <a
-                href="/"
+                href="/allsheds"
                 className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-center lg:text-[16px] tracking-[0] uppercase xl:w-[104px]"
               >
                 Seller Login
@@ -272,7 +272,7 @@ function Navbar() {
               Lounge
             </a>
             <a
-              href="/"
+              href="/allsheds"
               className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px] tracking-[0] uppercase block"
             >
               Seller Login
