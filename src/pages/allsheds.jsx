@@ -6,6 +6,10 @@ import { FaList, FaTh } from "react-icons/fa";
 import Footer from "../component/footer";
 import PropertyListings from "../component/links";
 
+import { useSheds } from "../hooks/useSheds";
+
+
+
 const shedsData = [
   {
     id: 1,
@@ -59,6 +63,8 @@ const shedsData = [
 
 const Allsheds = () => {
   const [sheds] = useState(shedsData);
+  const { allsheds, loading, error } = useSheds();
+
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const handleSubmit = () => {
@@ -72,6 +78,7 @@ const Allsheds = () => {
       setIsSubmitted(false);
     }, 1000);
   };
+
   // ✅ Filter States
   const [category, setCategory] = useState("");
   const [color, setColor] = useState("");
