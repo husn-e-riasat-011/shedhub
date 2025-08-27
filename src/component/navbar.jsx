@@ -190,7 +190,7 @@ function Navbar() {
                 href="/landingpage"
                 className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-center lg:text-[16px] tracking-[0] uppercase xl:w-[64px]"
               >
-                Mian Page
+                MianPage
               </a>
               <a
                 href="/allsheds"
@@ -269,7 +269,7 @@ function Navbar() {
               href="/landingpage"
               className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px] tracking-[0] uppercase block"
             >
-              Mian Page
+              MianPage
             </a>
             <a
               href="/allsheds"
