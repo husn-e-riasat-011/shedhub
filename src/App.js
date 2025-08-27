@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Allsheds from "./pages/allsheds";
+import Landingpage from "./pages/landingpage";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/allsheds" element={<Allsheds />} />
+        <Route path="/landingpage" element={<Landingpage />} />
       </Routes>
     </BrowserRouter>
   );

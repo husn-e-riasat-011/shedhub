@@ -120,8 +120,8 @@ function Navbar() {
                     x2="18.6"
                     y2="2.29006"
                     stroke="#FFA424"
-                    stroke-width="2.8"
-                    stroke-linecap="round"
+                    strokeWidth="2.8"
+                    strokeLinecap="round"
                   />
                   <line
                     x1="1.76004"
@@ -129,8 +129,8 @@ function Navbar() {
                     x2="10.3719"
                     y2="8.63097"
                     stroke="#FFA424"
-                    stroke-width="2.8"
-                    stroke-linecap="round"
+                    strokeWidth="2.8"
+                    strokeLinecap="round"
                   />
                   <line
                     x1="1.98826"
@@ -138,8 +138,8 @@ function Navbar() {
                     x2="18.0118"
                     y2="14.6431"
                     stroke="#FFA424"
-                    stroke-width="2.8"
-                    stroke-linecap="round"
+                    strokeWidth="2.8"
+                    strokeLinecap="round"
                   />
                 </svg>
               </button>
@@ -158,9 +158,9 @@ function Navbar() {
                   <path
                     d="M17 19.1693C17 17.7737 17 17.076 16.8278 16.5082C16.44 15.2298 15.4395 14.2293 14.1611 13.8415C13.5933 13.6693 12.8956 13.6693 11.5 13.6693H6.5C5.10444 13.6693 4.40665 13.6693 3.83886 13.8415C2.56045 14.2293 1.56004 15.2298 1.17224 16.5082C1 17.076 1 17.7737 1 19.1693M13.5 5.66931C13.5 8.15459 11.4853 10.1693 9 10.1693C6.51472 10.1693 4.5 8.15459 4.5 5.66931C4.5 3.18403 6.51472 1.16931 9 1.16931C11.4853 1.16931 13.5 3.18403 13.5 5.66931Z"
                     stroke="#FFA424"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
@@ -187,10 +187,10 @@ function Navbar() {
                 Lounge
               </a>
               <a
-                href="/"
+                href="/landingpage"
                 className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-center lg:text-[16px] tracking-[0] uppercase xl:w-[64px]"
               >
-                Lounge
+                Mian Page
               </a>
               <a
                 href="/allsheds"
@@ -214,9 +214,9 @@ function Navbar() {
                   <path
                     d="M15 17C15 15.7595 15 15.1393 14.8493 14.6346C14.51 13.4982 13.6346 12.6089 12.516 12.2642C12.0191 12.1111 11.4086 12.1111 10.1875 12.1111H5.8125C4.59138 12.1111 3.98082 12.1111 3.484 12.2642C2.36539 12.6089 1.49003 13.4982 1.15071 14.6346C1 15.1393 1 15.7595 1 17M11.9375 5C11.9375 7.20914 10.1746 9 8 9C5.82538 9 4.0625 7.20914 4.0625 5C4.0625 2.79086 5.82538 1 8 1C10.1746 1 11.9375 2.79086 11.9375 5Z"
                     stroke="#FFA424"
-                    stroke-width="1.75"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.75"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
                 LOGIN
@@ -233,9 +233,9 @@ function Navbar() {
                   <path
                     d="M6.5 1V12M1 6.5H12"
                     stroke="#FFA424"
-                    stroke-width="1.75"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.75"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
                 SELL
@@ -266,10 +266,10 @@ function Navbar() {
               Lounge
             </a>
             <a
-              href="/"
+              href="/landingpage"
               className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px] tracking-[0] uppercase block"
             >
-              Lounge
+              Mian Page
             </a>
             <a
               href="/allsheds"
