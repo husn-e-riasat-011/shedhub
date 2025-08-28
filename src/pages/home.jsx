@@ -794,8 +794,12 @@ Thank you!`}
           </div>
         </div>
       </div>
-      <SimilarSheds />
-
+      <div className="p-6 max-w-[2560px] mx-auto">
+        <h2 className="font-poppins font-normal  text-[25px] md:text-[48px] leading-[56px] tracking-[-0.03em] mt-6 mb-11 max-w-[1538px] px-6 mx-auto">
+          Similar Sheds
+        </h2>
+        <SimilarSheds />
+      </div>
       <Footer />
 
       {/* <Foot /> */}
