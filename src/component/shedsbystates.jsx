@@ -1,6 +1,3 @@
-import React from "react";
-import { ChevronDown } from "lucide-react";
-
 export default function ShedsbyStates() {
   const states = [
     {
@@ -82,8 +79,16 @@ export default function ShedsbyStates() {
         {/* Explore More States Button */}
         <div className="text-center pt-5">
           <button className="inline-flex items-center gap-2 px-6 py-3 text-gray-700 font-semibold hover:text-gray-900 transition-colors duration-300 group">
-            <span className="text-base">EXPLORE MORE STATES</span>
-            <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" />
+            <span className="text-normal">EXPLORE MORE STATES</span>
+            <svg
+              width="13"
+              height="9"
+              viewBox="0 0 13 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 1L6.5 7L12 1" stroke="#002C49" stroke-width="1.5" />
+            </svg>
           </button>
         </div>
       </div>
