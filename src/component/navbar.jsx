@@ -181,7 +181,7 @@ function Navbar() {
                 Feature Sellers
               </a>
               <a
-                href="/"
+                href="/sellercard"
                 className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-center lg:text-[16px] tracking-[0] uppercase xl:w-[64px]"
               >
                 Lounge
@@ -190,7 +190,7 @@ function Navbar() {
                 href="/landingpage"
                 className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-center lg:text-[16px] tracking-[0] uppercase xl:w-[64px]"
               >
-                MianPage
+                MainPage
               </a>
               <a
                 href="/allsheds"
@@ -260,7 +260,7 @@ function Navbar() {
               Feature Sellers
             </a>
             <a
-              href="/"
+              href="/sellercard"
               className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px] tracking-[0] uppercase block"
             >
               Lounge
@@ -269,7 +269,7 @@ function Navbar() {
               href="/landingpage"
               className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px] tracking-[0] uppercase block"
             >
-              MianPage
+              MainPage
             </a>
             <a
               href="/allsheds"

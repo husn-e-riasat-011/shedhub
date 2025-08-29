@@ -1,3 +1,5 @@
+// import React from "../assats/";
+
 export default function ShedsbyStates() {
   const states = [
     {
