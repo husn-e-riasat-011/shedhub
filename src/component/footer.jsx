@@ -10,7 +10,7 @@ import {
 import StickyNote from "./StickyNote";
 const Footer = () => {
   return (
-    <footer className="bg-white mt-32 relative z-[2px] ">
+    <footer className="bg-white md:mt-32 mt-0 relative z-[2px] ">
       {/* Top Banner */}
       <div className="bg-[#002D4A] text-[#FFFFFF] relative max-w-[2560px] h-[230px] mx-auto hidden lg:block ">
         <img
@@ -75,9 +75,9 @@ const Footer = () => {
           {/* bus */}
         </div>
       </div>
-      <div className="bg-[#F7F7F7] max-w-[2560px] mx-auto">
+      <div className="bg-[#F7F7F7] max-w-[2560px] mx-auto ">
         {/* Middle Links */}
-        <div className="py-5 max-w-[1538px] mx-auto">
+        <div className="py-10 md:py-5 max-w-[1538px] mx-auto">
           <div className="max-w-[1538px] mx-auto flex flex-col md:flex-row justify-between px-6 relative">
             {/* Links Section */}
             <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-7 text-[#002D4A] font-poppins font-normal text-[17px] leading-[33px] tracking-[-0.03em]">

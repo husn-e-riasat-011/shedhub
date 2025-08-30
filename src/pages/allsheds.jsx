@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../component/navbar";
 import FinanceAd from "../component/financeAd";
 import { FaList, FaTh } from "react-icons/fa";
-
+import { ChevronDown, Search } from "lucide-react";
 import Footer from "../component/footer";
 import PropertyListings from "../component/links";
 
@@ -96,7 +96,20 @@ const Allsheds = () => {
 
   // ✅ View toggle state
   const [view, setView] = useState("list");
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setView("grid"); // md se chhoti screen → grid
+      }
+    };
 
+    // run on mount
+    handleResize();
+    // run on resize
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   // ✅ Filtering logic
   const filteredSheds = sheds.filter((shed) => {
     const matchesSearch =
@@ -117,11 +130,14 @@ const Allsheds = () => {
   return (
     <div>
       <Navbar />
-      <FinanceAd />
       <div className="bg-[#F7F7F7] max-w-[2560px] mx-auto">
-        <div className="flex max-w-[1538px] mx-auto p-6 gap-6 pt-20 ">
+        {" "}
+        <FinanceAd />
+      </div>
+      <div className="bg-[#F7F7F7] max-w-[2560px] mx-auto">
+        <div className="flex max-w-[1538px] mx-auto md:p-6 p-3 gap-6 md:pt-20 ">
           {/* Left Sidebar Filter */}
-          <div className="w-1/4  p-4  mb-1 rounded-lg">
+          <div className="w-1/4 hidden lg:block p-4  mb-1 rounded-lg">
             {/* ✅ Search Box */}
             <div className="relative mb-6">
               <input
@@ -509,8 +525,8 @@ const Allsheds = () => {
           </div>
 
           {/* Shed Listings */}
-          <div className="w-3/4">
-            <div className="flex justify-between items-center max-w-7xl mx-auto mt-4 mb-6">
+          <div className="lg:w-3/4 w-full">
+            <div className=" justify-between items-center max-w-7xl mx-auto mt-4 mb-4 hidden md:flex">
               {/* Left Heading */}
               <h1 className="text-3xl font-bold text-[#002D4A]">
                 Sheds for Sale in Kentucky
@@ -535,15 +551,60 @@ const Allsheds = () => {
                 </div>
               </div>
             </div>
+            <div className=" justify-between items-center max-w-7xl mx-auto  mb-6 hidden md:flex">
+              {/* Left Heading */}
+              <h1 className="font-poppins font-normal text-[17px] leading-[100%] tracking-[0%] text-[#9C9CA3]">
+                <span className="font-poppins font-semibold text-black text-[17px] leading-[100%] tracking-[0%]">
+                  {filteredSheds.length}
+                </span>{" "}
+                Sheds Found
+              </h1>
 
+              {/* Right View Section */}
+              <div className="flex items-center gap-3">
+                <span className="text-gray-600 font-medium">Sort by:</span>
+                <div className="flex justify-center items-center gap-4 font-poppins font-semibold text-[14px] leading-[100%] tracking-[0%]">
+                  Newest Listing{" "}
+                  <svg
+                    width="6"
+                    height="5"
+                    viewBox="0 0 6 5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.86603 4.5C3.48112 5.16667 2.51887 5.16667 2.13397 4.5L0.401924 1.5C0.0170235 0.833332 0.498149 -5.6841e-07 1.26795 -5.01112e-07L4.73205 -1.9827e-07C5.50185 -1.30972e-07 5.98298 0.833333 5.59808 1.5L3.86603 4.5Z"
+                      fill="#9C9CA3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div className="flex md:hidden items-center justify-end gap-3 mb-6 mt-3">
+              {/* Sort By Text */}
+              <span className="font-poppins font-medium text-[12px] leading-[100%] tracking-[0] capitalize text-[#002C49] cursor-pointer">
+                Sort By:
+              </span>
+
+              {/* Dropdown Button */}
+              <button className="flex items-center gap-2 border border-[#002C49] rounded-full px-3 py-2 font-poppins font-medium text-[13px] leading-[100%] tracking-[0] uppercase text-[#002C49]">
+                BEST MATCH
+                <ChevronDown className="w-5 h-5 text-[#002C49]" />
+              </button>
+
+              {/* Round Orange Button */}
+              <button className="w-12 h-12 flex items-center justify-center rounded-full bg-[#FFA424] text-white">
+                <Search className="w-6 h-6" />
+              </button>
+            </div>
             {filteredSheds.length === 0 ? (
               <p className="text-gray-500">No sheds found.</p>
             ) : view === "list" ? (
-              <div className="space-y-6">
+              <div className="space-y-6 ">
                 {filteredSheds.map((shed) => (
                   <div
                     key={shed.id}
-                    className="flex bg-white p-2  shadow-md rounded-xl overflow-hidden border border-gray-200"
+                    className="flex bg-white p-4 shadow-md rounded-xl overflow-hidden border border-gray-200"
                   >
                     {/* Left Image Section */}
                     <div className="relative">
@@ -787,36 +848,109 @@ const Allsheds = () => {
                     </div>
                   </div>
                 ))}
-                <div className="flex justify-center items-center py-12">
-                  <button className="flex items-center gap-2 border border-[#002D4A] rounded-full px-6 py-2 text-[#002D4A] font-semibold">
-                    LOAD MORE
-                    <span className="text-lg">↓</span>
-                  </button>
-                </div>
               </div>
             ) : (
-              <div className="grid grid-cols-3 gap-6">
+              <div className="flex flex-wrap gap-6 justify-center  ">
                 {filteredSheds.map((shed) => (
                   <div
                     key={shed.id}
-                    className="bg-white shadow-md rounded-lg overflow-hidden"
+                    className="bg-white shadow-md rounded-lg overflow-hidden w-[326px]"
                   >
-                    <img
-                      src={shed.image}
-                      alt={shed.category}
-                      className="w-full h-40 object-cover"
-                    />
+                    <div className="relative">
+                      <img
+                        src={shed.image}
+                        alt={shed.category}
+                        className="w-[326px] h-[224px] rounded-[6px]  object-cover"
+                      />
+                      {/* Status Tag */}
+
+                      <span className="absolute bottom-2 left-2 flex items-center gap-2 bg-[#FFFFFF] text-[#002D4A] font-poppins font-semibold text-[12px] leading-[100%] tracking-[-0.03em] px-2 py-1 rounded-full">
+                        <span className="w-2 h-2 bg-[#02db40] rounded-full"></span>
+                        status {shed.status}
+                      </span>
+                      {/* Top Left heart Icon */}
+                      <div className="absolute bottom-2 right-6">
+                        <button className="bg-white p-2 rounded-full shadow w-9 h-9">
+                          <svg
+                            width="19"
+                            height="16"
+                            viewBox="0 0 19 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M9.6391 2.67663C8.03958 0.841744 5.37234 0.348162 3.36829 2.02837C1.36424 3.70858 1.08211 6.51783 2.65589 8.505C3.96439 10.1572 7.92435 13.6419 9.22222 14.7697C9.36742 14.8959 9.44006 14.9589 9.5247 14.9837C9.59862 15.0054 9.6795 15.0054 9.75342 14.9837C9.83806 14.9589 9.9107 14.8959 10.0559 14.7697C11.3537 13.6419 15.3137 10.1572 16.6222 8.505C18.196 6.51783 17.9483 3.69091 15.9098 2.02837C13.8713 0.36584 11.2385 0.841744 9.6391 2.67663Z"
+                              stroke="#FFA424"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
                     <div className="p-4">
-                      <h2 className="font-bold text-lg">
+                      <h2 className="font-poppins font-semibold text-[23px] leading-[100%] tracking-[-0.03em] text-[#002D4A]">
                         {shed.size} {shed.category} Shed
                       </h2>
-                      <p className="text-gray-600">Location: {shed.location}</p>
-                      <p className="text-gray-600">Color: {shed.color}</p>
-                      <p className="text-sm text-green-600">{shed.status}</p>
-                      <span className="text-orange-500 font-bold text-lg block mt-2">
-                        ${shed.price.toLocaleString()}
-                      </span>
-                      <button className="bg-[#FFA424]  text-white px-4 py-2 rounded-md mt-2 w-full">
+
+                      <p className="text-[#002D4A]">
+                        With Grandview LP Siding Siding
+                      </p>
+                      <div className="mt-4 text-xs text-gray-500 flex items-center gap-2">
+                        <img
+                          src="/location.png"
+                          alt="Seller Logo"
+                          className="w-10 h-10 rounded-full"
+                        />
+                        <div>
+                          <span className="font-poppins font-medium text-[14px] leading-[100%] tracking-[-0.03em] text-[#002D4A]">
+                            Urban Shed Concepts LLC, {shed.location}
+                          </span>
+                          <p className="flex items-center gap-1 font-poppins font-normal text-[13px] leading-[100%] tracking-[-0.03em] text-[#878B96] not-italic mt-1">
+                            <span className="text-[#878B96]">
+                              <svg
+                                width="10"
+                                height="13"
+                                viewBox="0 0 21 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.5 14.0625C12.4676 14.0625 14.0625 12.4676 14.0625 10.5C14.0625 8.53249 12.4676 6.9375 10.5 6.9375C8.53243 6.9375 6.9375 8.53249 6.9375 10.5C6.9375 12.4676 8.53243 14.0625 10.5 14.0625Z"
+                                  stroke="#878B96"
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                                <path
+                                  d="M10.5 24.75C15.25 20 20 15.7467 20 10.5C20 5.25329 15.7467 1 10.5 1C5.25329 1 1 5.25329 1 10.5C1 15.7467 5.75 20 10.5 24.75Z"
+                                  stroke="#878B96"
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                              </svg>
+                            </span>
+                            6024551571, Phoenix, AZ
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-baseline gap-[2px] text-[#FFA424] my-3">
+                        <span className="font-poppins font-semibold text-[24px] leading-[100%] tracking-[-0.03em]">
+                          ${shed.price.toLocaleString()}.00
+                        </span>
+
+                        <span className="font-poppins font-light text-[24px] leading-[100%] tracking-[-0.03em]">
+                          + Taxes
+                        </span>
+                      </div>
+
+                      <button className="bg-[#FFA424]  text-white px-4 py-2 rounded-md mt-2 w-full cursor-pointer">
                         Contact Seller
                       </button>
                     </div>
@@ -824,12 +958,18 @@ const Allsheds = () => {
                 ))}
               </div>
             )}
-
+            <div className="flex justify-center items-center py-12">
+              <button className="flex items-center gap-2 border border-[#002D4A] rounded-full px-6 py-2 text-[#002D4A] font-semibold">
+                LOAD MORE
+                <span className="text-lg">↓</span>
+              </button>
+            </div>
             {}
           </div>
         </div>
       </div>
-      <div className="max-w-[1538px] mx-auto p-6">
+
+      <div className="max-w-[1538px] mx-auto p-6 md:block hidden">
         <p className="font-poppins font-normal text-[40px] text-[#002D4A]  leading-[56px] tracking-[-0.03em]">
           Popular Search
         </p>
@@ -839,7 +979,9 @@ const Allsheds = () => {
         <PropertyListings />
       </div>
 
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

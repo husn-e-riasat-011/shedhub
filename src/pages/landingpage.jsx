@@ -4,7 +4,10 @@ import FinanceAd from "../component/financeAd";
 import { Play } from "lucide-react";
 import SimilarSheds from "../component/SimilarSheds";
 import ShedsbyStates from "../component/shedsbystates";
-
+import ShedSearchFilter from "../component/submitinfo";
+import Faq from "../component/faq";
+import Footer from "../component/footer";
+import FinanceAdMobile from "../component/financeaddmobile";
 export default function Landingpage() {
   return (
     <div>
@@ -19,20 +22,34 @@ export default function Landingpage() {
         <div className="absolute inset-0 bg-[#002D4A]/80 max-h-[430px]"></div>
 
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-white">
-            Welcome to <span className="text-[#FFA424]">ShedHub</span>
+          <h1
+            className="font-poppins font-normal leading-[100%] tracking-[-0.03em] 
+               text-[18px] sm:text-[24px] md:text-[28px] lg:text-[36px] xl:text-[48px] text-white"
+          >
+            Welcome to{" "}
+            <span
+              className="font-poppins font-semibold leading-[100%] tracking-[-0.03em] 
+                   text-[18px] sm:text-[24px] md:text-[28px] lg:text-[36px] xl:text-[48px] text-[#FFA424]"
+            >
+              ShedHub
+            </span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mt-2">
+
+          <p
+            className="font-poppins font-semibold leading-[100%] tracking-[-0.03em] 
+               text-[18px] sm:text-[24px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
+               text-[#FFFFFF] text-center mt-2"
+          >
             Find Shed For Sale Nearby
           </p>
 
           {/* Search Bar */}
           <div className="mt-6 flex justify-center">
-            <div className="flex items-center bg-transparent border border-[#FFFFFF] rounded-full w-[90%] max-w-xl px-4 py-2 shadow-sm">
+            <div className="flex items-center bg-transparent border border-[#FFFFFF] rounded-full w-[99%] max-w-xl px-4 md:py-4 py-2 shadow-sm">
               <input
                 type="text"
-                placeholder="Search by Location"
-                className="flex-1 bg-transparent text-[#FFFFFF] placeholder-[#FFFFFF] outline-none"
+                placeholder="SEARCH ZIP OR LOCATION"
+                className="flex-1 bg-transparent text-[#FFFFFF] placeholder-[#FFFFFF] placeholder:uppercase outline-none max-w-[660px] mx-auto"
               />
               <button className="text-[#FFFFFF]  pl-3 border-l border-[#FFFFFF]">
                 <svg
@@ -53,9 +70,19 @@ export default function Landingpage() {
             </div>
           </div>
 
-          <p className="text-sm text-[#FFFFFF] mt-4">
-            Search from more than <span className="font-bold">7,500</span>{" "}
-            dealers nationwide!
+          <p
+            className="font-poppins font-normal leading-[100%] tracking-[-0.03em] 
+               text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] 
+               text-[#FFFFFF] mt-4"
+          >
+            Search from more than{" "}
+            <span
+              className="font-poppins font-semibold leading-[100%] tracking-[-0.03em] 
+                   text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]"
+            >
+              7,500 dealers
+            </span>{" "}
+            nationwide!
           </p>
         </div>
       </section>
@@ -63,34 +90,84 @@ export default function Landingpage() {
       <div className="max-w-[1260px] mx-auto ">
         <FinanceAd />
       </div>
+      <FinanceAdMobile />
       {/* hero section */}
-      <section className="w-full bg-white  py-16 ">
+      <section className="w-full bg-white  sm:py-16 py-4 ">
         <div className="max-w-[1538px] mx-auto px-6  flex flex-col lg:flex-row items-center justify-between gap-2">
           {/* Left Content */}
           <div className="flex-1 text-center lg:text-left max-w-[700px] md:block hidden">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 leading-snug">
-              <span className="text-orange-500">ShedHub</span> is the{" "}
-              <span className="text-gray-900 font-bold">#1 place</span> <br />
+            <h2
+              className="font-poppins font-normal leading-[56px] tracking-[-0.03em] 
+             text-[18px] sm:text-[24px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
+             text-[#0B1A53]"
+            >
+              <span
+                className="font-poppins font-semibold leading-[56px] tracking-[-0.03em] 
+               text-[18px] sm:text-[24px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
+               text-[#FFA424]"
+              >
+                ShedHub
+              </span>{" "}
+              is the{" "}
+              <span
+                className="font-poppins font-semibold leading-[56px] tracking-[-0.03em] 
+               text-[18px] sm:text-[24px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
+               text-[#0B1A53]"
+              >
+                #1 place
+              </span>{" "}
+              <br />
               to find sheds for sale <br />
               in your local area.
             </h2>
-            <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed max-w-[600px]">
+            <p
+              className="font-poppins font-normal leading-[34px] tracking-[-0.03em] 
+             text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 
+             text-[#002D4A] max-w-[600px] mt-4"
+            >
               Browse thousands of sheds from sellers across the country. With
               our Advanced Shed Search tool, you can easily sort through our
               expansive inventory and find just the right shed in a matter of
               minutes. Make your shed buying experience a breeze with{" "}
-              <span className="text-orange-500 font-medium">ShedHub.</span>
+              <span
+                className="font-poppins font-normal leading-[34px] tracking-[-0.03em] 
+               text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 
+               text-[#FFA424]"
+              >
+                ShedHub.
+              </span>
             </p>
-            <button className="mt-6 px-6 py-3 rounded-full border border-gray-400 text-gray-800 hover:bg-orange-500 hover:text-white transition">
-              Search Sheds →
+
+            <button
+              className="font-poppins font-medium text-[20px] uppercase leading-[100%] tracking-[0em]
+             mt-6 px-6 py-3 rounded-full border-2 border-[#002D4A] text-[#002D4A]
+             flex items-center gap-2 hover:bg-[#FFA424] hover:text-white transition"
+            >
+              Search Sheds
+              <svg
+                className="w-4 h-5 "
+                viewBox="0 0 11 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 16L9 8.5L0.999999 1"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                />
+              </svg>
             </button>
           </div>
 
           {/* Right Video/Image */}
           <div>
-            <h1 className="md:hidden block">
-              <span>Why</span> ShedHub?
+            <h1 className="md:hidden block font-poppins font-semibold text-[22px] leading-[26px] tracking-[-0.03em] text-[#0B1A53] my-4">
+              <span className="font-poppins font-normal text-[22px] leading-[26px] tracking-[-0.03em]">
+                Why
+              </span>{" "}
+              ShedHub?
             </h1>
+
             <div className="relative lg:max-w-[770px] w-full aspect-video overflow-hidden shadow-lg rounded-[13px]">
               {/* Background Image */}
 
@@ -108,7 +185,7 @@ export default function Landingpage() {
                 </div>
               </button>
             </div>
-            <p className="md:hidden block">
+            <p className="md:hidden block font-poppins font-normal text-[11px] leading-[20px] tracking-[-0.03em] text-justify text-[#0B1A53] my-4">
               ShedHub is the #1 place to find sheds for sale in your local area.
               Browse thousands of sheds from sellers across the country. With
               our Advanced Shed Search tool, you can easily sort through our
@@ -120,27 +197,30 @@ export default function Landingpage() {
       </section>
 
       {/* hero section 2 */}
-      <div className="bg-[#F7F7F7] py-12 px-6 max-w-[2560px] mx-auto">
-        <div className="max-w-[1490px] mx-auto flex items-center justify-between">
+      <div className="bg-[#F7F7F7] md:py-12 py-5 px-6 max-w-[2560px] mx-auto">
+        <div className="max-w-[1490px] mx-auto flex flex-col xl:flex-row md:items-center items-start xl:items-start justify-between gap-10">
           {/* Left side - Main heading */}
-          <div className="flex-1 pr-12">
-            <h1 className="text-5xl font-bold leading-tight">
-              <span className="text-orange-400">ShedHub</span>{" "}
-              <span className="text-gray-800">Makes</span>
+          <div className="flex-1 text-left ">
+            <h1>
+              <span className="font-poppins font-semibold text-[28px] sm:text-[36px] md:text-[48px] leading-[120%] tracking-[-0.03em] text-[#FFA424]">
+                ShedHub
+              </span>{" "}
+              <span className="font-poppins font-normal text-[28px] sm:text-[36px] md:text-[48px] leading-[120%] tracking-[-0.03em] text-[#002D4A]">
+                Makes
+              </span>
             </h1>
-            <h2 className="text-5xl font-bold text-gray-800 leading-tight">
+            <h2 className="font-poppins font-semibold text-[22px] sm:text-[36px] md:text-[48px] leading-[120%] tracking-[-0.03em] text-[#002D4A]">
               Shed Shopping Easy!
             </h2>
           </div>
 
-          {/* Right side - Feature cards in a row */}
-          <div className="flex gap-10">
+          {/* Right side - Feature cards */}
+          <div className="flex flex-row sm:flex-wrap lg:flex-nowrap gap-2 lg:gap-10 px-1">
             {/* FIND Card */}
-            <div className="flex gap-7 bg-white py-3 px-7 max-w-[309px]">
+            <div className="flex flex-col justify-center items-center sm:flex-row gap-7 bg-white py-4 md:px-6 px-2  shadow-md hover:shadow-lg transition duration-300 flex-1">
               <div className="flex items-center justify-center">
                 <svg
-                  width="48"
-                  height="48"
+                  className="w-12 h-12"
                   viewBox="0 0 58 58"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -148,52 +228,48 @@ export default function Landingpage() {
                   <path
                     d="M56 56L45.5003 45.5M53 27.5C53 41.5832 41.5832 53 27.5 53C13.4167 53 2 41.5832 2 27.5C2 13.4167 13.4167 2 27.5 2C41.5832 2 53 13.4167 53 27.5Z"
                     stroke="#FFA424"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
-              <div>
-                {" "}
-                <h3 className="text-lg font-bold text-gray-800 ">FIND</h3>
-                <p className="text-gray-600 text-sm leading-relaxed whitespace-nowrap">
+              <div className="sm:text-left text-center">
+                <h3 className="text-lg font-bold text-gray-800">FIND</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
                   Find the Perfect <br /> Shed for Your Needs
                 </p>
               </div>
             </div>
 
             {/* BUY Card */}
-            <div className="flex gap-7 bg-white py-3 px-7 max-w-[309px]">
+            <div className="flex flex-col justify-center items-center  sm:flex-row gap-7 bg-white py-4 md:px-6 px-2  shadow-md hover:shadow-lg transition duration-300 flex-1">
               <div className="flex items-center justify-center">
                 <svg
-                  width="60"
-                  height="59"
+                  className="w-14 h-14"
                   viewBox="0 0 60 59"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M2 2H5.67774C6.37046 2 6.71682 2 6.99555 2.12441C7.24119 2.23405 7.44935 2.41035 7.5952 2.63236C7.76071 2.88423 7.8097 3.21913 7.90766 3.88887L9.24036 13M9.24036 13L12.2022 34.2613C12.578 36.9594 12.7659 38.3085 13.4264 39.3238C14.0083 40.2187 14.8426 40.9301 15.8289 41.3728C16.9481 41.875 18.3421 41.875 21.1301 41.875H45.2265C47.8803 41.875 49.2073 41.875 50.2919 41.4086C51.2479 40.9975 52.0681 40.3345 52.6608 39.4941C53.3326 38.5409 53.581 37.2679 54.0776 34.7217L57.8045 15.6116C57.9793 14.7155 58.0666 14.2674 57.9399 13.9171C57.829 13.6099 57.6096 13.3511 57.3213 13.1871C56.9927 13 56.5259 13 55.5916 13H9.24036ZM24.5255 54.25C24.5255 55.7688 23.2649 57 21.7098 57C20.1548 57 18.8942 55.7688 18.8942 54.25C18.8942 52.7312 20.1548 51.5 21.7098 51.5C23.2649 51.5 24.5255 52.7312 24.5255 54.25ZM47.0511 54.25C47.0511 55.7688 45.7905 57 44.2354 57C42.6803 57 41.4197 55.7688 41.4197 54.25C41.4197 52.7312 42.6803 51.5 44.2354 51.5C45.7905 51.5 47.0511 52.7312 47.0511 54.25Z"
+                    d="M2 2H5.67774C6.37046 2 6.71682 2 6.99555 2.12441C7.24119 2.23405 7.44935 2.41035 7.5952 2.63236C7.76071 2.88423 7.8097 3.21913 7.90766 3.88887L9.24036 13M9.24036 13L12.2022 34.2613C12.578 36.9594 12.7659 38.3085 13.4264 39.3238C14.0083 40.2187 14.8426 40.9301 15.8289 41.3728C16.9481 41.875 18.3421 41.875 21.1301 41.875H45.2265C47.8803 41.875 49.2073 41.875 50.2919 41.4086C51.2479 40.9975 52.0681 40.3345 52.6608 39.4941C53.3326 38.5409 53.581 37.2679 54.0776 34.7217L57.8045 15.6116C57.9793 14.7155 58.0666 14.2674 57.9399 13.9171C57.829 13.6099 57.6096 13.3511 57.3213 13.1871C56.9927 13 56.5259 13 55.5916 13H9.24036ZM24.5255 54.25C24.5255 55.7688 23.2649 57 21.7098 57C20.1548 57 18.8942 55.7688 18.8942 54.25C18.8942 52.7312 20.1548 51.5 21.7098 51.5C23.2649 51.5 24.5255 52.7312 24.5255 54.25ZM47.0511 54.25C47.0511 55.7688 45.7905 57 44.235 57C42.6799 57 41.4193 55.7688 41.4193 54.25C41.4193 52.7312 42.6799 51.5 44.235 51.5C45.7905 51.5 47.0511 52.7312 47.0511 54.25Z"
                     stroke="#FFA424"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
-              <div>
-                <h3 className="text-lg font-bold  mb-2">BUY</h3>
-                <p className="text-gray-600 text-sm leading-relaxed whitespace-nowrap">
-                  Buy Safely & Directly,
-                  <br />
-                  No Additional Fees
+              <div className="sm:text-left text-center">
+                <h3 className="text-lg font-bold text-gray-800">BUY</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Get Your Shed <br /> Delivered Fast
                 </p>
               </div>
             </div>
 
-            {/* MANAGE Card */}
-            <div className="flex gap-7 bg-white py-3 px-7 max-w-[309px]">
+            {/* SELL Card */}
+            <div className="flex flex-col justify-center items-center  sm:flex-row gap-7 bg-white py-4 md:px-6 px-2  shadow-md hover:shadow-lg transition duration-300 flex-1">
               <div className="flex items-center justify-center">
                 <svg
                   width="67"
@@ -202,34 +278,35 @@ export default function Landingpage() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  {" "}
                   <path
                     d="M8.3 45.5556L8.3 44.9333C8.3 39.706 8.3 37.0927 9.33005 35.096C10.236 33.3398 11.6815 31.9121 13.4597 31.0173C15.4814 30 18.1274 30 23.42 30L43.58 30C48.8725 30 51.5188 30 53.5402 31.0173C55.3183 31.9121 56.764 33.3398 57.67 35.096C58.7 37.0927 58.7 39.706 58.7 44.9333L58.7 45.5556M8.3 45.5556C4.82051 45.5556 2 48.3412 2 51.7778C2 55.2143 4.82051 58 8.3 58C11.7795 58 14.6 55.2143 14.6 51.7778C14.6 48.3412 11.7795 45.5556 8.3 45.5556ZM58.7 45.5556C55.2206 45.5556 52.4 48.3412 52.4 51.7778C52.4 55.2143 55.2206 58 58.7 58C62.1794 58 65 55.2143 65 51.7778C65 48.3412 62.1794 45.5556 58.7 45.5556ZM33.5 14.4444L33.5 45.5556M33.5 14.4444C30.0205 14.4444 27.2 11.6587 27.2 8.22222C27.2 4.78578 30.0205 2 33.5 2C36.9795 2 39.8 4.78578 39.8 8.22222C39.8 11.6587 36.9795 14.4444 33.5 14.4444ZM33.5 45.5556C30.0205 45.5556 27.2 48.3412 27.2 51.7778C27.2 55.2143 30.0205 58 33.5 58C36.9795 58 39.8 55.2143 39.8 51.7778C39.8 48.3412 36.9795 45.5556 33.5 45.5556Z"
                     stroke="#FFA424"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />{" "}
                 </svg>
               </div>
-              <div>
-                {" "}
-                <h3 className="text-lg font-bold text-gray-800 mb-2">MANAGE</h3>
-                <p className="text-gray-600 text-sm leading-relaxed whitespace-nowrap">
-                  Manage Everything
-                  <br />
-                  from Here
+              <div className="sm:text-left text-center">
+                <h3 className="text-lg font-bold text-gray-800">SELL</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  List Your Shed <br /> and Reach Buyers
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/* sheds  */}
-      <div className="p-6 max-w-[2560px] mx-auto">
-        <h3 className="font-poppins font-normal  text-[25px] md:text-[48px] leading-[56px] tracking-[-0.03em] mt-6  max-w-[1538px] px-6 mx-auto text-center">
+      <div className="md:py-12 py-2 max-w-[2560px] mx-auto">
+        <h3 className="font-poppins font-normal text-[28px] sm:text-[36px] md:text-[48px] leading-[56px] tracking-[-0.03em] md:text-center text-left md:mt-12 mt-6 max-w-[1538px] px-6 mx-auto  text-[#002D4A] ">
           Featured Sheds for
         </h3>
-        <h1 className="text-center mb-11"> Sale or Lease</h1>
+        <h1 className="font-poppins font-semibold text-[28px] sm:text-[36px] md:text-[48px] leading-[56px] tracking-[-0.03em] md:text-center text-left md:mb-20 mb-6 text-[#002D4A]  px-6 ">
+          Sale or Lease
+        </h1>
         <SimilarSheds />
         <div className="mt-8">
           <SimilarSheds />
@@ -237,26 +314,34 @@ export default function Landingpage() {
         <div className="flex justify-center items-center py-12">
           <button className="flex items-center gap-2 border border-[#002D4A] rounded-full px-6 py-2 text-[#002D4A] font-semibold">
             LOAD MORE
-            <span className="text-lg">↓</span>
+            <svg
+              width="13"
+              height="9"
+              viewBox="0 0 13 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 1L6.5 7L12 1" stroke="#002C49" stroke-width="1.5" />
+            </svg>
           </button>
         </div>
       </div>
 
       {/* building style  */}
-      <div className="bg-[#F7F7F7] py-12 px-6 max-w-[2560px] mx-auto">
-        <div className="max-w-[1490px] mx-auto flex items-center justify-between">
+      <div className="bg-[#F7F7F7] md:py-12 py-6 px-6 max-w-[2560px] mx-auto">
+        <div className="max-w-[1490px] mx-auto flex flex-wrap items-center justify-between">
           {/* Left side - Main heading */}
           <div className="flex-1 pr-12">
-            <h1 className="text-4xl font-semibold leading-tight">
+            <h1 className="text-[28px] sm:text-[36px] md:text-[48px] font-semibold leading-tight  text-[#002D4A]">
               Browse Sheds by
             </h1>
-            <h2 className="text-5xl font-bold text-gray-800 leading-tight">
+            <h2 className="text-[28px] sm:text-[36px] md:text-[48px] font-bold text-[#002D4A] leading-tight">
               Building Style
             </h2>
           </div>
 
           {/* Right side - Feature cards in a row */}
-          <div className="flex gap-10">
+          <div className="flex flex-wrap justify-center items-center gap-2 lg:gap-10 md:mt-0 mt-10">
             {/* 1 */}
             <div className=" gap-7 bg-white py-3 px-7 max-w-[309px]">
               <div className="flex items-center justify-center">
@@ -713,6 +798,22 @@ export default function Landingpage() {
       </div>
       {/* sheds by state */}
       <ShedsbyStates />
+
+      <ShedSearchFilter />
+      <Faq />
+
+      <div className="py-12 max-w-[2560px] mx-auto bg-[#F7F7F7]">
+        <h3 className="font-poppins font-normal text-[48px] leading-[56px] tracking-[-0.03em] text-center mt-12 max-w-[1538px] px-6 mx-auto  text-[#002D4A] ">
+          New Listings on
+        </h3>
+        <h1 className="font-poppins font-semibold text-[48px] leading-[56px] tracking-[-0.03em] text-center mb-20 text-[#002D4A]  ">
+          Shedhub
+        </h1>
+
+        <SimilarSheds />
+      </div>
+
+      <Footer />
     </div>
   );
 }

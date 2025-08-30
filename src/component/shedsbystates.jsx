@@ -1,5 +1,4 @@
-import React from "react";
-import { ChevronDown } from "lucide-react";
+// import React from "../assats/";
 
 export default function ShedsbyStates() {
   const states = [
@@ -42,15 +41,15 @@ export default function ShedsbyStates() {
   ];
 
   return (
-    <div className="bg-white py-28">
+    <div className="bg-white md:py-28 py-10">
       <div className="max-w-[1538px] mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="font-poppins font-normal text-[48px] leading-[56px] tracking-[-0.03em] text-center text-[#002D4A]">
+        <div className="md:text-center text-left mb-12">
+          <h2 className="font-poppins font-normal text-[28px] sm:text-[36px] md:text-[48px] leading-[56px] tracking-[-0.03em] text-center text-[#002D4A]">
             Browse Sheds by
           </h2>
 
-          <h3 className="font-poppins font-semibold text-[48px] leading-[56px] tracking-[-0.03em] text-center text-[#002D4A]">
+          <h3 className="font-poppins font-semibold text-[28px] sm:text-[36px] md:text-[48px] leading-[56px] tracking-[-0.03em] text-center text-[#002D4A]">
             Your State
           </h3>
         </div>
@@ -82,8 +81,16 @@ export default function ShedsbyStates() {
         {/* Explore More States Button */}
         <div className="text-center pt-5">
           <button className="inline-flex items-center gap-2 px-6 py-3 text-gray-700 font-semibold hover:text-gray-900 transition-colors duration-300 group">
-            <span className="text-base">EXPLORE MORE STATES</span>
-            <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" />
+            <span className="text-normal">EXPLORE MORE STATES</span>
+            <svg
+              width="13"
+              height="9"
+              viewBox="0 0 13 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 1L6.5 7L12 1" stroke="#002C49" stroke-width="1.5" />
+            </svg>
           </button>
         </div>
       </div>
