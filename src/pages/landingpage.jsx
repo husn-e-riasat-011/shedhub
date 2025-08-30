@@ -92,7 +92,7 @@ export default function Landingpage() {
       </div>
       <FinanceAdMobile />
       {/* hero section */}
-      <section className="w-full bg-white  sm:py-16 py-6 ">
+      <section className="w-full bg-white  sm:py-16 py-4 ">
         <div className="max-w-[1538px] mx-auto px-6  flex flex-col lg:flex-row items-center justify-between gap-2">
           {/* Left Content */}
           <div className="flex-1 text-center lg:text-left max-w-[700px] md:block hidden">
@@ -197,11 +197,11 @@ export default function Landingpage() {
       </section>
 
       {/* hero section 2 */}
-      <div className="bg-[#F7F7F7] py-12 px-6 max-w-[2560px] mx-auto">
-        <div className="max-w-[1490px] mx-auto flex flex-col xl:flex-row items-center xl:items-start justify-between gap-10">
+      <div className="bg-[#F7F7F7] md:py-12 py-5 px-6 max-w-[2560px] mx-auto">
+        <div className="max-w-[1490px] mx-auto flex flex-col xl:flex-row md:items-center items-start xl:items-start justify-between gap-10">
           {/* Left side - Main heading */}
-          <div className="flex-1 lg:pr-12 text-center xl:text-left ">
-            <h1 className="text-5xl font-bold leading-tight">
+          <div className="flex-1 text-left ">
+            <h1>
               <span className="font-poppins font-semibold text-[28px] sm:text-[36px] md:text-[48px] leading-[120%] tracking-[-0.03em] text-[#FFA424]">
                 ShedHub
               </span>{" "}
@@ -209,15 +209,15 @@ export default function Landingpage() {
                 Makes
               </span>
             </h1>
-            <h2 className="font-poppins font-semibold text-[28px] sm:text-[36px] md:text-[48px] leading-[120%] tracking-[-0.03em] text-[#002D4A]">
+            <h2 className="font-poppins font-semibold text-[22px] sm:text-[36px] md:text-[48px] leading-[120%] tracking-[-0.03em] text-[#002D4A]">
               Shed Shopping Easy!
             </h2>
           </div>
 
           {/* Right side - Feature cards */}
-          <div className="flex flex-row sm:flex-wrap lg:flex-nowrap gap-6 lg:gap-10">
+          <div className="flex flex-row sm:flex-wrap lg:flex-nowrap gap-2 lg:gap-10 px-1">
             {/* FIND Card */}
-            <div className="flex flex-col sm:flex-row gap-7 bg-white py-4 px-6  shadow-md hover:shadow-lg transition duration-300 flex-1">
+            <div className="flex flex-col justify-center items-center sm:flex-row gap-7 bg-white py-4 md:px-6 px-2  shadow-md hover:shadow-lg transition duration-300 flex-1">
               <div className="flex items-center justify-center">
                 <svg
                   className="w-12 h-12"
@@ -243,7 +243,7 @@ export default function Landingpage() {
             </div>
 
             {/* BUY Card */}
-            <div className="flex flex-col sm:flex-row gap-7 bg-white py-4 px-6  shadow-md hover:shadow-lg transition duration-300 flex-1">
+            <div className="flex flex-col justify-center items-center  sm:flex-row gap-7 bg-white py-4 md:px-6 px-2  shadow-md hover:shadow-lg transition duration-300 flex-1">
               <div className="flex items-center justify-center">
                 <svg
                   className="w-14 h-14"
@@ -269,7 +269,7 @@ export default function Landingpage() {
             </div>
 
             {/* SELL Card */}
-            <div className="flex flex-col sm:flex-row gap-7 bg-white py-4 px-6  shadow-md hover:shadow-lg transition duration-300 flex-1">
+            <div className="flex flex-col justify-center items-center  sm:flex-row gap-7 bg-white py-4 md:px-6 px-2  shadow-md hover:shadow-lg transition duration-300 flex-1">
               <div className="flex items-center justify-center">
                 <svg
                   width="67"
@@ -300,11 +300,11 @@ export default function Landingpage() {
       </div>
 
       {/* sheds  */}
-      <div className="py-12 max-w-[2560px] mx-auto">
-        <h3 className="font-poppins font-normal text-[48px] leading-[56px] tracking-[-0.03em] text-center mt-12 max-w-[1538px] px-6 mx-auto  text-[#002D4A] ">
+      <div className="md:py-12 py-2 max-w-[2560px] mx-auto">
+        <h3 className="font-poppins font-normal text-[28px] sm:text-[36px] md:text-[48px] leading-[56px] tracking-[-0.03em] md:text-center text-left md:mt-12 mt-6 max-w-[1538px] px-6 mx-auto  text-[#002D4A] ">
           Featured Sheds for
         </h3>
-        <h1 className="font-poppins font-semibold text-[48px] leading-[56px] tracking-[-0.03em] text-center mb-20 text-[#002D4A]  ">
+        <h1 className="font-poppins font-semibold text-[28px] sm:text-[36px] md:text-[48px] leading-[56px] tracking-[-0.03em] md:text-center text-left md:mb-20 mb-6 text-[#002D4A]  px-6 ">
           Sale or Lease
         </h1>
         <SimilarSheds />
@@ -328,14 +328,14 @@ export default function Landingpage() {
       </div>
 
       {/* building style  */}
-      <div className="bg-[#F7F7F7] py-12 px-6 max-w-[2560px] mx-auto">
+      <div className="bg-[#F7F7F7] md:py-12 py-6 px-6 max-w-[2560px] mx-auto">
         <div className="max-w-[1490px] mx-auto flex flex-wrap items-center justify-between">
           {/* Left side - Main heading */}
           <div className="flex-1 pr-12">
-            <h1 className="text-4xl font-semibold leading-tight">
+            <h1 className="text-[28px] sm:text-[36px] md:text-[48px] font-semibold leading-tight  text-[#002D4A]">
               Browse Sheds by
             </h1>
-            <h2 className="text-5xl font-bold text-gray-800 leading-tight">
+            <h2 className="text-[28px] sm:text-[36px] md:text-[48px] font-bold text-[#002D4A] leading-tight">
               Building Style
             </h2>
           </div>

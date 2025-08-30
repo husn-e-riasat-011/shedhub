@@ -94,7 +94,7 @@ export default function SellerCard() {
           </div>
         </div>
       </div>
-      <div className="pt-16 bg-gray-100">
+      <div className="md:pt-16 pt-3 bg-gray-100">
         {" "}
         <SimilarSheds />
       </div>

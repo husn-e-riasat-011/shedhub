@@ -41,15 +41,15 @@ export default function ShedsbyStates() {
   ];
 
   return (
-    <div className="bg-white py-28">
+    <div className="bg-white md:py-28 py-10">
       <div className="max-w-[1538px] mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="font-poppins font-normal text-[48px] leading-[56px] tracking-[-0.03em] text-center text-[#002D4A]">
+        <div className="md:text-center text-left mb-12">
+          <h2 className="font-poppins font-normal text-[28px] sm:text-[36px] md:text-[48px] leading-[56px] tracking-[-0.03em] text-center text-[#002D4A]">
             Browse Sheds by
           </h2>
 
-          <h3 className="font-poppins font-semibold text-[48px] leading-[56px] tracking-[-0.03em] text-center text-[#002D4A]">
+          <h3 className="font-poppins font-semibold text-[28px] sm:text-[36px] md:text-[48px] leading-[56px] tracking-[-0.03em] text-center text-[#002D4A]">
             Your State
           </h3>
         </div>

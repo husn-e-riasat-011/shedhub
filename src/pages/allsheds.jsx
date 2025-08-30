@@ -604,7 +604,7 @@ const Allsheds = () => {
                 {filteredSheds.map((shed) => (
                   <div
                     key={shed.id}
-                    className="flex bg-white p-2  shadow-md rounded-xl overflow-hidden border border-gray-200"
+                    className="flex bg-white p-4 shadow-md rounded-xl overflow-hidden border border-gray-200"
                   >
                     {/* Left Image Section */}
                     <div className="relative">
