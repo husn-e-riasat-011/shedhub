@@ -175,7 +175,7 @@ function Navbar() {
                 Shed News
               </a>
               <a
-                href="/"
+                href="/alldealers"
                 className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-center lg:text-[16px] tracking-[0] uppercase xl:w-[133px]"
               >
                 Feature Sellers
@@ -254,7 +254,7 @@ function Navbar() {
               Shed News
             </a>
             <a
-              href="/"
+              href="/alldealers"
               className="text-[#002D4A] hover:text-[#FFA424] font-poppins font-semibold text-[16px] tracking-[0] uppercase block"
             >
               Feature Sellers
