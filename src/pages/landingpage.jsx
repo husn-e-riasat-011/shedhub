@@ -802,7 +802,7 @@ export default function Landingpage() {
       <ShedSearchFilter />
       <Faq />
 
-      <div className="py-12 max-w-[2560px] mx-auto bg-[#F7F7F7]">
+      <div className="py-12 max-w-[2560px] mx-auto bg-[#F7F7F7] md:block hidden">
         <h3 className="font-poppins font-normal text-[48px] leading-[56px] tracking-[-0.03em] text-center mt-12 max-w-[1538px] px-6 mx-auto  text-[#002D4A] ">
           New Listings on
         </h3>

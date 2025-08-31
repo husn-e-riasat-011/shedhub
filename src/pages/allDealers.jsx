@@ -951,7 +951,7 @@ export default function AllDealers() {
                 {/* Yoder Logo */}
                 <div className="mb-4 absolute -top-16 left-1/2 transform -translate-x-1/2">
                   <img
-                    src="/alldealersimg.png" // yahan apna image path do (public folder me hona chahiye)
+                    src="/alldealersimg.PNG" // yahan apna image path do (public folder me hona chahiye)
                     alt="icon"
                     width={116}
                     height={123}
