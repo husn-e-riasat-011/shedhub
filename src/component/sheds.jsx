@@ -1118,7 +1118,7 @@ export default function Sheds() {
             <button
               onClick={() => setVisibleCount((prev) => prev + 12)}
               className="group flex items-center border border-[#002D4A] rounded-[35px] gap-2
-    transition-all duration-300 hover:bg-[#002D4A] active:scale-95 px-[23px] py-[17px]"
+    transition-all duration-300 hover:bg-[#002D4A] active:scale-95 px-[23px] py-[17px] mb-12"
             >
               {/* Text */}
               <span

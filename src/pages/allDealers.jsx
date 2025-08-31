@@ -837,7 +837,7 @@ export default function AllDealers() {
   return (
     <>
       <Navbar />
-      <div className=" max-w-[2560px] bg-[#F7F7F7]">
+      <div className=" max-w-[2560px] mx-auto bg-[#F7F7F7]">
         {/* Header */}
         <div className="max-w-[1538px] mx-auto my-auto pt-10 px-6">
           <div className="flex flex-wrap justify-between items-center ">
@@ -1054,7 +1054,7 @@ export default function AllDealers() {
                   </div>
 
                   {/* Buttons */}
-                  <div className="mt-6 flex flex-col gap-2">
+                  <div className="mt-6 flex items-center flex-col gap-2">
                     <button className="bg-[#FFA424] text-white font-medium md:text-[19px] text-[16px] leading-[100%] tracking-[-0.03em] text-center align-middle py-3 rounded-lg w-full max-w-[308px] font-poppins">
                       Contact Seller
                     </button>
@@ -1069,11 +1069,11 @@ export default function AllDealers() {
         </div>
         {/* Load More Button */}
         {visibleCount < sellers.length && (
-          <div className="flex justify-center items-center my-10">
+          <div className="flex justify-center items-center mt-14">
             <button
               onClick={() => setVisibleCount((prev) => prev + 12)}
               className="group flex items-center border border-[#002D4A] rounded-[35px] gap-2
-    transition-all duration-300 hover:bg-[#002D4A] active:scale-95 px-[23px] py-[17px]"
+    transition-all duration-300 hover:bg-[#002D4A] active:scale-95 px-[23px] py-[17px] mb-3"
             >
               {/* Text */}
               <span
@@ -1104,8 +1104,9 @@ export default function AllDealers() {
           </div>
         )}
       </div>
-
-      <Footer />
+      <div className="bg-[#F7F7F7] md:pt-32 pt-0">
+        <Footer />
+      </div>
     </>
   );
 }

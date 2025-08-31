@@ -3,11 +3,12 @@ import { Mail, Globe, MapPin } from "lucide-react";
 import Navbar from "../component/navbar";
 import Footer from "../component/footer";
 import Sheds from "../component/sheds";
+import Silmilerdellers from "../component/silmilerdellers";
 export default function SellerCard() {
   return (
     <>
       <Navbar />
-      <div className=" bg-[#F7F7F7] flex justify-center py-10">
+      <div className=" bg-[#F7F7F7] flex justify-center py-10 max-w-[2560px] mx-auto">
         <div className="relative md:w-[1490px]">
           {/* Top Image */}
           <div className="w-full md:h-[440px] rounded-xl overflow-hidden relative px-2">
@@ -171,9 +172,10 @@ export default function SellerCard() {
           </div>
         </div>
       </div>
-      <div className="mt-14 bg-[#F7F7F7]">
+      <div className="pt-14 bg-[#F7F7F7] max-w-[2560px] mx-auto">
         <Sheds />
       </div>
+      <Silmilerdellers />
       <Footer />
     </>
   );

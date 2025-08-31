@@ -10,7 +10,7 @@ import {
 import StickyNote from "./StickyNote";
 const Footer = () => {
   return (
-    <footer className="bg-white md:mt-32 mt-0 relative z-[2px] ">
+    <footer className="  relative z-[2px] ">
       {/* Top Banner */}
       <div className="bg-[#002D4A] text-[#FFFFFF] relative max-w-[2560px] h-[230px] mx-auto hidden lg:block ">
         <img
