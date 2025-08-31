@@ -2,12 +2,13 @@ import React from "react";
 import Navbar from "../component/navbar";
 import FinanceAd from "../component/financeAd";
 import { Play } from "lucide-react";
-import SimilarSheds from "../component/SimilarSheds";
 import ShedsbyStates from "../component/shedsbystates";
 import ShedSearchFilter from "../component/submitinfo";
 import Faq from "../component/faq";
 import Footer from "../component/footer";
 import FinanceAdMobile from "../component/financeaddmobile";
+import Sheds from "../component/sheds";
+import SimilarSheds from "../component/SimilarSheds";
 export default function Landingpage() {
   return (
     <div>
@@ -307,23 +308,8 @@ export default function Landingpage() {
         <h1 className="font-poppins font-semibold text-[28px] sm:text-[36px] md:text-[48px] leading-[56px] tracking-[-0.03em] md:text-center text-left md:mb-20 mb-6 text-[#002D4A]  px-6 ">
           Sale or Lease
         </h1>
-        <SimilarSheds />
-        <div className="mt-8">
-          <SimilarSheds />
-        </div>
-        <div className="flex justify-center items-center py-12">
-          <button className="flex items-center gap-2 border border-[#002D4A] rounded-full px-6 py-2 text-[#002D4A] font-semibold">
-            LOAD MORE
-            <svg
-              width="13"
-              height="9"
-              viewBox="0 0 13 9"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M1 1L6.5 7L12 1" stroke="#002C49" stroke-width="1.5" />
-            </svg>
-          </button>
+        <div className=" bg-[white]">
+          <Sheds />
         </div>
       </div>
 
