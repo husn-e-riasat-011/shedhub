@@ -1022,12 +1022,37 @@ export default function AllDealers() {
         </div>
         {/* Load More Button */}
         {visibleCount < sellers.length && (
-          <div className="flex justify-center mt-6">
+          <div className="flex justify-center items-center my-10">
             <button
               onClick={() => setVisibleCount((prev) => prev + 12)}
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+              className="group flex items-center border border-[#002D4A] rounded-[35px] gap-2
+    transition-all duration-300 hover:bg-[#002D4A] active:scale-95 px-[23px] py-[17px]"
             >
-              Load More
+              {/* Text */}
+              <span
+                className="text-[#002D4A] font-medium text-[20px] tracking-normal leading-[100%] 
+      transition-colors duration-300 group-hover:text-white"
+              >
+                LOAD MORE
+              </span>
+
+              {/* Icon */}
+              <span className="pt-[3.5px] flex items-center justify-center">
+                <svg
+                  className="transition-colors duration-300 text-[#002D4A] group-hover:text-white"
+                  width="11"
+                  height="8"
+                  viewBox="0 0 13 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L6.5 7L12 1"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  />
+                </svg>
+              </span>
             </button>
           </div>
         )}

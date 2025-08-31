@@ -1,15 +1,13 @@
 import React from "react";
 import { Mail, Globe, MapPin } from "lucide-react";
 import Navbar from "../component/navbar";
-import SimilarSheds from "../component/SimilarSheds";
 import Footer from "../component/footer";
-
+import Sheds from "../component/sheds";
 export default function SellerCard() {
   return (
     <>
-      {" "}
       <Navbar />
-      <div className="bg-gray-100 flex justify-center py-10">
+      <div className=" bg-[#F7F7F7] flex justify-center py-10">
         <div className="relative md:w-[1490px]">
           {/* Top Image */}
           <div className="w-full md:h-[440px] rounded-xl overflow-hidden">
@@ -21,7 +19,7 @@ export default function SellerCard() {
           </div>
 
           {/* Floating Info Section */}
-          <div className="absolute -bottom-14 left-1/2 -translate-x-1/2 w-[95%] bg-white rounded-xl p-6  flex-col md:flex-row items-center justify-between gap-6 z-10 md:flex hidden">
+          <div className="absolute -bottom-14 left-1/2 -translate-x-1/2 w-[95%] bg-[white] rounded-xl p-6  flex-col md:flex-row items-center justify-between gap-6 z-10 md:flex hidden">
             {/* Left Info */}
             <div className="flex items-center gap-4">
               {/* Logo */}
@@ -94,28 +92,8 @@ export default function SellerCard() {
           </div>
         </div>
       </div>
-      <div className="md:pt-16 pt-3 bg-gray-100">
-        {" "}
-        <SimilarSheds />
-      </div>
-      <div className="my-6">
-        {" "}
-        <SimilarSheds />
-      </div>
-      <SimilarSheds />
-      <div className="flex justify-center items-center py-12">
-        <button className="flex items-center gap-2 border border-[#002D4A] rounded-full px-6 py-2 text-[#002D4A] font-semibold">
-          LOAD MORE
-          <svg
-            width="13"
-            height="9"
-            viewBox="0 0 13 9"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M1 1L6.5 7L12 1" stroke="#002C49" stroke-width="1.5" />
-          </svg>
-        </button>
+      <div className="mt-14 bg-[#F7F7F7]">
+        <Sheds />
       </div>
       <Footer />
     </>
