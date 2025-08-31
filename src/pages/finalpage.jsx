@@ -98,7 +98,7 @@ export default function SellerCard() {
           </div>
 
           {/* Floating Info Section */}
-          <div className="absolute -bottom-14 left-1/2 -translate-x-1/2 w-[95%] bg-[white] rounded-xl p-6  flex-col md:flex-row items-center justify-between gap-6 z-10 md:flex hidden">
+          <div className="absolute -bottom-14 left-1/2 -translate-x-1/2 w-[95%] bg-[white] rounded-xl p-6  flex-col md:flex-row items-center justify-between gap-6 z-10 xl:flex hidden">
             {/* Left Info */}
             <div className="flex items-center gap-4">
               {/* Logo */}
@@ -176,6 +176,7 @@ export default function SellerCard() {
         <Sheds />
       </div>
       <Silmilerdellers />
+
       <Footer />
     </>
   );

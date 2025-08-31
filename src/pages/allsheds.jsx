@@ -979,7 +979,7 @@ const Allsheds = () => {
         <PropertyListings />
       </div>
 
-      <div>
+      <div className="bg-[white] xl:pt-32 pt-0">
         <Footer />
       </div>
     </div>

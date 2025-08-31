@@ -800,7 +800,9 @@ Thank you!`}
         </h2>
         <SimilarSheds />
       </div>
-      <Footer />
+      <div className="bg-[#F7F7F7] xl:pt-32 pt-0">
+        <Footer />
+      </div>
 
       {/* <Foot /> */}
     </div>

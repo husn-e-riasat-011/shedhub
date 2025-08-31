@@ -798,8 +798,9 @@ export default function Landingpage() {
 
         <SimilarSheds />
       </div>
-
-      <Footer />
+      <div className="bg-[#F7F7F7] xl:pt-32 pt-0">
+        <Footer />
+      </div>
     </div>
   );
 }
