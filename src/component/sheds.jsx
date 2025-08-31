@@ -1008,7 +1008,7 @@ export default function Sheds() {
   const visibleSellers = sheds.slice(0, visibleCount);
   return (
     <>
-      <div className=" bg-[#F7F7F7]">
+      <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1538px] px-6 mx-auto">
           {visibleSellers.map((shed, i) => (
             <div
