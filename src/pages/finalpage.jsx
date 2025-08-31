@@ -12,12 +12,90 @@ export default function SellerCard() {
       <div className="bg-gray-100 flex justify-center py-10">
         <div className="relative md:w-[1490px]">
           {/* Top Image */}
-          <div className="w-full md:h-[440px] rounded-xl overflow-hidden">
+          <div className="w-full md:h-[440px] rounded-xl overflow-hidden relative px-2">
             <img
               src="/bgggg.png"
               alt="Seller Shed"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-xl"
             />
+            <svg
+              width="46"
+              height="46"
+              viewBox="0 0 46 46"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="absolute md:bottom-24 bottom-3 right-14"
+            >
+              <g filter="url(#filter0_d_388_1685)">
+                <path
+                  d="M22.9999 39C32.941 39 40.9999 30.9411 40.9999 21C40.9999 11.0589 32.941 3 22.9999 3C13.0588 3 4.99988 11.0589 4.99988 21C4.99988 30.9411 13.0588 39 22.9999 39Z"
+                  fill="white"
+                />
+              </g>
+              <path
+                d="M19.3029 22.7835L24.9945 26.1665M24.9862 16.8335L19.3029 20.2165M29.6445 15.55C29.6445 16.9583 28.5253 18.1 27.1445 18.1C25.7638 18.1 24.6445 16.9583 24.6445 15.55C24.6445 14.1417 25.7638 13 27.1445 13C28.5253 13 29.6445 14.1417 29.6445 15.55ZM19.6445 21.5C19.6445 22.9084 18.5252 24.05 17.1445 24.05C15.7638 24.05 14.6445 22.9084 14.6445 21.5C14.6445 20.0916 15.7638 18.95 17.1445 18.95C18.5252 18.95 19.6445 20.0916 19.6445 21.5ZM29.6445 27.45C29.6445 28.8584 28.5253 30 27.1445 30C25.7638 30 24.6445 28.8584 24.6445 27.45C24.6445 26.0416 25.7638 24.9 27.1445 24.9C28.5253 24.9 29.6445 26.0416 29.6445 27.45Z"
+                stroke="#FFA424"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <defs>
+                <filter
+                  id="filter0_d_388_1685"
+                  x="-0.00012207"
+                  y="0"
+                  width="46"
+                  height="46"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="2" />
+                  <feGaussianBlur stdDeviation="2.5" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.101961 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_388_1685"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_388_1685"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+            <div className="absolute md:bottom-[102px] bottom-5 right-4 bg-white rounded-full p-[10px] shadow-md cursor-pointer">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 19 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M9.6391 2.67663C8.03958 0.841744 5.37234 0.348162 3.36829 2.02837C1.36424 3.70858 1.08211 6.51783 2.65589 8.505C3.96439 10.1572 7.92435 13.6419 9.22222 14.7697C9.36742 14.8959 9.44006 14.9589 9.5247 14.9837C9.59862 15.0054 9.6795 15.0054 9.75342 14.9837C9.83806 14.9589 9.9107 14.8959 10.0559 14.7697C11.3537 13.6419 15.3137 10.1572 16.6222 8.505C18.196 6.51783 17.9483 3.69091 15.9098 2.02837C13.8713 0.36584 11.2385 0.841744 9.6391 2.67663Z"
+                  stroke="#FFA424"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
           </div>
 
           {/* Floating Info Section */}
@@ -25,7 +103,7 @@ export default function SellerCard() {
             {/* Left Info */}
             <div className="flex items-center gap-4">
               {/* Logo */}
-              <div className=" -md p-2 w-24 h-24 flex items-center justify-center">
+              <div className="  p-2 w-24 h-24 flex items-center justify-center">
                 <img
                   src="/frntimg.PNG"
                   alt="logo"
@@ -84,10 +162,11 @@ export default function SellerCard() {
             </div>
             {/* Right Buttons */}
             <div className="flex flex-col gap-3">
-              <button className="bg-[#FFA424] text-white px-6 py-2 rounded-md font-medium w-[340px]">
+              <button className="bg-[#FFA424] text-[#FFFFFF] px-6 py-2 rounded-md font-medium w-[340px] hover:bg-[#d3810f] transition">
                 Contact Seller
               </button>
-              <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-md font-medium">
+
+              <button className="border border-gray-300 text-[#002D4A] px-6 py-2 rounded-md font-medium hover:bg-[#002D4A] hover:text-white transition">
                 Message Seller
               </button>
             </div>

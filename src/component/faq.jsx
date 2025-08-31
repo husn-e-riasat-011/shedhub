@@ -37,14 +37,14 @@ export default function ShedSalesFAQ() {
   };
 
   return (
-    <div className="max-w-[1538px] mx-auto bg-white px-8 pb-16 pt-10 font-poppins">
+    <div className="max-w-[1538px] mx-auto bg-white px-8 pb-16 md:pt-10 pt-0 font-poppins">
       {/* Header Section */}
       <div className="mb-4 py-10">
-        <h3 className="font-poppins font-normal text-[28px] sm:text-[36px] md:text-[48px] leading-[56px] text-[#002D4A] tracking-[-0.03em]">
+        <h3 className="font-poppins font-normal text-[20px] sm:text-[36px] md:text-[48px] leading-[56px] text-[#002D4A] tracking-[-0.03em]">
           What to Consider When
         </h3>
 
-        <h1 className="font-poppins font-semibold text-[28px] sm:text-[36px] md:text-[48px] leading-[56px] tracking-[-0.03em] text-[#002D4A] mb-4">
+        <h1 className="font-poppins font-semibold text-[20px] sm:text-[36px] md:text-[48px] leading-[56px] tracking-[-0.03em] text-[#002D4A] mb-4">
           Shopping for Sheds for Sales
         </h1>
 
